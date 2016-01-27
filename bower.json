@@ -1,0 +1,20 @@
+{
+  "name": "ayw",
+  "description": "",
+  "authors": [
+    "Alex Moser <amoser@leadnomics.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "susy": "^2.2.12"
+  }
+}
