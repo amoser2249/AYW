@@ -21,24 +21,24 @@ var gulp = require('gulp'),
 // DEVELOPMENT PHASE
 // =================
 
-// Custom Error Handler and Notification
+// Custom Plumber function for catching errors
 function customPlumber(errTitle) {
-	if (process.env.CI) {
-		return plumber({
-			errorHandler: function(err) {
-				throw Error(gutil.colors.red(err.message));
-			}
-		});
-	} else {
-		return plumber({
-			errorHandler: notify.onError({
-				title: errTitle || 'Error running Gulp',
-				message: 'Error: <%= error.message %>',
-				sound: 'Glass'
-			})
-		});
-	}
+  if (process.env.CI) {
+    return plumber({
+      errorHandler: function(err) {
+        throw Error(gutil.colors.red(err.message));
+      }
+    });
+  } else {
+    return plumber({
+      errorHandler: notify.onError({
+        title: errTitle || 'Error running Gulp',
+        message: 'Error: <%= error.message %>',
+      })
+    });
+  }
 }
+
 // Compile SASS with sourcemaps, autoprefixer and automatically inject changes into browser
 // app/bower_components defined as included path (aka easier referencing @import statements)
 gulp.task('sass', function() {
@@ -173,9 +173,7 @@ gulp.task('test', function(done) {
 
 gulp.task('dev-ci', function(callback) {
 	runSequence(
-		'clean:dev',
-		['sprites', 'lint:js', 'lint:scss'],
-		['sass', 'nunjucks'],
+		'clean:dev', ['sprites', 'lint:js', 'lint:scss'], ['sass', 'nunjucks'],
 		callback
-		);
-	});
+	);
+})
