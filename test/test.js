@@ -1,6 +1,6 @@
 // test.js
 describe('This test', function() {
-	it('shoudl always return true', function() {
+	it('Should always return true', function() {
 		expect(true).toBe(false);
 	});
 })
