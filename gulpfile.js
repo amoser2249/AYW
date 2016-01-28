@@ -22,15 +22,22 @@ var gulp = require('gulp'),
 
 // Custom Error Handler and Notification
 function customPlumber(errTitle) {
-	return plumber({
-		errorHandler: notify.onError({
-			title: errTitle || 'Error running Gulp',
-			message: 'Error: <%= error.message %>',
-			sound: 'Glass'
-		})
-	});
+	if (process.env.CI) {
+		return plumber({
+			errorHandler: function(err) {
+				throw Error(err.message);
+			}
+		});
+	} else {
+		return plumber({
+			errorHandler: notify.onError({
+				title: errTitle || 'Error running Gulp',
+				message: 'Error: <%= error.message %>',
+				sound: 'Glass'
+			})
+		});
+	}
 }
-
 // Compile SASS with sourcemaps, autoprefixer and automatically inject changes into browser
 // app/bower_components defined as included path (aka easier referencing @import statements)
 gulp.task('sass', function() {

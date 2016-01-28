@@ -14,3 +14,4 @@ install:
 script:
   - gulp dev-ci
   - gulp test
+env: CI=true
