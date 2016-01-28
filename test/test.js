@@ -1,7 +1,7 @@
 // test.js
 describe('This test', function() {
 	it('Should always return true', function() {
-		expect(true).toBe(false);
+		expect(true).toBe(true);
 	});
 })
 
