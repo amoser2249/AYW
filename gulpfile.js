@@ -14,7 +14,8 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
-	Server = require('karma').Server;
+	Server = require('karma').Server,
+	gutil = require('gulp-util');
 
 // =================
 // DEVELOPMENT PHASE
@@ -25,7 +26,7 @@ function customPlumber(errTitle) {
 	if (process.env.CI) {
 		return plumber({
 			errorHandler: function(err) {
-				throw Error(err.message);
+				throw Error(gutil.colors.red(err.message));
 			}
 		});
 	} else {
