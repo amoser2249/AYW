@@ -1,4 +1,4 @@
-# Gitignore file 
+# Gitignore file
 .DS_Store
 Thumbs.db
 profile
@@ -7,12 +7,12 @@ profile
 *. sublime-project
 *. sublime-workspace
 
-# ignore packages 
-node_modules 
-bower_components 
+# ignore packages
+node_modules
+bower_components
 
-# ignore generated files and folders 
-*. log 
-*. html 
-*. css 
+# ignore generated files and folders
+*. log
+*. html
+*. css
 dist
