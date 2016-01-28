@@ -173,7 +173,7 @@ gulp.task('test', function(done) {
 
 gulp.task('dev-ci', function(callback) {
 	runSequence(
-		'clean:dev', ['sprites', 'lint:js', 'lint:scss'], ['sass', 'nunjucks'],
+		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'],
 		callback
 	);
 })
