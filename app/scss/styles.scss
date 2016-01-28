@@ -1,12 +1,15 @@
 // Styles.scss
-@import "susy/sass/susy";
-@import "testing";
-@import "sprites";
+@import 'susy/sass/susy';
+@import 'testing';
+@import 'sprites';
+
+$coral: #ff7f50;
 
 .test {
 	@include span(2);
-	background-color: coral;
+	background-color: $coral;
 }
+
 .github {
 	@include retina-sprite($github-group);
 }
