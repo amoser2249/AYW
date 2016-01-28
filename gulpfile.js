@@ -12,7 +12,9 @@ var gulp = require('gulp'),
 	del = require('del'),
 	runSequence = require('run-sequence'),
 	jshint = require('gulp-jshint'),
-	jscs = require('gulp-jscs');
+	jscs = require('gulp-jscs'),
+	scssLint = require('gulp-scss-lint'),
+	Server = require('karma').Server;
 
 // =================
 // DEVELOPMENT PHASE
@@ -98,22 +100,27 @@ gulp.task('clean:dev', function(callback) {
 	], callback);
 });
 
+gulp.task('watch-js', ['lint:js'], browserSync.reload);
+
 // Gulp Watch task -- browserSync & SASS Compiler -- reloads on scss/css, nunjucks, js and html changes
 gulp.task('watch', function() {
+	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:sass']);
+	gulp.watch('app/js/**/*.js', ['watch-js']);
 	gulp.watch([
 		'app/templates/**/*',
 		'app/pages/**/*.+(html|nunjucks)',
 		'app/data.json'
 	], ['nunjucks'])
-	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
-	gulp.watch('app/*.html', browserSync.reload);
 });
+	// gulp.watch('app/*.html', browserSync.reload);
 
 // Consolidated dev phase task
 gulp.task('default', function(callback) {
-	runSequence('clean:dev',
-		'sprites', ['sass', 'nunjucks'], ['browserSync', 'watch'],
+	runSequence(
+		'clean:dev',
+		['sprites', 'lint:js', 'lint:sass'],
+		['sass', 'nunjucks'],
+		['browserSync', 'watch'],
 		callback
 	)
 });
@@ -127,11 +134,31 @@ gulp.task('lint:js', function() {
 		.pipe(customPlumber('JSHint Error'))
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))
+		.pipe(jshint.reporter('fail', {
+			ignoreWarning: true,
+			ignoreInfo: true
+		}))
 		.pipe(jscs({
 			fix: true,
 			configPath: '.jscsrc'
 		}))
 		.pipe(gulp.dest('app/js'))
-		.pipe(jshint.reporter('fail'))
-});
+	});
 
+gulp.task('lint:sass', function() {
+	return gulp.src('app/scss/**/*.scss')
+		.pipe(scssLint({
+			config: '.scss-lint.yml'
+		}));
+	});
+
+gulp.task('test', function(done) {
+	new Server({
+		configFile: process.cwd() + '/karma.conf.js',
+		singleRun: true
+		}, done).start();
+	});
+
+// =================
+// INTEGRATION PHASE
+// =================
