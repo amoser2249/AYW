@@ -10,6 +10,7 @@ install:
   - npm install
   - npm install bower -g
   - bower install
+  - gem install scss_lint
 script:
   - gulp
   - gulp test
