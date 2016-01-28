@@ -10,3 +10,6 @@ install:
   - npm install
   - npm install bower -g
   - bower install
+script:
+  - gulp
+  - gulp test
