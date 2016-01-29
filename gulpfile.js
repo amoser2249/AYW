@@ -14,6 +14,7 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
+	gutil = require('gulp-util'),
 	Server = require('karma').Server;
 
 // =================
@@ -22,22 +23,20 @@ var gulp = require('gulp'),
 
 // Custom Plumber function for catching errors
 function customPlumber(errTitle) {
-  // Determining whether plumber is ran by Travis
-  if (process.env.CI) {
-    return plumber({
-      errorHandler: function(err) {
-        throw Error(err.message);
-      }
-    });
-  } else {
-    return plumber({
-      errorHandler: notify.onError({
-        // Customizing error title
-        title: errTitle || 'Error running Gulp',
-        message: 'Error: <%= error.message %>',
-      })
-    });
-  }
+	if (process.env.CI) {
+		return plumber({
+			errorHandler: function(err) {
+				throw Error(gutil.colors.red(err.message));
+			}
+		});
+	} else {
+		return plumber({
+			errorHandler: notify.onError({
+				title: errTitle || 'Error running Gulp',
+				message: 'Error: <%= error.messge %>',
+			})
+		});
+	}
 }
 
 // Compile SASS with sourcemaps, autoprefixer and automatically inject changes into browser
@@ -121,15 +120,12 @@ gulp.task('watch', function() {
 		'app/data.json'
 	], ['nunjucks'])
 });
-	// gulp.watch('app/*.html', browserSync.reload);
+// gulp.watch('app/*.html', browserSync.reload);
 
 // Consolidated dev phase task
 gulp.task('default', function(callback) {
 	runSequence(
-		'clean:dev',
-		['sprites', 'lint:js', 'lint:sass'],
-		['sass', 'nunjucks'],
-		['browserSync', 'watch'],
+		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'], ['browserSync', 'watch'],
 		callback
 	)
 });
@@ -152,21 +148,21 @@ gulp.task('lint:js', function() {
 			configPath: '.jscsrc'
 		}))
 		.pipe(gulp.dest('app/js'))
-	});
+});
 
 gulp.task('lint:sass', function() {
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(scssLint({
 			config: '.scss-lint.yml'
 		}));
-	});
+});
 
 gulp.task('test', function(done) {
 	new Server({
 		configFile: process.cwd() + '/karma.conf.js',
 		singleRun: true
-		}, done).start();
-	});
+	}, done).start();
+});
 
 // =================
 // INTEGRATION PHASE
