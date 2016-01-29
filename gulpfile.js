@@ -14,7 +14,6 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
-	gutil = require('gulp-util'),
 	Server = require('karma').Server;
 
 // =================
@@ -27,7 +26,7 @@ function customPlumber(errTitle) {
   if (process.env.CI) {
     return plumber({
       errorHandler: function(err) {
-        throw Error(gutil.colors.red(err.message));
+        throw Error(err.message);
       }
     });
   } else {
