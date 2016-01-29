@@ -14,8 +14,8 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
-	Server = require('karma').Server,
-	gutil = require('gulp-util');
+	gutil = require('gulp-util'),
+	Server = require('karma').Server;
 
 // =================
 // DEVELOPMENT PHASE
@@ -23,6 +23,7 @@ var gulp = require('gulp'),
 
 // Custom Plumber function for catching errors
 function customPlumber(errTitle) {
+  // Determining whether plumber is ran by Travis
   if (process.env.CI) {
     return plumber({
       errorHandler: function(err) {
@@ -32,6 +33,7 @@ function customPlumber(errTitle) {
   } else {
     return plumber({
       errorHandler: notify.onError({
+        // Customizing error title
         title: errTitle || 'Error running Gulp',
         message: 'Error: <%= error.message %>',
       })
