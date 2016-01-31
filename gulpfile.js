@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
 	gutil = require('gulp-util'),
+	useref = require('gulp-useref'),
 	Server = require('karma').Server;
 
 // =================
@@ -174,3 +175,13 @@ gulp.task('dev-ci', function(callback) {
 		callback
 	);
 })
+
+// ==================
+// OPTIMIZATION PHASE
+// ==================
+
+gulp.task('useref', function() {
+	return gulp.src('app/*.html')
+		.pipe(useref())
+		.pipe(gulp.dest('dist'));
+});
