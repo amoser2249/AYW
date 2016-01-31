@@ -1,7 +1,7 @@
 // Styles.scss
 @import 'susy/sass/susy';
 @import 'testing';
-@import 'sprites';
+// @import 'sprites';
 
 $coral: #ff7f50;
 
@@ -10,8 +10,27 @@ $coral: #ff7f50;
 	background-color: $coral;
 }
 
-.github {
-	@include retina-sprite($github-group);
+// .github {
+// 	@include retina-sprite($github-group);
+// }
+
+.susy-test {
+	@include span(2);
 }
 
-@include retina-sprites($retina-groups);
+.is-active {
+	color: red;
+}
+
+.has-border {
+	border: 2px solid black;
+}
+
+/* uncss:ignore */
+.ignored-selector {
+	color: pink;
+}
+
+.removed-selector {
+	color: black;
+}

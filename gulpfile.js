@@ -19,7 +19,8 @@ var gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
 	uglify = require('gulp-uglify'),
 	debug = require('gulp-debug'),
-	cached = require('gulp-cached'),
+	cache = require('gulp-cached'),
+	uncss= require('gulp-uncss'),
 	Server = require('karma').Server;
 
 // =================
@@ -186,8 +187,16 @@ gulp.task('dev-ci', function(callback) {
 
 gulp.task('useref', function() {
 	return gulp.src('app/*.html')
-		.pipe(cached('useref'))
+		.pipe(cache('useref'))
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.css', uncss({
+			html: ['app/*.html'],
+			ignore: [
+				'.susy-test',
+				/.is-/,
+				/.has-/
+			]
+		})))
 		.pipe(gulp.dest('dist'))
 });
