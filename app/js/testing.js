@@ -1,5 +1,5 @@
 // testing.js
-function testing () {
-	 'use strict';
-	 console.log('testing'); 
+function testing() {
+	'use strict';
+	console.log('testing');
 }
