@@ -26,6 +26,7 @@ var gulp = require('gulp'),
 	cache = require('gulp-cache'),
 	rsync = require('rsyncwrapper'), rsync,
 	ghPages = require('gulp-gh-pages'),
+	s3 = require('gulp-s3'),
 	Server = require('karma').Server;
 
 // =================
@@ -274,4 +275,15 @@ gulp.task('rsync', function() {
 gulp.task('ghpages', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
+});
+
+// Deploy to Amason s3
+gulp.task('amazon', () => {
+	gulp.src('./dist/**/*')
+		.pipe(s3({
+			'key': 'Your-API-Key',
+			'secret': 'Your-AWS-Secret',
+			'bucket': 'Your-AWS-bucket',
+			'region': 'Your-region'
+		}));
 });
