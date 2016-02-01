@@ -23,7 +23,6 @@ var gulp = require('gulp'),
 	uncss= require('gulp-uncss'),
 	cssnano = require('gulp-cssnano'),
 	imagemin = require('gulp-imagemin'),
-	newer = require('gulp-newer'),
 	Server = require('karma').Server;
 
 // =================
@@ -207,7 +206,6 @@ gulp.task('useref', function() {
 
 gulp.task('images', function() {
 	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-		.pipe(newer('dist/images'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 });
@@ -215,4 +213,8 @@ gulp.task('images', function() {
 gulp.task('fonts', function() {
 	return gulp.src('app/fonts/**/*')
 		.pipe(gulp.dest('dist/fonts'))
+});
+
+gulp.task('clean:dist', function(callback) {
+	del(['dist'], callback)
 });
