@@ -22,6 +22,7 @@ var gulp = require('gulp'),
 	cache = require('gulp-cached'),
 	uncss= require('gulp-uncss'),
 	cssnano = require('gulp-cssnano'),
+	imagemin = require('gulp-imagemin'),
 	Server = require('karma').Server;
 
 // =================
@@ -202,3 +203,9 @@ gulp.task('useref', function() {
 		.pipe(gulpIf('*.css', cssnano()))
 		.pipe(gulp.dest('dist'))
 });
+
+gulp.task('images', function() {
+	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+	.pipe(imagemin())
+	.pipe(gulp.dest('dist/images'))
+})
