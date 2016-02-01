@@ -27,6 +27,7 @@ var gulp = require('gulp'),
 	rsync = require('rsyncwrapper'), rsync,
 	ghPages = require('gulp-gh-pages'),
 	s3 = require('gulp-s3'),
+	creds = JSON.parse(fs.readFileSync('./secrets.json'));
 	Server = require('karma').Server;
 
 // =================
@@ -255,35 +256,59 @@ gulp.task('browserSync:dist', function() {
 //  DEPLOYMENT PHASE
 // ==================
 
-// Deploy via rSync SSH
-gulp.task('rsync', function() {
-	rsync({
-		src: 'dist/',
-		dest: 'synced-folder',
-		recursive: true,
-		deleteAll: true
-	}, function(error, stdout, stderr, cmd) {
-		if (error) {
-			console.log(error.message);
-			console.log(stdout);
-			console.log(stderr);
-		}
+if (!process.env.CI) {
+	// Deploy via rSync SSH
+	gulp.task('rsync', function() {
+		rsync({
+			src: 'dist/',
+			// Keep destination in secrets.json
+			dest: 'username@server-address:public_html/path-to-project',
+			ssh: true,
+			recursive: true,
+			deleteAll: true
+		}, function(error, stdout, stderr, cmd) {
+			if (error) {
+				console.log(error.message);
+				console.log(stdout);
+				console.log(stderr);
+			}
+		});
 	});
-});
 
-// Deploy to GitHub Pages
-gulp.task('ghpages', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
+	var conn = ftp.create({
+		// Keep everything here in secrets.json
+		host: creds.server,
+		user: creds.username,
+		password: creds.password,
+		log: gutil.log
+	});
 
-// Deploy to Amason s3
-gulp.task('amazon', () => {
-	gulp.src('./dist/**/*')
-		.pipe(s3({
-			'key': 'Your-API-Key',
-			'secret': 'Your-AWS-Secret',
-			'bucket': 'Your-AWS-bucket',
-			'region': 'Your-region'
-		}));
-});
+	gulp.task('ftp-clean', function(cb) {
+		conn.rmdir('public_html/path-to-project', function(err) {
+			if (err) {
+				console.log(err);
+			}
+		});
+	});
+
+	gulp.task('ftp', function() {
+		return gulp.src('dist/**/*')
+			.pipe(conn.dest('public_html/path-to-project'));
+	});
+
+	// Deploy to GitHub Pages
+	gulp.task('ghpages', function() {
+		return gulp.src('./dist/**/*')
+			.pipe(ghPages());
+	});
+
+	// Deploy to Amason s3
+	gulp.task('amazon', () => {
+		gulp.src('./dist/**/*')
+			.pipe(s3({
+				'key': 'Your-API-Key',
+				'secret': 'Your-AWS-Secret',
+				'bucket': 'Your-AWS-bucket',
+				'region': 'Your-region'
+			}));
+	});
