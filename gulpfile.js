@@ -238,3 +238,11 @@ gulp.task('build', function(callback) {
 		callback
 	);
 });
+
+gulp.task('browserSync:dist', function() {
+	browserSync.init({
+		server: {
+			baseDir: 'dist'
+		}
+	})
+});
