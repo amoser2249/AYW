@@ -1,5 +1,5 @@
 // second.js
-function second () {
-	 'use strict';
-	 console.log('I\'m second!');
+function second() {
+  'use strict';
+  console.log('I\'m second!');
 }

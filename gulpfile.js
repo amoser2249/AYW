@@ -19,7 +19,7 @@ var gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
 	uglify = require('gulp-uglify'),
 	debug = require('gulp-debug'),
-	cache = require('gulp-cached'),
+	cached = require('gulp-cached'),
 	uncss= require('gulp-uncss'),
 	cssnano = require('gulp-cssnano'),
 	imagemin = require('gulp-imagemin'),
@@ -193,7 +193,7 @@ gulp.task('dev-ci', function(callback) {
 
 gulp.task('useref', function() {
 	return gulp.src('app/*.html')
-		.pipe(cache('useref'))
+		.pipe(cached('useref'))
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
 		.pipe(gulpIf('*.css', uncss({
@@ -227,4 +227,14 @@ gulp.task('fonts', function() {
 
 gulp.task('clean:dist', function(callback) {
 	del(['dist'], callback)
+});
+
+gulp.task('build', function(callback) {
+	runSequence(
+		['clean:dev', 'clean:dist'],
+		['sprites', 'lint:js', 'lint:scss'],
+		['sass', 'nunjucks'],
+		['useref', 'images', 'fonts', 'test'],
+		callback
+	);
 });
