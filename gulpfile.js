@@ -64,7 +64,7 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({
 			stream: true
-		}))
+		}));
 });
 
 // BrowserSync Server
@@ -73,7 +73,7 @@ gulp.task('browserSync', function() {
 		server: {
 			baseDir: 'app'
 		},
-	})
+	});
 });
 
 // Create standard & retina Sprites  -  NOT to be used for responsive images
@@ -136,7 +136,7 @@ gulp.task('default', function(callback) {
 	runSequence(
 		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'], ['browserSync', 'watch'],
 		callback
-	)
+	);
 });
 
 // =================
@@ -210,4 +210,9 @@ gulp.task('images', function() {
 		.pipe(newer('dist/images'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
-})
+});
+
+gulp.task('fonts', function() {
+	return gulp.src('app/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts'))
+});
