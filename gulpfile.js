@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 	debug = require('gulp-debug'),
 	cache = require('gulp-cached'),
 	uncss= require('gulp-uncss'),
+	cssnano = require('gulp-cssnano'),
 	Server = require('karma').Server;
 
 // =================
@@ -198,5 +199,6 @@ gulp.task('useref', function() {
 				/.has-/
 			]
 		})))
+		.pipe(gulpIf('*.css', cssnano()))
 		.pipe(gulp.dest('dist'))
 });
