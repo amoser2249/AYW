@@ -25,6 +25,7 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	cache = require('gulp-cache'),
 	rsync = require('rsyncwrapper'), rsync,
+	ghPages = require('gulp-gh-pages'),
 	Server = require('karma').Server;
 
 // =================
@@ -253,6 +254,7 @@ gulp.task('browserSync:dist', function() {
 //  DEPLOYMENT PHASE
 // ==================
 
+// Deploy via rSync SSH
 gulp.task('rsync', function() {
 	rsync({
 		src: 'dist/',
@@ -266,4 +268,10 @@ gulp.task('rsync', function() {
 			console.log(stderr);
 		}
 	});
+});
+
+// Deploy to GitHub Pages
+gulp.task('gh-pages', function() {
+	return gulp.src('dist/**/*')
+		.pipe(ghPages());
 });
