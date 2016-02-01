@@ -239,6 +239,7 @@ gulp.task('build', function(callback) {
 	);
 });
 
+// Launches web server that points to built assets (located in dist/)
 gulp.task('browserSync:dist', function() {
 	browserSync.init({
 		server: {
