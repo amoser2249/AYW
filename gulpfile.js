@@ -271,7 +271,7 @@ gulp.task('rsync', function() {
 });
 
 // Deploy to GitHub Pages
-gulp.task('gh-pages', function() {
-	return gulp.src('dist/**/*')
-		.pipe(ghPages());
+gulp.task('ghpages', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
