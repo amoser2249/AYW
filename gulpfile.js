@@ -121,7 +121,7 @@ gulp.task('watch-js', ['lint:js'], browserSync.reload);
 
 // Gulp Watch task -- browserSync & SASS Compiler -- reloads on scss/css, nunjucks, js and html changes
 gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:scss']);
 	gulp.watch('app/js/**/*.js', ['watch-js']);
 	gulp.watch([
 		'app/templates/**/*',
@@ -134,7 +134,10 @@ gulp.task('watch', function() {
 // Consolidated dev phase task
 gulp.task('default', function(callback) {
 	runSequence(
-		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'], ['browserSync', 'watch'],
+		'clean:dev',
+		['sprites', 'lint:js', 'lint:scss'],
+		['sass', 'nunjucks'],
+		['browserSync', 'watch'],
 		callback
 	);
 });
@@ -159,7 +162,7 @@ gulp.task('lint:js', function() {
 		.pipe(gulp.dest('app/js'))
 });
 
-gulp.task('lint:sass', function() {
+gulp.task('lint:scss', function() {
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(scssLint({
 			config: '.scss-lint.yml'
@@ -179,7 +182,7 @@ gulp.task('test', function(done) {
 
 gulp.task('dev-ci', function(callback) {
 	runSequence(
-		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'],
+		'clean:dev', ['sprites', 'lint:js', 'lint:scss'], ['sass', 'nunjucks'],
 		callback
 	);
 })
