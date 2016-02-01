@@ -12,7 +12,7 @@ node_modules
 bower_components
 
 # ignore generated files and folders
-*. log
-*. html
-*. css
+*.log
+*.html
+*.css
 dist

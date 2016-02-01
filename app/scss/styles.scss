@@ -4,6 +4,10 @@
 @import 'sprites';
 
 $coral: #ff7f50;
+$red: #f00;
+$black: #000;
+$pink: #ffc0cb;
+$purple: 800000;
 
 .test {
 	@include span(2);
@@ -14,4 +18,28 @@ $coral: #ff7f50;
 	@include retina-sprite($github-group);
 }
 
-@include retina-sprites($retina-groups);
+.susy-test {
+	@include span(2);
+}
+
+.is-active {
+	color: $red;
+}
+
+.has-border {
+	border: 2px solid $black;
+}
+
+/* uncss:ignore */
+.ignored-selector {
+	color: $pink;
+}
+
+.removed-selector {
+	color: $black;
+}
+
+.testing {
+	background-color: $purple;
+	width: percentage(5 / 7);
+}

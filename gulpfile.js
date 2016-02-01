@@ -15,6 +15,17 @@ var gulp = require('gulp'),
 	jscs = require('gulp-jscs'),
 	scssLint = require('gulp-scss-lint'),
 	gutil = require('gulp-util'),
+	useref = require('gulp-useref'),
+	gulpIf = require('gulp-if'),
+	uglify = require('gulp-uglify'),
+	debug = require('gulp-debug'),
+	cached = require('gulp-cached'),
+	uncss= require('gulp-uncss'),
+	cssnano = require('gulp-cssnano'),
+	imagemin = require('gulp-imagemin'),
+	cache = require('gulp-cache'),
+	rsync = require('rsyncwrapper'), rsync,
+	ghPages = require('gulp-gh-pages'),
 	Server = require('karma').Server;
 
 // =================
@@ -55,7 +66,7 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({
 			stream: true
-		}))
+		}));
 });
 
 // BrowserSync Server
@@ -64,7 +75,7 @@ gulp.task('browserSync', function() {
 		server: {
 			baseDir: 'app'
 		},
-	})
+	});
 });
 
 // Create standard & retina Sprites  -  NOT to be used for responsive images
@@ -112,7 +123,7 @@ gulp.task('watch-js', ['lint:js'], browserSync.reload);
 
 // Gulp Watch task -- browserSync & SASS Compiler -- reloads on scss/css, nunjucks, js and html changes
 gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:scss']);
 	gulp.watch('app/js/**/*.js', ['watch-js']);
 	gulp.watch([
 		'app/templates/**/*',
@@ -125,9 +136,12 @@ gulp.task('watch', function() {
 // Consolidated dev phase task
 gulp.task('default', function(callback) {
 	runSequence(
-		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'], ['browserSync', 'watch'],
+		'clean:dev',
+		['sprites', 'lint:js', 'lint:scss'],
+		['sass', 'nunjucks'],
+		['browserSync', 'watch'],
 		callback
-	)
+	);
 });
 
 // =================
@@ -150,7 +164,7 @@ gulp.task('lint:js', function() {
 		.pipe(gulp.dest('app/js'))
 });
 
-gulp.task('lint:sass', function() {
+gulp.task('lint:scss', function() {
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(scssLint({
 			config: '.scss-lint.yml'
@@ -170,7 +184,94 @@ gulp.task('test', function(done) {
 
 gulp.task('dev-ci', function(callback) {
 	runSequence(
-		'clean:dev', ['sprites', 'lint:js', 'lint:sass'], ['sass', 'nunjucks'],
+		'clean:dev', ['sprites', 'lint:js', 'lint:scss'], ['sass', 'nunjucks'],
 		callback
 	);
 })
+
+// ==================
+// OPTIMIZATION PHASE
+// ==================
+
+gulp.task('useref', function() {
+	return gulp.src('app/*.html')
+		.pipe(cached('useref'))
+		.pipe(useref())
+		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.css', uncss({
+			html: ['app/*.html'],
+			ignore: [
+				'.susy-test',
+				/.is-/,
+				/.has-/
+			]
+		})))
+		.pipe(gulpIf('*.css', cssnano()))
+		.pipe(gulp.dest('dist'))
+});
+
+gulp.task('images', function() {
+	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+		.pipe(cache(imagemin(), {
+			name: 'ayw'
+		}))
+		.pipe(gulp.dest('dist/images'))
+});
+
+gulp.task('cache:clear', function(callback) {
+	return cache.clearAll(callback)
+});
+
+gulp.task('fonts', function() {
+	return gulp.src('app/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts'))
+});
+
+gulp.task('clean:dist', function(callback) {
+	del(['dist'], callback)
+});
+
+gulp.task('build', function(callback) {
+	runSequence(
+		['clean:dev', 'clean:dist'],
+		['sprites', 'lint:js', 'lint:scss'],
+		['sass', 'nunjucks'],
+		['useref', 'images', 'fonts', 'test'],
+		callback
+	);
+});
+
+// Launches web server that points to built assets (located in dist/)
+gulp.task('browserSync:dist', function() {
+	browserSync.init({
+		server: {
+			baseDir: 'dist'
+		}
+	})
+});
+
+// ==================
+//  DEPLOYMENT PHASE
+// ==================
+
+// Deploy via rSync SSH
+gulp.task('rsync', function() {
+	rsync({
+		src: 'dist/',
+		dest: 'synced-folder',
+		recursive: true,
+		deleteAll: true
+	}, function(error, stdout, stderr, cmd) {
+		if (error) {
+			console.log(error.message);
+			console.log(stdout);
+			console.log(stderr);
+		}
+	});
+});
+
+// Deploy to GitHub Pages
+gulp.task('ghpages', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
