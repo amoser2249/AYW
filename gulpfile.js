@@ -24,6 +24,7 @@ var gulp = require('gulp'),
 	cssnano = require('gulp-cssnano'),
 	imagemin = require('gulp-imagemin'),
 	cache = require('gulp-cache'),
+	rsync = require('rsyncwrapper'), rsync,
 	Server = require('karma').Server;
 
 // =================
@@ -246,4 +247,23 @@ gulp.task('browserSync:dist', function() {
 			baseDir: 'dist'
 		}
 	})
+});
+
+// ==================
+//  DEPLOYMENT PHASE
+// ==================
+
+gulp.task('rsync', function() {
+	rsync({
+		src: 'dist/',
+		dest: 'synced-folder',
+		recursive: true,
+		deleteAll: true
+	}, function(error, stdout, stderr, cmd) {
+		if (error) {
+			console.log(error.message);
+			console.log(stdout);
+			console.log(stderr);
+		}
+	});
 });
