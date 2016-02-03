@@ -27,58 +27,25 @@ var gulp = require('gulp'),
 	rsync = require('rsyncwrapper'), rsync,
 	ghPages = require('gulp-gh-pages'),
 	s3 = require('gulp-s3'),
-	creds = JSON.parse(fs.readFileSync('./secrets.json'));
-	Server = require('karma').Server;
+	creds = JSON.parse(fs.readFileSync('./secrets.json')),
+	Server = require('karma').Server,
+	requireDir = require('require-dir');
+
+// Require gulp tasks from task directory
+requireDir('./gulp/tasks');
 
 // =================
 // DEVELOPMENT PHASE
 // =================
 
-// Custom Plumber function for catching errors
-function customPlumber(errTitle) {
-	if (process.env.CI) {
-		return plumber({
-			errorHandler: function(err) {
-				throw Error(gutil.colors.red(err.message));
-			}
-		});
-	} else {
-		return plumber({
-			errorHandler: notify.onError({
-				title: errTitle || 'Error running Gulp',
-				message: 'Error: <%= error.messge %>',
-			})
-		});
-	}
-}
-
-// Compile SASS with sourcemaps, autoprefixer and automatically inject changes into browser
-// app/bower_components defined as included path (aka easier referencing @import statements)
-gulp.task('sass', function() {
-	return gulp.src('app/scss/**/*.scss')
-		.pipe(customPlumber('Error Running Sass'))
-		.pipe(sourcemaps.init())
-		.pipe(sass({
-			includePaths: ['app/bower_components/']
-		}))
-		.pipe(autoprefixer({
-			browsers: ['ie 8-9', 'last 2 versions']
-		}))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('app/css'))
-		.pipe(browserSync.reload({
-			stream: true
-		}));
-});
-
-// BrowserSync Server
-gulp.task('browserSync', function() {
-	browserSync({
-		server: {
-			baseDir: 'app'
-		},
-	});
-});
+// // BrowserSync Server
+// gulp.task('browserSync', function() {
+// 	browserSync({
+// 		server: {
+// 			baseDir: 'app'
+// 		},
+// 	});
+// });
 
 // Create standard & retina Sprites  -  NOT to be used for responsive images
 gulp.task('sprites', function() {
@@ -251,64 +218,3 @@ gulp.task('browserSync:dist', function() {
 		}
 	})
 });
-
-// ==================
-//  DEPLOYMENT PHASE
-// ==================
-
-if (!process.env.CI) {
-	// Deploy via rSync SSH
-	gulp.task('rsync', function() {
-		rsync({
-			src: 'dist/',
-			// Keep destination in secrets.json
-			dest: 'username@server-address:public_html/path-to-project',
-			ssh: true,
-			recursive: true,
-			deleteAll: true
-		}, function(error, stdout, stderr, cmd) {
-			if (error) {
-				console.log(error.message);
-				console.log(stdout);
-				console.log(stderr);
-			}
-		});
-	});
-
-	var conn = ftp.create({
-		// Keep everything here in secrets.json
-		host: creds.server,
-		user: creds.username,
-		password: creds.password,
-		log: gutil.log
-	});
-
-	gulp.task('ftp-clean', function(cb) {
-		conn.rmdir('public_html/path-to-project', function(err) {
-			if (err) {
-				console.log(err);
-			}
-		});
-	});
-
-	gulp.task('ftp', function() {
-		return gulp.src('dist/**/*')
-			.pipe(conn.dest('public_html/path-to-project'));
-	});
-
-	// Deploy to GitHub Pages
-	gulp.task('ghpages', function() {
-		return gulp.src('./dist/**/*')
-			.pipe(ghPages());
-	});
-
-	// Deploy to Amason s3
-	gulp.task('amazon', () => {
-		gulp.src('./dist/**/*')
-			.pipe(s3({
-				'key': 'Your-API-Key',
-				'secret': 'Your-AWS-Secret',
-				'bucket': 'Your-AWS-bucket',
-				'region': 'Your-region'
-			}));
-	});
