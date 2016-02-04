@@ -2,9 +2,6 @@
 //   Task: sass
 // -------------------------------------
 
-// Compile SASS with sourcemaps, autoprefixer and automatically inject changes into browser
-// app/bower_components defined as included path (aka easier referencing @import statements)
-
 // require modules
 var $ = require('gulp-load-plugins')(),
 	gulp = require('gulp'),
