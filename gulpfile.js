@@ -1,3 +1,8 @@
+// Once everything is partialed out
+// only thing should be:
+// 		var requireDir = require('require-dir');
+// 		requireDir('./gulp/tasks');
+
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	plumber = require('gulp-plumber'),
@@ -38,7 +43,7 @@ requireDir('./gulp/tasks');
 // DEVELOPMENT PHASE
 // =================
 
-// // BrowserSync Server
+// BrowserSync Server
 // gulp.task('browserSync', function() {
 // 	browserSync({
 // 		server: {
@@ -47,105 +52,105 @@ requireDir('./gulp/tasks');
 // 	});
 // });
 
-// Create standard & retina Sprites  -  NOT to be used for responsive images
-gulp.task('sprites', function() {
-	var spriteData =
-		gulp.src('./app/images/sprites/*.*') // source path of the sprite images
-		.pipe(spritesmith({
-			imgName: 'sprites.png',
-			cssName: '_sprites.scss',
-			imgPath: '../images/sprites.png',
-			retinaSrcFilter: 'app/images/sprites/*@2x.png',
-			retinaImgName: 'sprites@2x.png',
-			retinaImgPath: '../images/sprites@2x.png'
-		}));
-	spriteData.img.pipe(gulp.dest('./app/images/')); // output path for the sprite
-	spriteData.css.pipe(gulp.dest('./app/scss/')); // output path for the CSS
-});
+// // Create standard & retina Sprites  -  NOT to be used for responsive images
+// gulp.task('sprites', function() {
+// 	var spriteData =
+// 		gulp.src('./app/images/sprites/*.*') // source path of the sprite images
+// 		.pipe(spritesmith({
+// 			imgName: 'sprites.png',
+// 			cssName: '_sprites.scss',
+// 			imgPath: '../images/sprites.png',
+// 			retinaSrcFilter: 'app/images/sprites/*@2x.png',
+// 			retinaImgName: 'sprites@2x.png',
+// 			retinaImgPath: '../images/sprites@2x.png'
+// 		}));
+// 	spriteData.img.pipe(gulp.dest('./app/images/')); // output path for the sprite
+// 	spriteData.css.pipe(gulp.dest('./app/scss/')); // output path for the CSS
+// });
 
-// Nunjucks templating with data source & browserSync
-gulp.task('nunjucks', function() {
-	nunjucksRender.nunjucks.configure(['app/templates'], {
-		watch: false
-	});
-	return gulp.src('app/pages/**/*.+(html|nunjucks)')
-		.pipe(customPlumber('Error Running Nunjucks'))
-		.pipe(data(function() {
-			return JSON.parse(fs.readFileSync('./app/data.json'))
-		}))
-		.pipe(nunjucksRender())
-		.pipe(gulp.dest('app'))
-		.pipe(browserSync.reload({
-			stream: true
-		}));
-});
+// // Nunjucks templating with data source & browserSync
+// gulp.task('nunjucks', function() {
+// 	nunjucksRender.nunjucks.configure(['app/templates'], {
+// 		watch: false
+// 	});
+// 	return gulp.src('app/pages/**/*.+(html|nunjucks)')
+// 		.pipe(customPlumber('Error Running Nunjucks'))
+// 		.pipe(data(function() {
+// 			return JSON.parse(fs.readFileSync('./app/data.json'))
+// 		}))
+// 		.pipe(nunjucksRender())
+// 		.pipe(gulp.dest('app'))
+// 		.pipe(browserSync.reload({
+// 			stream: true
+// 		}));
+// });
 
-// Clean up CSS and generated HTML files in app directory
-gulp.task('clean:dev', function(callback) {
-	del([
-		'app/css',
-		'app/*.+(html|nunjucks)'
-	], callback);
-});
+// // Clean up CSS and generated HTML files in app directory
+// gulp.task('clean:dev', function(callback) {
+// 	del([
+// 		'app/css',
+// 		'app/*.+(html|nunjucks)'
+// 	], callback);
+// });
 
-gulp.task('watch-js', ['lint:js'], browserSync.reload);
+// gulp.task('watch-js', ['lint:js'], browserSync.reload);
 
-// Gulp Watch task -- browserSync & SASS Compiler -- reloads on scss/css, nunjucks, js and html changes
-gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:scss']);
-	gulp.watch('app/js/**/*.js', ['watch-js']);
-	gulp.watch([
-		'app/templates/**/*',
-		'app/pages/**/*.+(html|nunjucks)',
-		'app/data.json'
-	], ['nunjucks'])
-});
+// // Gulp Watch task -- browserSync & SASS Compiler -- reloads on scss/css, nunjucks, js and html changes
+// gulp.task('watch', function() {
+// 	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:scss']);
+// 	gulp.watch('app/js/**/*.js', ['watch-js']);
+// 	gulp.watch([
+// 		'app/templates/**/*',
+// 		'app/pages/**/*.+(html|nunjucks)',
+// 		'app/data.json'
+// 	], ['nunjucks'])
+// });
 // gulp.watch('app/*.html', browserSync.reload);
 
 // Consolidated dev phase task
-gulp.task('default', function(callback) {
-	runSequence(
-		'clean:dev',
-		['sprites', 'lint:js', 'lint:scss'],
-		['sass', 'nunjucks'],
-		['browserSync', 'watch'],
-		callback
-	);
-});
+// gulp.task('default', function(callback) {
+// 	runSequence(
+// 		'clean:dev',
+// 		['sprites', 'lint:js', 'lint:scss'],
+// 		['sass', 'nunjucks'],
+// 		['browserSync', 'watch'],
+// 		callback
+// 	);
+// });
 
 // =================
 //   TESTING PHASE
 // =================
 
-gulp.task('lint:js', function() {
-	return gulp.src('app/js/**/*.js')
-		.pipe(customPlumber('JSHint Error'))
-		.pipe(jshint())
-		.pipe(jshint.reporter('jshint-stylish'))
-		.pipe(jshint.reporter('fail', {
-			ignoreWarning: true,
-			ignoreInfo: true
-		}))
-		.pipe(jscs({
-			fix: true,
-			configPath: '.jscsrc'
-		}))
-		.pipe(gulp.dest('app/js'))
-});
+// gulp.task('lint:js', function() {
+// 	return gulp.src('app/js/**/*.js')
+// 		.pipe(customPlumber('JSHint Error'))
+// 		.pipe(jshint())
+// 		.pipe(jshint.reporter('jshint-stylish'))
+// 		.pipe(jshint.reporter('fail', {
+// 			ignoreWarning: true,
+// 			ignoreInfo: true
+// 		}))
+// 		.pipe(jscs({
+// 			fix: true,
+// 			configPath: '.jscsrc'
+// 		}))
+// 		.pipe(gulp.dest('app/js'))
+// });
 
-gulp.task('lint:scss', function() {
-	return gulp.src('app/scss/**/*.scss')
-		.pipe(scssLint({
-			config: '.scss-lint.yml'
-		}));
-});
+// gulp.task('lint:scss', function() {
+// 	return gulp.src('app/scss/**/*.scss')
+// 		.pipe(scssLint({
+// 			config: '.scss-lint.yml'
+// 		}));
+// });
 
-gulp.task('test', function(done) {
-	new Server({
-		configFile: process.cwd() + '/karma.conf.js',
-		singleRun: true
-	}, done).start();
-});
+// gulp.task('test', function(done) {
+// 	new Server({
+// 		configFile: process.cwd() + '/karma.conf.js',
+// 		singleRun: true
+// 	}, done).start();
+// });
 
 // =================
 // INTEGRATION PHASE
@@ -162,59 +167,59 @@ gulp.task('dev-ci', function(callback) {
 // OPTIMIZATION PHASE
 // ==================
 
-gulp.task('useref', function() {
-	return gulp.src('app/*.html')
-		.pipe(cached('useref'))
-		.pipe(useref())
-		.pipe(gulpIf('*.js', uglify()))
-		.pipe(gulpIf('*.css', uncss({
-			html: ['app/*.html'],
-			ignore: [
-				'.susy-test',
-				/.is-/,
-				/.has-/
-			]
-		})))
-		.pipe(gulpIf('*.css', cssnano()))
-		.pipe(gulp.dest('dist'))
-});
+// gulp.task('useref', function() {
+// 	return gulp.src('app/*.html')
+// 		.pipe(cached('useref'))
+// 		.pipe(useref())
+// 		.pipe(gulpIf('*.js', uglify()))
+// 		.pipe(gulpIf('*.css', uncss({
+// 			html: ['app/*.html'],
+// 			ignore: [
+// 				'.susy-test',
+// 				/.is-/,
+// 				/.has-/
+// 			]
+// 		})))
+// 		.pipe(gulpIf('*.css', cssnano()))
+// 		.pipe(gulp.dest('dist'))
+// });
 
-gulp.task('images', function() {
-	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-		.pipe(cache(imagemin(), {
-			name: 'ayw'
-		}))
-		.pipe(gulp.dest('dist/images'))
-});
+// gulp.task('images', function() {
+// 	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+// 		.pipe(cache(imagemin(), {
+// 			name: 'ayw'
+// 		}))
+// 		.pipe(gulp.dest('dist/images'))
+// });
 
-gulp.task('cache:clear', function(callback) {
-	return cache.clearAll(callback)
-});
+// gulp.task('cache:clear', function(callback) {
+// 	return cache.clearAll(callback)
+// });
 
-gulp.task('fonts', function() {
-	return gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'))
-});
+// gulp.task('fonts', function() {
+// 	return gulp.src('app/fonts/**/*')
+// 		.pipe(gulp.dest('dist/fonts'))
+// });
 
-gulp.task('clean:dist', function(callback) {
-	del(['dist'], callback)
-});
+// gulp.task('clean:dist', function(callback) {
+// 	del(['dist'], callback)
+// });
 
-gulp.task('build', function(callback) {
-	runSequence(
-		['clean:dev', 'clean:dist'],
-		['sprites', 'lint:js', 'lint:scss'],
-		['sass', 'nunjucks'],
-		['useref', 'images', 'fonts', 'test'],
-		callback
-	);
-});
+// gulp.task('build', function(callback) {
+// 	runSequence(
+// 		['clean:dev', 'clean:dist'],
+// 		['sprites', 'lint:js', 'lint:scss'],
+// 		['sass', 'nunjucks'],
+// 		['useref', 'images', 'fonts', 'test'],
+// 		callback
+// 	);
+// });
 
-// Launches web server that points to built assets (located in dist/)
-gulp.task('browserSync:dist', function() {
-	browserSync.init({
-		server: {
-			baseDir: 'dist'
-		}
-	})
-});
+// // Launches web server that points to built assets (located in dist/)
+// gulp.task('browserSync:dist', function() {
+// 	browserSync.init({
+// 		server: {
+// 			baseDir: 'dist'
+// 		}
+// 	})
+// });
