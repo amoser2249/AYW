@@ -7,15 +7,23 @@ $coral: #ff7f50;
 $red: #f00;
 $black: #000;
 $pink: #ffc0cb;
-$purple: 800000;
+$purple: #800000;
 
 .test {
 	@include span(2);
 	background-color: $coral;
 }
 
+.active {
+	color: $coral;
+}
+
 .github {
 	@include retina-sprite($github-group);
+}
+
+.twitter {
+	@include retina-sprite($twitter-group);
 }
 
 .susy-test {
@@ -41,5 +49,10 @@ $purple: 800000;
 
 .testing {
 	background-color: $purple;
-	width: percentage(5 / 7);
+	width: percentage(7 / 7);
+}
+
+nav {
+	width: percentage(100);
+	background: navy;
 }
