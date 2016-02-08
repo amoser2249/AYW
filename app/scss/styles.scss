@@ -1,2 +1,47 @@
 // Styles.scss
 @import 'susy/sass/susy';
+
+$susy: (
+	columns: 12,
+	global-box-sizing: border-box,
+	debug: (image:show),
+	container: 1140px
+);
+
+$lightblue: rgba(113, 218, 210, 0.8);
+$lightyellow: rgba(250, 231, 179, 0.8);
+
+@include border-box-sizing;
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+	@include container();
+	height: 100vh;
+}
+
+.content {
+	@include span(8 of 12);
+	margin-top: 10vh;
+	height: 80vh;
+	background: $lightblue;
+}
+
+.sidebar {
+	@include span(4 of 12 last);
+	margin-top: 10vh;
+	height: 40vh;
+	background: $lightyellow;
+}
+
+.inner-content {
+	background: #fefefe;
+}
+
+h2 {
+	padding: 1rem 0;
+	text-align: center;
+	color: #555;
+}
