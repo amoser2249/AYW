@@ -47,5 +47,9 @@
     "require-dir": "^0.3.0",
     "rsyncwrapper": "^1.0.0",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "gulp-dot": "^1.5.0",
+    "gulp-dot-template": "^0.2.1"
   }
 }

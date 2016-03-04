@@ -1,0 +1,27 @@
+<!-- car.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div id="meat" data-type="cleanCar" data-version="a">
+  <div id="bg-container">
+    <div class="meatWrapper">
+      <div id="meatConstraint">
+        <section id="enticer"></section>
+        <div class="formWrapper">
+            <h1>Stop Overpaying For Car Insurance!<br>Quickly SAVE Up To 45%.</h1>
+          <p class="sub">FREE Quotes - Start Saving Now</p>
+          <!-- FORM GOES HERE -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id="subHead">Competitive Rates From Partners Like</p>
+  <div id="insuranceCarrierStrip">
+    <img style="width:100%;" src="https://dn3nmb5yt1ysw.cloudfront.net/images/carrier-logos/carrier-strip-color.jpg" alt="Insuruance Carriers: SateFarm Insuruance, Generals Auto Insuruance, 21st Cenutry Insuruance, AllState Insuruance" />
+  </div>
+</div>
+<div class="content">
+<p>Maybe some content</p>
+</div>
+{% endblock %}

@@ -21,7 +21,9 @@ gulp.task('nunjucks', function() {
 		.pipe($.data(function() {
 			return JSON.parse(fs.readFileSync('./app/data.json'))
 		}))
-		.pipe($.nunjucksRender())
+		.pipe($.nunjucksRender({
+			cdn: 'https://dn3nmb5yt1ysw.cloudfront.net'
+		}))
 		.pipe(gulp.dest('app'))
 		.pipe(browserSync.reload({
 			stream: true

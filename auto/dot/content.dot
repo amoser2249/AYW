@@ -1,0 +1,14 @@
+{{#def._header}}
+<div class="content-page">
+  {{#def._zipFullWidthCallout}}
+  {{? it.fields.headline}}
+  <h1>{{=it.fields.headline}}</h1>
+  {{?}}
+  {{? it.fields.content}}
+  <div class="content">
+    {{=it.fields.content}}
+  </div>
+  {{?}}
+  {{#def._sidebar}}
+</div>
+{{#def._footer}}

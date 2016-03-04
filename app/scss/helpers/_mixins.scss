@@ -3,6 +3,9 @@
 // General mixins for projects
 // ======
 
+$cdn: 'https://dn3nmb5yt1ysw.cloudfront.net/';
+
+// images/logos/getmyinsurance-logo-sprite-r.png
 // Clearfix
 // --------
 @mixin cf {
@@ -13,7 +16,7 @@
   }
 }
 
-// Image-replacement 
+// Image-replacement
 // -----------------
 // Hides text for image replacement
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
@@ -103,7 +106,7 @@ $text-input-types: text, password, date, datetime, datetime-local, month, week, 
 
 // Trans-prep
 // ----------
-// Prepares for transforms. Gives backface-visibility: hidden 
+// Prepares for transforms. Gives backface-visibility: hidden
 // to remove flickering effect on Webkit browsers
 // - http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
 @mixin trans-prep {
@@ -115,4 +118,22 @@ $text-input-types: text, password, date, datetime, datetime-local, month, week, 
 // -------
 @mixin zi($location) {
   z-index: map-get($zindex, $location);
+}
+
+//Background Image - Retina
+
+@mixin background-image-retina($imageUrl, $type, $width, $height, $positionX: left, $positionY: top, $background-repeat: no-repeat) {
+  background-image: url($cdn + $imageUrl + '-s.' + $type);
+  background-size: $width $height;
+  width: $width; height: $height;
+  background-position: $positionX $positionY;
+  background-repeat: $background-repeat;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+    & {
+      background-image: url($imageUrl + '-r.' + $type);
+      background-size: $width*2 $height*2;
+      width: $width*2; height: $height*2;
+    }
+  }
 }

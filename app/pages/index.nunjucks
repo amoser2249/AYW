@@ -1,28 +1,14 @@
 <!-- index.nunjucks -->
 {% extends "layout.nunjucks" %}
+
 {% block content %}
 
-<div class="wrap">
-<main class="content">
-	<h1>Solar: The Smart Way to Save</h1>
-	<h3>Reduce your impact and take thousands off your energy bills.</h3>
-	<div class="form-wrap">
-
-	<form action="#">
-	<p>See if you qualify for solar:</p>
-    <!-- input must have an required attribute -->
-    <input type="text" name="input" id="input" required>
-    <!-- labels must have placeholder and alt attributes -->
-    <label for="input" placeholder="First Placeholder Label" alt="Third Placeholder Label"></label>
-</form>
-	</div>
-</main>
-<div class="tri">
-<h2>Sunny Days Ahead</h2>
+<div class="content-page">
+  <h1>Headline Content</h1>
+  <div class="content">
+  <p>Content content</p>
+  </div>
+	{% include "partials/sidebar.nunjucks" %}
 </div>
-</div>
-
-
-
 
 {% endblock %}
