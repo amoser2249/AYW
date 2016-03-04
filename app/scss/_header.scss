@@ -1,0 +1,16 @@
+
+
+header {
+	padding-top: 0.5em;
+
+	.logo {
+		@include span(2 of 4);
+		@include bp(780px) {
+			@include span(3 of 12);
+		}
+
+		img {
+			@include shake();
+		}
+	}
+}

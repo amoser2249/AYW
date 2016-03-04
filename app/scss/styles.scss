@@ -1,47 +1,105 @@
-// Styles.scss
-@import 'susy/sass/susy';
+@import 'scaffold';
 
 $susy: (
-	columns: 12,
-	global-box-sizing: border-box,
-	debug: (image:show),
-	container: 1140px
-);
+  columns: 6,
+  gutters: 0.25,
+  column-width: 80px,
+  global-box-sizing: border-box,
+  // debug: (image: show-columns)
+  );
 
-$lightblue: rgba(113, 218, 210, 0.8);
-$lightyellow: rgba(250, 231, 179, 0.8);
+$adaptive-placeholder: (
+  height: 4em,
+  margin: 2em,
+  border: 2px,
+  border-radius: 2px,
+  font-size: 0.75em,
+  border-color: color(cme-green),
+  label-color: #999,
+  active-color: color(cme-green),
+  valid-color: #23a045,
+  placeholder-background-color: white,
+  textarea: false
+  );
 
 @include border-box-sizing;
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
+$bp-med: span(8 static);
+$med: 12;
 
 .wrap {
-	@include container();
-	height: 100vh;
+  @include container;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include susy-breakpoint($bp-med, $med) {
+    @include show-grid;
+    max-width: container();
+    }
+  }
+
+$base-font-size: 10px;
+
+body {
+  font-family: 'Lato', sans-serif;
+
 }
 
 .content {
-	@include span(8 of 12);
-	margin-top: 10vh;
-	height: 80vh;
-	background: $lightblue;
+  @include span(12 of 12);
+  margin-top: 5vh;
+  height: 80vh;
 }
 
 .sidebar {
-	@include span(4 of 12 last);
-	margin-top: 10vh;
-	height: 40vh;
-	background: $lightyellow;
+  @include span(4 of 12 last);
+  margin-top: 10vh;
+  height: 40vh;
 }
 
 .inner-content {
-	background: #fefefe;
+  background: #fefefe;
 }
 
-h2 {
-	padding: 1rem 0;
+h1,
+h2,
+h3,
+p {
+	@include fw(normal);
 	text-align: center;
-	color: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+ {
+	color: color(cme-green);
+}
+
+h4,
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+
+input {
+    @include adaptive-placeholder();
+    &::placeholder {
+    	font-weight: 600;
+    }
+}
+
+.form-wrap {
+  border: 1px solid red;
+  // width: 100%;
+  // margin: 0px auto;
+  form {
+    p {
+    font-size: 0.625em;
+    color: color(pebble);
+    }
+  }
 }

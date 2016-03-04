@@ -4,14 +4,22 @@
 
 <div class="wrap">
 <main class="content">
-	<h2>Content</h2>
-	<div class="inner-content">
-		<h2>Nested Item</h2>
+	<h1>Solar: The Smart Way to Save</h1>
+	<h3>Reduce your impact and take thousands off your energy bills.</h3>
+	<div class="form-wrap">
+
+	<form action="#">
+	<p>See if you qualify for solar:</p>
+    <!-- input must have an required attribute -->
+    <input type="text" name="input" id="input" required>
+    <!-- labels must have placeholder and alt attributes -->
+    <label for="input" placeholder="First Placeholder Label" alt="Third Placeholder Label"></label>
+</form>
 	</div>
 </main>
-<aside class="sidebar">
-	<h2>Sidebar</h2>
-</aside>
+<div class="tri">
+<h2>Sunny Days Ahead</h2>
+</div>
 </div>
 
 

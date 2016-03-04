@@ -1,0 +1,66 @@
+// Typography base
+// ---------------
+// Sets typography for all of document 
+// ===============
+
+body {
+  // Optmizes font rendering for legibility.
+  // May break with some browsers, comment out as necessary.
+  text-rendering: optimizeLegibility;
+  @include ff(primary);
+}
+
+h1 {
+  @include type-scale(h1);
+}
+
+
+h2 {
+  @include type-scale(h2);
+}
+
+pre,
+code {
+  @include type-scale(base);
+}
+
+strong {
+  @include fw(bold);
+}
+
+em {
+  font-style: italic;
+}
+
+pre {
+  white-space: pre;
+}
+
+code {
+  overflow: hidden;
+}
+
+h2 {
+  > a,
+  > a:visited {
+    text-decoration: none;
+    color: #222;
+    transition: color 0.1225s ease;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: orange;
+  }
+}
+
+p {
+  color: #333;
+}
+
+code {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  background: #efefef;
+}

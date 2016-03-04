@@ -1,0 +1,18 @@
+
+// THEMES
+// ------
+// Map for project themes. Uses a theming method 
+// developed by @zellwk with the help of @ezekkkg. 
+// See Themify mixin for more info.
+// ======
+$themes: (
+  theme1: (
+    color: color(shamrock),
+    background: color(porcelain)
+    ),
+
+  theme2: (
+    color: color(havelock-blue),
+    background: color(porcelain)
+    )
+  );

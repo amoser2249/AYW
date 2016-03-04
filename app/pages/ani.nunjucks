@@ -1,0 +1,11 @@
+<!-- ani.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block content %}
+<div class="wrap">
+	<main class="content">
+	<div class="cloud1">
+		<img src="../images/cloud1.svg" alt="">
+	</div>
+	</main>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block content %}
+	<div class="tri">
+		<div class="wrap">
+			<div class="third">
+				<h2>Sunny Days Ahead</h2>
+				<img src="../images/sunnyDays.svg" alt="">
+				<p>The average solar customer saves $20,000 in energy bills over 20 years.</p>
+			</div>
+			<div class="third">
+				<h2>Easy Energy</h2>
+				<img src="../images/easyEnergy.svg" alt="">
+				<p>Customers often need $0 down to have solar panels installed in their homes.</p>
+			</div>
+			<div class="third">
+				<h2>Power Play</h2>
+				<img src="../images/powerPlay.svg" alt="">
+				<p>Solar energy users save a collective 35 million tons of carbon dioxide annually.</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -3,7 +3,7 @@
 
 scss_files: "**/*.scss"
 plugin_directories: ['.scss-linters']
-exclude: 'app/scss/_sprites.scss'
+exclude: ['app/scss/_sprites.scss', 'app/scss/lib/**', 'app/scss/helpers/**', 'app/scss/base/**', 'app/scss/variables/**']
 
 # List of gem names to load custom linters from (make sure they are already
 # installed)
@@ -27,7 +27,7 @@ linters:
     enabled: true
 
   ColorKeyword:
-    enabled: true
+    enabled: false
 
   Comment:
     enabled: false
@@ -76,7 +76,7 @@ linters:
     filename_extension: false
 
   Indentation:
-    enabled: true
+    enabled: false
     character: tab
     width: 1
 

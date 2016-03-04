@@ -2,13 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Automating Your Workflow || Alex</title>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+		<title>Automating Your Workflow || Solar StyleGuide</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 		<!-- build:css css/styles.min.css -->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- endbuild -->
 	</head>
-	<body>
+	<body class="styleguide">
 	{% include "partials/header.nunjucks" %}
 
 	{% block content %}

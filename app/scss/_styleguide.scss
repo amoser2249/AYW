@@ -1,0 +1,41 @@
+body.styleguide {
+	h1, h2, h3, h4, h5 {
+		text-align: left;
+	}
+	div {
+		&#circle {
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+		}
+		&.cme-green {
+			background: color(cme-green);
+			border: 1px solid color(cme-green);
+		}
+	}
+	p {
+
+		line-height: 60px;
+		vertical-align: top;
+	}
+	span {
+		font-weight: 600;
+		text-transform: uppercase;
+		opacity: .75;
+		display: block;
+
+		&.heading {
+			font-size: .865em;
+			letter-spacing: 2px;
+			color: color(grey);
+			width: 50%;
+			border-bottom: 2px solid color(grey);
+			margin-bottom: 1em;
+		}
+		&.description {
+			font-size: .625em;
+			color: color(pebble);
+			margin-bottom: 2em;
+		}
+	}
+}
