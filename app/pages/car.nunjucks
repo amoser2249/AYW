@@ -1,5 +1,4 @@
-<!-- car.nunjucks -->
-{% extends "layout.nunjucks" %}
+{% extends "./app/templates/layout.nunjucks" %}
 
 {% block content %}
 
@@ -24,4 +23,6 @@
 <div class="content">
 <p>Maybe some content</p>
 </div>
+
+
 {% endblock %}

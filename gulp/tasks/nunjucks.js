@@ -17,14 +17,15 @@ gulp.task('nunjucks', function() {
 		watch: false
 	});
 	return gulp.src('app/pages/**/*.+(html|nunjucks)')
+		.pipe($.debug())
 		.pipe(customPlumber('Error Running Nunjucks'))
-		.pipe($.data(function() {
-			return JSON.parse(fs.readFileSync('./app/data.json'))
-		}))
+		.pipe($.debug())
 		.pipe($.nunjucksRender({
 			cdn: 'https://dn3nmb5yt1ysw.cloudfront.net'
 		}))
+		.pipe($.debug())
 		.pipe(gulp.dest('app'))
+		.pipe($.debug())
 		.pipe(browserSync.reload({
 			stream: true
 		}));

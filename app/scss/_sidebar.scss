@@ -1,0 +1,40 @@
+.sidebar {
+	display: table-cell;
+	box-sizing: border-box;
+	padding-right: 10px;
+	width: 25%;
+
+	color:#004689
+	section {
+		border-bottom: 1px solid #004689;
+		padding: 20px 10px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+	.logo {
+		background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -37px -518px;
+		width: 165px;
+		height: 165px;
+	}
+	ul {
+		padding: 0px;
+
+		li {
+			background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -170px -290px;
+			padding-left: 30px !important;
+			list-style-type: none;
+			margin-bottom: 10px;
+			line-height: 1.25
+		}
+	}
+}
+#side-banner {
+	padding: 40px 0px;
+	text-align: center;
+}
+#faq {
+	border-bottom: 1px solid #004689;
+	padding: 20px 10px;
+}

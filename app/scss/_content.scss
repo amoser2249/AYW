@@ -1,0 +1,30 @@
+.content-page {
+	width: 100%;
+	display: table;
+	box-sizing: border-box;
+	h1 {
+		font-size: 35px;
+		font-family: $share;
+	    color: #004689;
+	    display: block;
+	    max-width: 960px;
+	    margin: 0px auto;
+	    padding: 10px;
+	}
+}
+.content-wrap {
+	display: table;
+	width: 98%;
+	height: 100%;
+	max-width: 960px;
+	box-sizing: border-box;
+	margin: 0px auto;
+	table-layout: fixed;
+	padding: 10px 20px;
+
+	.content {
+		display: table-cell;
+		vertical-align: top;
+		padding-right: 50px;
+	}
+}

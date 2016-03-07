@@ -120,20 +120,31 @@ $text-input-types: text, password, date, datetime, datetime-local, month, week, 
   z-index: map-get($zindex, $location);
 }
 
-//Background Image - Retina
-
-@mixin background-image-retina($imageUrl, $type, $width, $height, $positionX: left, $positionY: top, $background-repeat: no-repeat) {
-  background-image: url($cdn + $imageUrl + '-s.' + $type);
-  background-size: $width $height;
-  width: $width; height: $height;
-  background-position: $positionX $positionY;
-  background-repeat: $background-repeat;
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
-    & {
-      background-image: url($imageUrl + '-r.' + $type);
-      background-size: $width*2 $height*2;
-      width: $width*2; height: $height*2;
+@mixin breakpoint($point) {
+    @if $point == papa-bear {
+        @media (min-width: 1600px) {@content;}
     }
-  }
+    @else if $point == mamma-bear {
+        @media (min-width: 1250px) {@content;}
+    }
+    @else if $point == baby-bear {
+        @media (min-width: 650px)  {@content;}
+    }
+    @else if $point == baby-mamma-bear {
+        @media (min-width: 650px) and (max-width: 880px)  {@content;}
+    }
+    @else if $point == foxy-bear {
+        @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)  {@content;}
+    }
+    @else {
+        @media only screen and (min-width:$point + px) {
+            @content;
+        }
+    }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
