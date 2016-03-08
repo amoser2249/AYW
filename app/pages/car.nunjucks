@@ -1,5 +1,4 @@
-{% extends "./app/templates/layout.nunjucks" %}
-
+{% extends "layout.nunjucks" %}
 {% block content %}
 
 <div id="meat" data-type="cleanCar" data-version="a">
@@ -9,8 +8,7 @@
         <section id="enticer"></section>
         <div class="formWrapper">
             <h1>Stop Overpaying For Car Insurance!<br>Quickly SAVE Up To 45%.</h1>
-          <p class="sub">FREE Quotes - Start Saving Now</p>
-          <!-- FORM GOES HERE -->
+          <p class="sub">FREE Quotes - Start Saving Now</p>Shit
         </div>
       </div>
     </div>

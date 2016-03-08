@@ -12,7 +12,7 @@
 		<!-- endbuild -->
 	</head>
 	<body>
-	{% include "/partials/header.nunjucks" %}
+	{% include "partials/header.nunjucks" %}
 
 	{% block content %}
 

@@ -27,7 +27,7 @@
     "gulp-load-plugins": "^1.2.0",
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
-    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-nunjucks-render": "^1.0.0",
     "gulp-plumber": "^1.0.1",
     "gulp-s3": "^0.3.0",
     "gulp-sass": "^2.1.1",
@@ -49,7 +49,5 @@
     "run-sequence": "^1.1.5"
   },
   "dependencies": {
-    "gulp-dot": "^1.5.0",
-    "gulp-dot-template": "^0.2.1"
   }
 }
