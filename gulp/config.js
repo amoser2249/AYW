@@ -55,6 +55,22 @@ var config = {
     }
   },
 
+  sassdoc: {
+    options: {
+      dest: './sassdoc',
+      verbose: true,
+      display: {
+        alias: true,
+        watermark: true
+      },
+      groups: {
+        'undefined': 'Ungrouped',
+        foo: 'Foo group',
+        bar: 'Bar group',
+      }
+    }
+  },
+
   scsslint: {
     config: '.scss-lint.yml'
   },

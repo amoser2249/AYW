@@ -2,12 +2,15 @@
   "name": "ayw",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "fsevents": "0.3.7",
+    "node-sass": "3.2.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",
@@ -30,9 +33,10 @@
     "gulp-nunjucks-render": "^1.0.0",
     "gulp-plumber": "^1.0.1",
     "gulp-s3": "^0.3.0",
-    "gulp-sass": "^2.1.1",
+    "gulp-sass": "dlmanning/gulp-sass#2.x",
     "gulp-scss-lint": "^0.3.9",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "^1.5.1",
     "gulp-uncss": "^1.0.4",
     "gulp-useref": "^3.0.5",
@@ -46,8 +50,7 @@
     "karma-jasmine": "^0.3.6",
     "require-dir": "^0.3.0",
     "rsyncwrapper": "^1.0.0",
-    "run-sequence": "^1.1.5"
-  },
-  "dependencies": {
+    "run-sequence": "^1.1.5",
+    "sassdoc": "^2.1.20"
   }
 }

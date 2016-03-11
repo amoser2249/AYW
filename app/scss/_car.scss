@@ -1,0 +1,116 @@
+#meat[data-type=cleanCar] {
+	margin: auto;
+	max-width: 960px;
+	width: 90%;
+	overflow: hidden;
+	font-family: Raleway, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .004)
+}
+#meat[data-type=cleanCar] * {
+	box-sizing: border-box
+}
+#meat[data-type=cleanCar] #bg-container {
+	background: none;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	transition: background-size .3s ease
+}
+@media only screen and (min-width:600px) {
+	#meat[data-type=cleanCar] #bg-container {
+		background: transparent url(https://dn3nmb5yt1ysw.cloudfront.net/images/common/blue-civic.jpg) no-repeat;
+		background-size: 60%;
+		background-position: 0;
+		height: 450px;
+		padding: 50px 0 0
+	}
+}
+@media only screen and (min-width:960px) {
+	#meat[data-type=cleanCar] #bg-container {
+		background-position: 0 100%;
+		background-size: 70%;
+		margin-bottom: 50px
+	}
+}
+#meat[data-type=cleanCar] .formWrapper {
+	display: block;
+	width: 100%;
+	text-align: center
+}
+@media only screen and (min-width:600px) {
+	#meat[data-type=cleanCar] .formWrapper {
+		width: 560px;
+		display: inline-block;
+		text-align: right;
+		float: right
+	}
+}
+#meat[data-type=cleanCar] .formWrapper * {
+	outline: 0
+}
+#meat[data-type=cleanCar] .formWrapper fieldset {
+	border: none;
+	padding: 0
+}
+#meat[data-type=cleanCar] .formWrapper input {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border: 2px solid rgba(0, 0, 0, .2);
+	border-radius: 2px;
+	background-clip: padding-box
+}
+@media only screen and (min-width:600px) {
+	#meat[data-type=cleanCar] .formWrapper input {
+		width: 250px
+	}
+}
+#meat[data-type=cleanCar] .formWrapper button {
+	background-color: rgba(32, 228, 167, .7);
+	padding: 20px 0;
+	margin: 10px 0;
+	font-size: 1.5em;
+	outline: 0;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-weight: 600;
+	width: 100%;
+	border-radius: 1px;
+	background-clip: padding-box;
+	box-shadow: 0 8px 18px -8px rgba(0, 0, 0, .18);
+	transition: box-shadow .3s, background .3s
+}
+@media only screen and (min-width:600px) {
+	#meat[data-type=cleanCar] .formWrapper button {
+		float: right;
+		width: 250px
+	}
+}
+#meat[data-type=cleanCar] .formWrapper button:hover {
+	background: #20e4a7;
+	box-shadow: 0 14px 18px -8px rgba(0, 0, 0, .28)
+}
+#meat[data-type=cleanCar] .formWrapper h1 {
+	font-size: 1.8em;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .5)
+}
+#meat[data-type=cleanCar] .formWrapper .sub {
+	font-weight: 200;
+	font-size: 20px;
+	color: rgba(0, 0, 0, .5)
+}
+#meat[data-type=cleanCar] #subHead {
+	color: rgba(0, 0, 0, .5);
+	font-size: 25px;
+	margin: 20px auto 10px;
+	text-align: center
+}
+#meat[data-type=cleanCar]+div.content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px
+}

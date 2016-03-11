@@ -1,6 +1,5 @@
 // Libraries
 // ---------
-@import 'lib/lib';
 @import 'lib/googleWebfonts';
 
 // Helpers
@@ -21,5 +20,6 @@
 // @import 'base/extends';
 // @import 'base/base';
 // @import 'base/typography';
+@import 'normalize-scss/normalize';
 
-@import 'general', 'footer', 'header', 'zipsubmit', 'content', 'sidebar';
+@import 'general', 'footer', 'header', 'zipsubmit', 'content', 'sidebar', 'car';

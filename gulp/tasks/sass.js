@@ -10,20 +10,21 @@ var $ = require('gulp-load-plugins')(),
 // require custom modules
 var customPlumber = require('../custom-modules/plumber');
 
+// require config
+var config = require('../config');
+
 
 // sass task
 gulp.task('sass', function() {
-	return gulp.src('app/scss/**/*.scss')
+	return gulp.src(config.sass.src)
 		.pipe(customPlumber('Error Running Sass'))
 		.pipe($.sourcemaps.init())
-		.pipe($.sass({
-			includePaths: ['app/bower_components', 'node_modules']
-		}))
+		.pipe($.sass(config.sass.options))
 		.pipe($.autoprefixer({
 			browsers: ['ie 8-9', 'last 2 versions']
 		}))
+		.pipe(gulp.dest(config.sass.dest))
 		.pipe($.sourcemaps.write())
-		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({
 			stream: true
 		}));

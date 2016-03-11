@@ -10,12 +10,7 @@ gulp.task('useref', function() {
 		.pipe($.useref())
 		.pipe($.if('*.js', $.uglify()))
 		.pipe($.if('*.css', $.uncss({
-			html: ['app/*.html'],
-			ignore: [
-				'.susy-test',
-				/.is-/,
-				/.has-/
-			]
+			html: ['app/*.html']
 		})))
 		.pipe($.if('*.css', $.cssnano()))
 		.pipe(gulp.dest('dist'))

@@ -1,32 +1,41 @@
-.sidebar {
-	display: table-cell;
+#sidebar {
+	display: block;
+	margin: 0px auto;
+	width: 250px;
 	box-sizing: border-box;
-	padding-right: 10px;
-	width: 25%;
+	color: #004689;
 
-	color:#004689
+	@include breakpoint(600) {
+		display: table-cell;
+	}
 	section {
-		border-bottom: 1px solid #004689;
+		text-align: center;
 		padding: 20px 10px;
 
-		a {
-			text-decoration: none;
+		ul {
+			text-align: left;
+
+			li {
+				line-height: 1.25;
+			}
 		}
 	}
-	.logo {
-		background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -37px -518px;
-		width: 165px;
-		height: 165px;
-	}
-	ul {
-		padding: 0px;
+	#seal {
+		.logo {
+			background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -37px -518px;
+			width: 165px;
+			height: 165px;
+			margin: 0px auto;
+		}
+		ul {
+			padding-left: 30px;
 
-		li {
-			background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -170px -290px;
-			padding-left: 30px !important;
-			list-style-type: none;
-			margin-bottom: 10px;
-			line-height: 1.25
+			li {
+				margin-bottom: 10px;
+				background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -170px -290px;
+				list-style-type: none;
+				padding-left: 30px !important;
+			}
 		}
 	}
 }
@@ -35,6 +44,38 @@
 	text-align: center;
 }
 #faq {
+	ul {
+		padding-left: 25px;
+
+		li {
+			margin-bottom: 5px;
+
+			a {
+				color: #004689;
+				text-decoration: none;
+			}
+		}
+	}
+}
+#seal, #side-banner, #faq {
 	border-bottom: 1px solid #004689;
-	padding: 20px 10px;
+}
+#inc500 {
+	.logo {
+		background: url(https://dn3nmb5yt1ysw.cloudfront.net/images/logos/getmyinsurance-logo-seal-s.png) no-repeat -127px -377px;
+		width: 108px;
+		height: 90px;
+		margin: auto;
+		float: none;
+	}
+	h3 {
+		font-family: $share;
+		font-size: 36px;
+		margin: 10px auto 0px;
+
+		+ p {
+			font-size: 13px;
+			margin: 0;
+		}
+	}
 }
