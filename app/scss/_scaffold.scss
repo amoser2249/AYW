@@ -8,9 +8,9 @@
 
 // Variables
 // ---------
-// @import 'variables/colors';
+@import 'variables/colors';
 // @import 'variables/themes';
-// @import 'variables/typography';
+@import 'variables/typography';
 // @import 'variables/zindex';
 // @import 'variables/breakpoints';
 
@@ -20,6 +20,6 @@
 // @import 'base/extends';
 // @import 'base/base';
 // @import 'base/typography';
-@import 'normalize-scss/normalize';
+// @import 'normalize-scss/normalize';
 
-@import 'general', 'footer', 'header', 'zipsubmit', 'content', 'sidebar', 'car';
+@import 'general', 'content';

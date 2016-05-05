@@ -3,21 +3,26 @@
 	<head>
 		<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
 		<meta charset="utf-8">
-		<title>Form System</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+		<title>Solar Electric COmpanies</title>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-		<!-- build:css css/styles.min.css -->
-		<link rel="stylesheet" href="css/styles.css">
-		<!-- endbuild -->
-	</head>
-	<body>
-	{% include "partials/header.nunjucks" %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet">
+			<!-- build:css css/styles.min.css -->
+			<link rel="stylesheet" href="css/styles.css">
+			<!-- endbuild -->
+				<!-- build:js js/main.min.js -->
+			<script src='js/main.js'></script>
+			<!-- endbuild -->
+		</head>
+		<body>
+			{% include 'partials/header.nunjucks' %}
+			{% block content %}
+			{% endblock %}
 
-	{% block content %}
-
-	{% endblock %}
-
-	{% include "partials/footer.nunjucks" %}
-</body>
-</html>
+		</body>
+	</html>

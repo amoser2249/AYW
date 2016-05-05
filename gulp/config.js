@@ -50,7 +50,7 @@ var config = {
     options: {
       includePaths: [
         'app/bower_components',
-        'node_modules'
+        './node_modules'
       ]
     }
   },

@@ -1,11 +1,13 @@
-<header>
-	<div class="header-constraint">
-		<div class="logo">
-			<!-- <img src="{{cdn}}/images/logos/getmyinsurance-logo-seal-s.png" alt="{{getmyinsurnace}}" /> -->
-		</div>
-		<div class="cta">
-			<img src="{{cdn}}/images/common/norton.gif" alt="norton" />
-		</div>
-	</div>
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title">
+        Primary bold title
+      </h1>
+      <h2 class="subtitle">
+        Primary bold subtitle
+      </h2>
+    </div>
+  </div>
+</section>
 
-</header>
