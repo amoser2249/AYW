@@ -1,9 +1,0 @@
-<div class="zip-callout">
-	<div class="table-wrap">
-		<h2>How Much Will You Save on Auto Insurance?</h2>
-		<div class="zip-submit">
-			<input type="text" name="zipcode" placeholder="Enter Your Zip" value="">
-			<button type="submit" name="button">Compare Rates!</button>
-		</div>
-	</div>
-</div>
