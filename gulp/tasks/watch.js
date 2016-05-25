@@ -8,7 +8,7 @@ gulp.task('watch-js', ['lint:js'], browserSync.reload);
 
 // Watches files for changes
 gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', ['sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass', 'lint:scss']);
 	gulp.watch('app/js/**/*.js', ['watch-js']);
 	gulp.watch([
 		'app/templates/**/*',
@@ -16,4 +16,3 @@ gulp.task('watch', function() {
 		'app/data.json'
 	], ['nunjucks'])
 });
-
