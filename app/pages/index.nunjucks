@@ -1,19 +1,14 @@
-<!-- index.nunjucks -->
 {% extends "layout.nunjucks" %}
 {% block content %}
-	<h1>This is the index page.</h1>
-	{% import "macros/nav-macro.nunjucks" as nav %}
-	{{ nav.active('home')}}
+<h1>This is the index page.</h1>
+{% import "macros/nav-macro.nunjucks" as nav %}
+{{ nav.active('home')}}
 
-	<div class="gallery">
-		{% for image in images %}
-			<div class="gallery__item">
-				<img src="{{image.src}}" alt="{{image.alt}}">
-			</div>
-		{% endfor %}
-	</div>
-	<div class="testing"></div>
-	<div class="github"></div>
-	<div class="twitter"></div>
-
+<div class="gallery">
+  {% for image in images %}
+  <div class="gallery__item">
+    <img src="{{image.src}}" alt="{{image.alt}}">
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}

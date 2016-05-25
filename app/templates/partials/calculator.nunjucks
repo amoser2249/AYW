@@ -1,0 +1,35 @@
+<div class="card is-fullwidth">
+  <div class="card-content">
+    <div class="content">
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box">
+            <p id="dispSavings" class="title">$30,000</p>
+            <p>The amount you'll spend in energy bills for your home.</p>
+          </div>
+          <div class="tile is-child box">
+            <p class="title">Two</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="title is-4 range-slider">
+              My monthly energy bill is about <span class="range-slider__value">$</span> per month.
+              <input class="range-slider__range" id="energyBill" type="range" value="150" min="0" max="1000">
+            </div>
+            <div class="title is-4 range-slider">
+              I have <span class="range-slider__value"></span> years left on my mortgage.
+              <input class="range-slider__range" id="mortgageYears" type="range" value="20" min="1" max="30">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--     <footer class="card-footer">
+    <a class="card-footer-item"><i class="material-icons">wb_cloudy</i></a>
+    <a class="card-footer-item"><i class="material-icons">flare</i></a>
+    <a class="card-footer-item"><i class="material-icons">nature_people</i></a>
+  </footer> -->
+</div>

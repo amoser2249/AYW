@@ -2,11 +2,11 @@
     "images": [
         {
             "src": "image-one.png",
-            "alt": "Image one alt text"
+            "alt": "image one alt text"
         },
         {
             "src": "image-two.png",
-            "alt": "Image two alt text"
+            "alt": "image two alt text"
         }
     ]
 }

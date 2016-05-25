@@ -4,9 +4,6 @@ var $ = require('gulp-load-plugins')(),
 
 gulp.task('images', function() {
 	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-		.pipe($.cache($.imagemin(), {
-			name: 'ayw'
-		}))
-		.pipe(gulp.dest('dist/images'))
+	 .pipe($.imagemin())
+   .pipe(gulp.dest('dist/images'))
 });
-

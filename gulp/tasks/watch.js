@@ -16,4 +16,3 @@ gulp.task('watch', function() {
 		'app/data.json'
 	], ['nunjucks'])
 });
-
