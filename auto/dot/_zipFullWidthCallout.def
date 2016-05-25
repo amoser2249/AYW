@@ -1,7 +1,0 @@
-<div class="zipsubmit">
-<h2>How Much Will You Save on Auto Insurance?</h2>
-  <div class="zip-submit">
-    <input type="text" name="zipcode" value="">
-    <button type="submit" name="button"></button>
-  </div>
-</div>
