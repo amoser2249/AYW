@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fsevents": "0.3.7",
+    "fsevents": "^1.0.12",
     "node-sass": "3.2.0"
   },
   "devDependencies": {
