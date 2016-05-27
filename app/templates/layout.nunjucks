@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>Alex's AYW Hub</title>
 		{% include 'partials/favicons.nunjucks' %}
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.css' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet">
@@ -14,7 +14,6 @@
 		<!-- endbuild -->
 		</head>
 		<body>
-			{% include 'partials/header.nunjucks' %}
 			{% block content %}
 			{% endblock %}
 			<!-- build:js js/main.min.js -->

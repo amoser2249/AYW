@@ -1,16 +1,16 @@
 // Libraries
 // ---------
-@import 'lib/googleWebfonts';
+// @import 'lib/googleWebfonts';
 
 // Helpers
 // -------
-@import 'helpers/helpers';
+// @import 'helpers/helpers';
 
 // Variables
 // ---------
-@import 'variables/colors';
+// @import 'variables/colors';
 // @import 'variables/themes';
-@import 'variables/typography';
+// @import 'variables/typography';
 // @import 'variables/zindex';
 // @import 'variables/breakpoints';
 
@@ -22,4 +22,4 @@
 // @import 'base/typography';
 // @import 'normalize-scss/normalize';
 
-@import 'general', 'content';
+@import 'general';

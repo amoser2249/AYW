@@ -1,6 +1,10 @@
 
 section.hero {
   text-align: center;
+  h1{
+  color: #fff;
+  font-family: 'Roboto';
+  }
 }
 
 p.control {
@@ -13,116 +17,8 @@ $shade-1: #d7dcdf !default;
 $shade-0: #fff !default;
 $teal: #2FD1AF !default;
 
-.hero.is-info .box .title {
-  color: #666;
-}
-h3 {
-  color: $teal;
-}
-
-* {
-  &,
-  &:before,
-  &:after {
-    box-sizing: border-box;
-  }
-}
-
-.range-slider {
-  margin: 2em auto;
-}
-
-
-// Range Slider
-$range-width: 100% !default;
-
-$range-handle-color: $shade-10 !default;
-$range-handle-color-hover: $teal !default;
-$range-handle-size: 15px !default;
-
-$range-track-color: $shade-1 !default;
-$range-track-height: 3px !default;
-
-$range-label-color: $teal !default;
-$range-label-width: 60px !default;
-
-.range-slider {
-  width: $range-width;
-  line-height: 1.365em;
-}
-
-.range-slider__range {
-  -webkit-appearance: none;
-  width: calc(100% - (#{$range-label-width + 13px}));
-  height: $range-track-height;
-  border-radius: 5px;
-  background: $range-track-color;
-  outline: none;
-  padding: 0;
-  margin: 1em auto;
-
-  // Range Handle
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: $range-handle-size;
-    height: $range-handle-size;
-    border-radius: 50%;
-    background: $range-handle-color;
-    cursor: pointer;
-    transition: background .15s ease-in-out;
-
-    &:hover {
-      background: $range-handle-color-hover;
-    }
-  }
-
-  &:active::-webkit-slider-thumb {
-    background: $range-handle-color-hover;
-  }
-
-  &::-moz-range-thumb {
-    width: $range-handle-size;
-    height: $range-handle-size;
-    border: 0;
-    border-radius: 50%;
-    background: $range-handle-color;
-    cursor: pointer;
-    transition: background .15s ease-in-out;
-
-    &:hover {
-      background: $range-handle-color-hover;
-    }
-  }
-
-  &:active::-moz-range-thumb {
-    background: $range-handle-color-hover;
-  }
-}
-
-
-// Range Label
-.range-slider__value {
-  display: inline-block;
-  position: relative;
-  // width: $range-label-width;
-  color: $range-label-color;;
-  line-height: 20px;
-  font-size: 1.25em;
-  text-align: center;
-  border-radius: 3px;
-  // background: $range-label-color;
-  padding: 5px;
-  // margin-left: 8px;
-}
-
-
-// Firefox Overrides
-::-moz-range-track {
-    background: $range-track-color;
-    border: 0;
-}
-
-input::-moz-focus-inner,
-input::-moz-focus-outer {
-  border: 0;
+.hero {
+  background-image: url('/images/hero_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
