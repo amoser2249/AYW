@@ -2,7 +2,16 @@
 $(document).ready(function() {
   'use strict';
   console.log('MAIN.JS');
-  if ('testing' === 'testing') {
-    console.log($);
-  }
+
+  console.log('ouibounce');
+
+  ouibounce(document.getElementById('ouibounce-modal'), {
+    aggressive: true,
+    sitewide: true,
+    cookieDomain: '.example.com',
+    timer: 0,
+    callback: function() {
+      console.log('ouibounce fired!');
+    }
+  });
 });

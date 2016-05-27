@@ -1,14 +1,23 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<h1>This is the index page.</h1>
-{% import "macros/nav-macro.nunjucks" as nav %}
-{{ nav.active('home')}}
-
-<div class="gallery">
-  {% for image in images %}
-  <div class="gallery__item">
-    <img src="{{image.src}}" alt="{{image.alt}}">
+  <div id="ouibounce-modal">
+    <div class="modal-overlay">
+      <div class="modal-close">
+        <i class="material-icons md-48 md-light">clear</i>
+      </div>
+    </div>
+    <div class="modal-wrapper">
+      <div class="cta">
+        <img src="/images/piggy-bank-white.svg" alt="PiggyBank">
+        <span>Do you want $50?</span>
+      </div>
+      <div class="card">
+        <p>We really want to save you money on insurance. So if we can't, we'll just give you $50. Sound good?</p>
+        <div class="modal-buttons">
+          <a href="#" title="Yes">YES!</a>
+          <a href="#" title="No">No</a>
+        </div>
+      </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
 {% endblock %}

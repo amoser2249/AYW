@@ -5,21 +5,21 @@
 		<meta charset="utf-8">
 		<title>Alex's AYW Hub</title>
 		{% include 'partials/favicons.nunjucks' %}
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet">
-		<!-- build:css css/styles.min.css -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/ouibounce/build/ouibounce.js"></script>
+
+	<!-- build:css css/styles.min.css -->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- endbuild -->
-		</head>
-		<body>
-			{% include 'partials/header.nunjucks' %}
-			{% block content %}
-			{% endblock %}
-			<!-- build:js js/main.min.js -->
-			<script src="bower_components/jquery/dist/jquery.min.js"></script>
-			<script src='js/main.js'></script>
-			<!-- endbuild -->
-		</body>
-	</html>
+	</head>
+	<body>
+		{% block content %}
+		{% endblock %}
+		<!-- build:js js/main.min.js -->
+		<script src='js/main.js'></script>
+		<!-- endbuild -->
+
+	</body>
+</html>
