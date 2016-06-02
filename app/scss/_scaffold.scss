@@ -9,6 +9,7 @@
 // Variables
 // ---------
 @import 'variables/colors';
+@import 'variables/margoDefaults';
 // @import 'variables/themes';
 @import 'variables/typography';
 // @import 'variables/zindex';
@@ -22,4 +23,4 @@
 // @import 'base/typography';
 // @import 'normalize-scss/normalize';
 
-@import 'general', 'content';
+@import 'general', 'content', 'dougModal';

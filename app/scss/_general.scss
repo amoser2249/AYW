@@ -1,31 +1,73 @@
-
 // Base Colors
-$shade-10: #4FA4DD !default;
-$shade-1: #d7dcdf !default;
-$shade-0: #fff !default;
+$shade-10:#4FA4DD !default;
+$shade-1:#d7dcdf !default;
+$shade-0:#fff !default;
 $teal: #2FD1AF !default;
-$modal-blue: #2a6a8e;
-$margo-green: rgb(0, 185, 121);
+$cdn: "//dn3nmb5yt1ysw.cloudfront.net";
 
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+}
+
+@include keyframes(slide-down) {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@include keyframes(fadeIn) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@include keyframes(popin) {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 * {
-  &,
-  &:before,
-  &:after {
+  &, &:before, &:after {
     box-sizing: border-box;
   }
 }
 
-body {
-  background-image: url('/images/margobg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// body {
+//   background-image: url('/images/margobg.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
 #ouibounce-modal {
   // display: none;
-  @include zoomIn();
 }
 
-.modal-overlay, .modal-wrapper {
+.modal-underlay, .modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,61 +76,140 @@ body {
   overflow: hidden;
 }
 
-.modal-overlay {
-  background-color: rgba($modal-blue, .9);
+.modal-underlay {
+  z-index: 99;
+  @include animation('fadeIn .5s');
+  &.blue {
+    background-color: $tertiary-blue;
+    @include opacity(.925);
+  }
 }
+
 .modal-wrapper {
+  font-family: $adobe-font;
+  -webkit-font-smoothing: antialiased;
   z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Roboto';
+  @include animation('popin .3s');
 }
 
-.cta {
-  margin-top: -69px;
-  font-size: 2.5em;
-  color: #fff;
+.modal-cta {
+  border: 1px solid red;
+  font-size: 1.75em;
   font-weight: 300;
-  span {
-    display: inline-block;
-    padding-bottom: .25em;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  // align-content: center;
+  // max-width: 500px;
+  margin: 0px auto;
+  &.hand { max-width: 95%; }
+  > div { min-width: 0; }
+  @include breakpoint(450) { font-size: 2em; }
+  @include breakpoint(780) { font-size: 2.75em; }
+
+  .hand-svg {
+    background-image: url('/images/money-hand-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 105% 20px;
+    width: 100px;
+    height: 100px;
+    @include breakpoint(780) {
+      // background-position: 105% 20px;
+      width: 150px;
+      height: 150px;
+    }
   }
-  img {
-    vertical-align: bottom;
-    height: 125px;
-    margin-right: .25em;
-    max-width: 100%;
-    display: inline;
+  .modal-cta-text span {
+    line-height: 2em;
+    font-size: 1.25em;
+    font-weight: 500;
+    // padding-bottom: .25em;
+    // padding-right: 75px;
+    // padding-top: 50px;
   }
+  .responsive-img {
+    padding-right: .75em;
+    img {
+      vertical-align: bottom;
+      height: 85px;
+      max-width: 100%;
+      @include breakpoint(780) { height: 115px; }
+    }
+  }
+}
+
+.card-wrap {
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: -125px;
 }
 
 .card {
   background: #fff;
   border-radius: 2px;
-  padding: 2em;
   max-width: 650px;
   text-align: center;
-  font-size: 20px;
+  padding: 1em .5em;
+  font-size: 1em;
   @include box-shadow(5px, 5px, 2px, rgba(#444, .25));
+  @include breakpoint(780) { padding: 3em; }
+  p {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em;
+    line-height: 1.5;
+    color: $grey-dark;
+    @include breakpoint(780) {
+      font-size: 1.5em;
+    }
+    &.emphasis {
+      color: $primary-green;
+      font-weight: 800;
+      margin-top: .25em;
+      margin-bottom: .5em;
+    }
+  }
 }
 
 .modal-buttons {
   display: flex;
-  max-width: 75%;
-  margin: 0px auto;
+  flex: 1;
+  margin: 1em auto 0em;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  @include breakpoint(780) {
+    flex-flow: row;
+    max-width: 75%;
+  }
   a {
-    background-color: $margo-green;
+    background-color: $primary-green;
     color: #fff;
     text-decoration: none;
     margin: 10px;
-    flex: 1 1 0px;
+    flex: 0 0 100%;
+    text-align: center;
     cursor: pointer;
     padding: 1em;
     border-radius: 5px;
-    @include transition(all .3s ease);
-    &:hover {
+    font-weight: 600;
+    font-size: 1.5em;
+    @include transition(background-color .3s ease, box-shadow .3s ease);
+    @include breakpoint(780) { flex: 1 1 0px; }
+    &:hover, &:active {
+      background-color: $accent-green;
       @include box-shadow(3px, 3px, 3px, rgba(#444, .25));
     }
   }
@@ -97,10 +218,17 @@ body {
 .modal-close {
   text-align: right;
   padding-top: 1em;
+  margin-bottom: auto;
   padding-right: 1em;
+  width: 100%;
+  align-self: flex-start;
+
   i {
     color: #fff;
     cursor: pointer;
     font-size: 48px;
+    @include opacity(.5);
+    @include transition(all .3s ease);
+    &:hover { @include opacity(1); }
   }
 }

@@ -18,7 +18,7 @@
         </div>
         <div class="card">
           <p>We really want to save you money on insurance. So if we can't, we'll just give you $50. Sound good?</p>
-          <div class="modal-buttons">
+          <div class="modal-buttons multi">
             <a href="#" id="modal-yes" title="Yes">YES!</a>
             <a href="#" id="modal-no" title="No">No</a>
           </div>

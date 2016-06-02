@@ -1,0 +1,32 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+  <div id="ouibounce-modal">
+    <div class="modal-underlay light"></div>
+    <div class="modal-wrapper">
+      <div id="doug-modal">
+        <div class="modal-close">
+          <i class="material-icons md-48 md-light">clear</i>
+        </div>
+<!-- Start Desktop CTA -->
+        <div class="desktop-cta">
+          <p class="modal-cta-headline">Need Help? Chat Doug.</p>
+          <p>Or Clint. Or Cody. Or Joe. At Margo, a real person with real answers is just a click away.</p>
+          <div class="modal-buttons single-left">
+            <a href="#" id="modal-yes" title="Yes">Chat Now!</a>
+          </div>
+        </div>
+<!-- End Desktop CTA -->
+<!-- Start Mobile CTA -->
+        <div class="mobile-cta">
+          <p class="modal-cta-headline">Doug wants to talk.</p>
+          <p>He's just a lonely, former NFL player wearing a headset who wants to talk about insurance. Won't you call him?</p>
+          <div class="modal-buttons">
+            <a href="#" id="modal-yes" title="Yes">Yes, I'll call Doug.</a>
+            <a href="#" id="modal-no" title="No">No, I'd rather get a quote online.</a>
+          </div>
+        </div>
+<!-- End Mobile CTA -->
+      </div>
+    </div>
+  </div>
+{% endblock %}

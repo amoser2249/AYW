@@ -162,3 +162,13 @@ $text-input-types: text, password, date, datetime, datetime-local, month, week, 
   -moz-box-shadow: $horizontal $vertical $blur $color;
   box-shadow: $horizontal $vertical $blur $color;
 }
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}

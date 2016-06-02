@@ -6,10 +6,11 @@
 		<title>Alex's AYW Hub</title>
 		{% include 'partials/favicons.nunjucks' %}
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/ouibounce/build/ouibounce.js"></script>
-
+		<script src="https://use.typekit.net/ybt3ast.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<!-- build:css css/styles.min.css -->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- endbuild -->

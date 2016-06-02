@@ -13,14 +13,14 @@
             <img src="/images/piggy-bank-white.svg" alt="PiggyBank">
           </div>
           <div class="modal-cta-text">
-            <span>Do you want $50?</span>
+            <span>You forgot your $50!</span>
           </div>
         </div>
         <div class="card">
-          <p>We really want to save you money on insurance. So if we can't, we'll just give you $50. Sound good?</p>
+          <p>Wait! If we can't save you money, we'll give you a $50 Amazon card. Seriously.</p>
+          <p class="emphasis">Go on, get $50.</p>
           <div class="modal-buttons">
-            <a href="#" id="modal-yes" title="Yes">YES!</a>
-            <a href="#" id="modal-no" title="No">No</a>
+            <a href="#" id="modal-yes" title="Yes">Try it!</a>
           </div>
         </div>
       </div>
