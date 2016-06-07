@@ -1,0 +1,401 @@
+<!doctype html> <!-- html5 -->
+<html lang="en">
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">	
+	<title>margo | A better way to shop for insurance</title>
+	
+	
+	<meta name="description" content="margo | A new, smarter, and free way to shop for auto, home, and renters insurance. Multiple carrier options, personalized shopping, and freedom to switch.">
+	
+	<link rel="stylesheet" href="/css/main.css" media="screen" title="main.css" charset="utf-8">
+    <link rel="stylesheet" href="/optimized/styles.css" media="screen" title="main.css" charset="utf-8">
+    <!-- <link rel="stylesheet" href="/css/styles.css" media="screen" title="main.css" charset="utf-8"> -->
+
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6997874/658088/css/fonts.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body class="homepage" ng-app="formlyExample" ng-controller="MainCtrl as vm" id="lnx">
+
+
+	  <div id="modal" class="close"></div>
+	  <div class="transformer">
+	  <div class="off-canvas" id="off-canvas">
+	    <div class="inner-canvas">
+	      <div id="off-canvas-nav-wrapper">
+	        <nav class="menu-drawer mobile-only">
+	          <ul>
+	            <li><a href="/types-of-insurance">get insured</a></li>
+	            <li><a href="/why-margo">why margo</a></li>
+	            <li><a href="/why-margo#how-it-works">how it works</a></li>
+	            <li><a href="/how-to-file-a-claim">claims center</a></li>
+	            <li><a href="/why-margo#faq">FAQ</a></li>
+	            <li><a href="/meet-the-team">meet our team</a></li>
+	            <li><a href="/careers">careers</a></li>
+	            <li><a href="/contact-us">contact us</a></li>
+	            <li><a href="/licenses">licenses</a></li>
+	            <li><a href="tel:+18445562746">1-844-55-margo</a></li>
+	          </ul>
+	        </nav>
+	        <nav class="menu-drawer desktop-only">
+	          <a href="/why-margo#how-it-works">how it works</a>
+	          <a href="/types-of-insurance#auto">car insurance</a>
+	          <a href="/types-of-insurance#home">homeowners insurance</a>
+	          <a href="/types-of-insurance#renters">renters insurance</a>
+	          <a href="/why-margo#faq">FAQ</a>
+	          <a href="/meet-the-team">meet our team</a>
+	          <a href="/contact-us">contact us</a>
+	        </nav>
+	        <div class="social-share-row">
+	          <a target="_blank" href="https://www.facebook.com/Margo-1530059327233221" class="social facebook"><i class="ion ion-social-facebook social-icon"></i></a>
+	          <a target="_blank" href="https://twitter.com/Get_Margo" class="social twitter"><i class="ion ion-social-twitter social-icon"></i></a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="main">
+	    <div class="menu-toggle overlay-close"></div>
+	    <div class="header-wrapper">
+	      <header>
+	        <nav class="mobile-only menu">
+	          <a href="#" class="menu-toggle"><span class="ion ion-android-menu drawer-btn"></span></a>
+	        </nav>
+	        <div class="logo">
+	          <a href="/"></a>
+	        </div>
+	        <nav class="mobile-only login">
+	          <a class="no-follow" href="tel:+18445562746"><span class="ion ion-ios-telephone"></span></a>
+	        </nav>
+	        <nav class="desktop-only menu">
+	          <a href="/types-of-insurance">get insured</a>
+	          <a href="/why-margo">why margo</a>
+	          <a href="/how-to-file-a-claim">claims center</a>
+	          <a class="no-follow" href="tel:+18445562746">1-844-55-margo</a>
+	          <a href="#" class="menu-toggle">
+	            <span class="ion ion-navicon drawer-btn"></span>
+	          </a>
+	        </nav>
+	      </header>
+	    </div>
+
+<section>
+    <div class="gradient-overlay"></div>
+    <div class="primary-gradient-bg"></div>
+    <div class="cta-wrapper">
+        <div class="cta">
+            <div class="inner">
+                <div class="content">
+                     <h1>Shopping for car insurance has never been so <span>easy</span></h1>
+<a href="/form" class="solid">Get Quoted</a>
+<a href="#" name="video" class="modal-open video"><i class="ion ion-play"></i> Learn More</a> 
+                </div>
+                <i class="scroll-indicator ion ion-ios-arrow-down"></i>
+            </div>
+        </div>
+        <div class="bottom-text-wrapper">
+            <div class="text">
+                car / home / renters
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-margo onScrollActivate">
+     <h2 class="dark">Why Margo?</h2>
+<p class="medium">
+Insurance should work for you (and not be hard work). That's why we created Margo—giving you choices, service, and flexibility—to keep happiness ensured.
+</p> 
+    <div class="content">
+        <div class="hexagon-wrapper">
+
+            <div class="hexagon">
+                <div class="hexagon-content">
+                    <div class="icon-wrapper">
+                        <i class="ion ion-android-list"></i>
+                    </div>
+                    <p>
+                        Multiple carrier and policy options at the best prices.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon-wrapper">
+
+            <div class="hexagon">
+                <div class="hexagon-content">
+                    <div class="icon-wrapper">
+                        <i class="ion ion-android-cart"></i>
+                    </div>
+                    <p>
+                        Personalized shopping with expert advice.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon-wrapper">
+            <div class="hexagon">
+                <div class="hexagon-content">
+                    <div class="icon-wrapper">
+                        <i class="ion ion-android-favorite"></i>
+                    </div>
+                    <p>
+                        Freedom to switch carriers or policies anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-margo-works">
+    <div class="dotted-trail">
+    </div>
+    <div class="content">
+        <div class="points">
+             <h2 class="white">How Margo Works</h2>
+<p class="white desktop-only">
+Margo is a new, smarter, and free way to shop for insurance from multiple carriers at the best possible prices. Shopping with Margo is simple:
+</p>
+<div class="point one">
+<h5 class="white">Enter your information.</h5>
+<p class="white">
+No funny business—it’s secure and helps us find the best price and policy matches.
+</p>
+</div>
+<div class="point two">
+<h5 class="white">Talk to an advocate.</h5>
+<p class="white">
+Our experts sit on your side of the table. They’ll explain your options and answer questions.
+</p>
+</div>
+<div class="point three">
+<h5 class="white">Pick a policy and let Margo do the rest.</h5>
+<p class="white">
+Take insurance off your to do list forever with virtual document signing; the freedom to make changes; and our advocates just a call, text, or email away.
+</p>
+</div> 
+        </div>
+        <div class="iphone">
+            <div class="content"></div>
+        </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/images/insurance-logos/progressive.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/access.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/Allied-Logo.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/dairyland-logo.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/foremost-insurance-logo.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/general-insurance-logo.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/mercury-insurance.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/national.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/titan-logo.png" alt="" /></div>
+            <div class="swiper-slide"><img src="/images/insurance-logos/Safeco.png" alt="" /></div>
+        </div>
+        <!-- If we need pagination
+        <div class="swiper-pagination"></div>-->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev ion-ios-arrow-left ionicons"></div>
+        <div class="swiper-button-next ion-ios-arrow-right ionicons"></div>
+    </div>
+    <div class="bottom-shadow"></div>
+</section>
+<section class="insurance-types">
+    <div class="insurance-type">
+        <div class="content">
+            <h3>Car Insurance</h3>
+            <img src="/images/auto-cta.jpg" alt="auto insurance" />
+            <p>
+                Our policy options put you in the driver's seat.
+            </p>
+            <a href="/types-of-insurance#auto">See what's under the hood.</a>
+        </div>
+    </div>
+    <div class="insurance-type">
+        <div class="content">
+            <h3>Home Insurance</h3>
+            <img src="/images/home-cta.jpg" alt="Home Owneers insurance" />
+            <p>
+                Our policy options make home extra sweet.
+            </p>
+            <a href="/types-of-insurance#home">Come on inside.</a>
+        </div>
+    </div>
+    <div class="insurance-type">
+        <div class="content">
+            <h3>Renters Insurance</h3>
+            <img src="/images/renters-cta.jpg" alt="Renters insurance" />
+            <p>
+                Our policy options make you the lord of your land.
+            </p>
+            <a href="/types-of-insurance#renters">See what sets us apart.</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-inner">
+        <div class="desktop-only">
+            <div class="help">
+                <h5>Help</h5>
+                <ul>
+                    <li><a href="/why-margo#faq">FAQ</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/licenses">State Licenses</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="/why-margo">About Margo</a></li>
+                    <li><a href="/meet-the-team">Our Team</a></li>
+                    <li><a href="/why-margo#how-it-works">How it Works</a></li>
+                    <li><a href="/types-of-insurance">Types of Coverage</a></li>
+                    <li><a href="https://www.agentinsure.com/EzLynxCustomerService/inscoverage" class="no-follow login" target="_blank">Customer Login <span class="ion-log-in"></span></a></li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <h4>Ready for your free<br>car insurance quote?</h4>
+                <a href="/form" class="solid">Get Quoted!</a>
+                <p>
+                    Prefer a personal touch? Talk to a Margo advocate at <a href="tel:+18445562746">1-844-55-margo</a>.
+                </p>
+            </div>
+            <div class="connect">
+                <h5>Connected, Not Wired:</h5>
+                <p>
+                    We’re a virtual company with real world empathy. <a href="/why-margo">Read our company values</a>.
+                </p>
+                <div class="social-share-row">
+                    <a target="_blank" href="https://www.facebook.com/Margo-1530059327233221" class="no-follow social facebook"><i class="ion ion-social-facebook social-icon"></i></a>
+                    <a target="_blank" href="https://twitter.com/Get_Margo" class="no-follow social twitter"><i class="ion ion-social-twitter social-icon"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-only">
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="/why-margo">About Margo</a></li>
+                    <li><a href="/types-of-insurance">Types of Coverage</a></li>
+                    <li><a href="/meet-the-team">Our Team</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/licenses">State Licenses</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-share-row">
+                <a target="_blank"  href="https://www.facebook.com/Margo-1530059327233221" class="no-follow social facebook"><i class="ion ion-social-facebook social-icon"></i></a>
+                <a target="_blank" href="https://twitter.com/Get_Margo" class="no-follow social twitter"><i class="ion ion-social-twitter social-icon"></i></a>
+            </div>
+        </div>
+
+        <div class="legal">
+            <p>
+                &copy;2016 Insurance Coverage Group, LLC d/b/a Margo<sup>&#8480;</sup>. All rights reserved. The compensation received by Insurance Coverage Group, LLC, its affiliates, and its employees varies by insurance company. Not all insurance products
+                and services are available in every state, and rates are subject to change.
+            </p>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.11/ouibounce.js"></script>
+<script src="/js/main.js"></script>
+
+<script>
+	window.lnxForm = {
+		pageType: 'lander'
+	}
+</script>
+<script type="text/javascript" src="https://lnxtrk.net/form.js"></script>
+
+<!-- INTERCOM Integration -->
+<script>
+	window.intercomSettings = {
+		app_id: "iknjbayl"
+	};
+</script>
+<script>
+	(function() {
+		var w = window;
+		var ic = w.Intercom;
+		if (typeof ic === "function") {
+			ic('reattach_activator');
+			ic('update', intercomSettings);
+		} else {
+			var d = document;
+			var i = function() {
+				i.c(arguments)
+			};
+			i.q = [];
+			i.c = function(args) {
+				i.q.push(args)
+			};
+			w.Intercom = i;
+
+			function l() {
+				var s = d.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'https://widget.intercom.io/widget/iknjbayl';
+				var x = d.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			}
+			if (w.attachEvent) {
+				w.attachEvent('onload', l);
+			} else {
+				w.addEventListener('load', l, false);
+			}
+		}
+	})()
+</script>
+
+<!-- Type Kit fonts -->
+<script>
+    (function(d) {
+        var config = {
+                kitId: 'vrc0fxq',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement,
+            t = setTimeout(function() {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout),
+            tk = d.createElement("script"),
+            f = false,
+            s = d.getElementsByTagName("script")[0],
+            a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+</body>
+</html>
+

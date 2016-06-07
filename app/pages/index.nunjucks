@@ -5,7 +5,7 @@
     </div>
     <div class="modal-wrapper">
       <div class="modal-close">
-        <i class="material-icons md-48 md-light">clear</i>
+        <i class="icon ion-close"></i>
       </div>
       <div class="card-wrap">
         <div class="modal-cta">

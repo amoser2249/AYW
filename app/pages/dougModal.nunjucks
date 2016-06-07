@@ -5,7 +5,7 @@
     <div class="modal-wrapper">
       <div id="doug-modal">
         <div class="modal-close">
-          <i class="material-icons md-48 md-light">clear</i>
+          <i class="icon ion-home"></i>
         </div>
 <!-- Start Desktop CTA -->
         <div class="desktop-cta">
