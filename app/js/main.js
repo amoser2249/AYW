@@ -7,7 +7,8 @@ $(document).ready(function() {
   var $monthlyBillRange = $('#monthlyEnergyBill');
   var $monthlyBill = $('.monthly-bill');
   var $mortgageRange = $('#mortgageYears');
-
+  var a = 200;
+  var b = 100;
   var track = function(data) {
   $monthlyBill.html('Monthly Bill Amount: ' + data.from);
 };
@@ -30,24 +31,34 @@ $(document).ready(function() {
     onStart: track,
     onChange: track,
     onFinish: track,
-    onUpdate: track
+    onChange: function(data) {
+      b = data.from;
+      updateSavings();
+    }
   });
 
   $mortgageRange.ionRangeSlider({
     hide_min_max: false,
     keyboard: true,
     min: 0,
-    max: 1000,
+    max: 30,
     step: 1,
     from: 200,
     prettify_enabled: true,
-    prettify_separator: ',',
-    prefix: '$',
     grid: false,
     onStart: track,
-
+    onChange: function(data) {
+      a = data.from;
+      updateSavings();
+    }
   });
 
+  var $totalEnergySavings = $('.totalEnergySavings');
+
+  function updateSavings() {
+  var savingsCalc = a * b;
+  $totalEnergySavings.text(savingsCalc);
+}
   // SAMPLE CODE
   // function sum () {
   //     var total = (a * 15) + (b * 15) + (c * 15);

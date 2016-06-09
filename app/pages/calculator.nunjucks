@@ -5,7 +5,7 @@
         <input type="text" id="monthlyEnergyBill" value="" name="range" />
 <p class="monthly-bill"></p>
         <input type="text" id="mortgageYears" value="" name="range" />
-
+<p class="totalEnergySavings"> hello</p>
   </div>
   </div>
 {% endblock %}
