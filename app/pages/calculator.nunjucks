@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+  <div class="solar-calculator">
+  <div>
+        <input type="text" id="monthlyEnergyBill" value="" name="range" />
+<p class="monthly-bill"></p>
+        <input type="text" id="mortgageYears" value="" name="range" />
+
+  </div>
+  </div>
+{% endblock %}
