@@ -42,6 +42,4 @@ $(window).load(function() {
   //   $('#ouibounce-modal').fadeOut('fast');
   // });
 
-
-
 });
