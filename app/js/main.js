@@ -2,20 +2,23 @@
 $(document).ready(function() {
   'use strict';
   console.log('MAIN.JS');
-  $('#example_id').ionRangeSlider();
 
   var $monthlyBillRange = $('#monthlyEnergyBill');
-  var $monthlyBill = $('.monthly-bill');
   var $mortgageRange = $('#mortgageYears');
+  var $totalEnergySavings = $('.totalEnergySavings');
   var a = 200;
-  var b = 100;
-  var track = function(data) {
-  $monthlyBill.html('Monthly Bill Amount: ' + data.from);
-};
+  var b = 10;
 
-  var track = function(data) {
-  $monthlyBill.html('Monthly Bill Amount: ' + data.from);
-};
+  $.fn.digits = function() {
+    return this.each(function() {
+      $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,'));
+    });
+  };
+
+  function updateSavings() {
+    var savingsCalc = a * b;
+    $totalEnergySavings.text('$' + savingsCalc).digits();
+  };
 
   $monthlyBillRange.ionRangeSlider({
     hide_min_max: false,
@@ -28,11 +31,8 @@ $(document).ready(function() {
     prettify_separator: ',',
     prefix: '$',
     grid: false,
-    onStart: track,
-    onChange: track,
-    onFinish: track,
     onChange: function(data) {
-      b = data.from;
+      a = data.from;
       updateSavings();
     }
   });
@@ -43,22 +43,18 @@ $(document).ready(function() {
     min: 0,
     max: 30,
     step: 1,
-    from: 200,
+    from: 10,
     prettify_enabled: true,
     grid: false,
-    onStart: track,
     onChange: function(data) {
-      a = data.from;
+      b = data.from;
       updateSavings();
     }
   });
 
-  var $totalEnergySavings = $('.totalEnergySavings');
-
-  function updateSavings() {
-  var savingsCalc = a * b;
-  $totalEnergySavings.text(savingsCalc);
-}
+  // var track = function(data) {
+  //   $monthlyBill.html('Monthly Bill Amount: ' + data.from);
+  // };
   // SAMPLE CODE
   // function sum () {
   //     var total = (a * 15) + (b * 15) + (c * 15);
