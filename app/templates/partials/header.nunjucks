@@ -1,12 +1,11 @@
-<section class="hero is-medium is-primary is-bold">
-  <div class="hero-content">
-    <div class="container">
-      <h1 class="title">
-        Primary bold title
-      </h1>
-      <h2 class="subtitle">
-        Primary bold subtitle
-      </h2>
+<div id="shell" data-type="form-slider" class="aio">
+  <header>
+    <div id="headerContstraint">
+      <div class="logo">GetMyRefinance.com</div>
     </div>
-  </div>
-</section>
+  </header>
+  <div id="content">
+    <div id="fafcWrap">
+      <div id="formWrap">
+        <div id="formConstraint">
+          <div class="headlineArrow" style="display:none"></div>

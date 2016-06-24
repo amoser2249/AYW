@@ -8,10 +8,10 @@ var $ = require('gulp-load-plugins')(),
 
 // BrowserSync Server
 gulp.task('uncss', function() {
-	return gulp.src('auto/old-css/gmi.css')
+	return gulp.src('./app/prod/gmr.css')
 		.pipe($.uncss({
-			html: ['auto/content.html'],
+			html: ['./app/index.html'],
 			ignore: ['@import']
 		}))
-		.pipe(gulp.dest('auto/css'));
+		.pipe(gulp.dest('./app/css/'));
 });

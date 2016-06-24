@@ -1,0 +1,257 @@
+<form id="the-form" action="javascript:window.location = window.location+'&tqf=true';" class="main-form">
+  <div id="slide-wrapper-block-1">
+    <div class="inner">
+      <fieldset data-transition-type="slide" class="section active main" data-page=0 data-page-title="/lander">
+        <div class="container main">
+          <section id="enticer">
+            <p class="fauxLander">What is your loan type?</p>
+            <div class="row">
+              <div class="field control-group">
+                <fieldset data-name="LeadInfo">
+                  <fieldset data-name="Demographics" data-index=0>
+                    <div class="column one-half">
+                      <label class="radioImages">
+                        <input type="radio" id="Refinance" name="Value" data-name="Value" value="Refinance" data-demographics-key="LoanType" data-autoadvance-click="true" checked="checked">
+                        <div class="overlay">Refinance</div>
+                      </label>
+                    </div>
+                    <div class="column one-half">
+                      <label class="radioImages">
+                        <input type="radio" id="NewMortgage" name="Value" data-name="Value" value="New Mortgage" data-demographics-key="LoanType" data-autoadvance-click="true">
+                        <div class="overlay">New Purchase</div>
+                      </label>
+                    </div>
+                  </fieldset>
+                </fieldset>
+              </div>
+            </div>
+            <button class="submit btn next" data-form-action-type="next">Start &raquo;</button>
+          </section>
+        </div>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=1 data-page-title="/section/1">
+        <p class="fauxLander">What is the property type?</p>
+        <div class="field control-group">
+          <fieldset data-name="Request">
+            <fieldset data-name="HomeRefinance">
+              <fieldset data-name="Properties" data-repeatable="1" data-index="0" >
+                <label class="radioImages coll one-forth">
+                  <input type="radio" data-autoadvance-click name="PropertyType" data-name="PropertyType" value="Single Family Home" checked="checked">
+                  <div class="overlay">Single Family Home&nbsp;</div>
+                </label><!--
+                --><label class="radioImages coll one-forth">
+                  <input type="radio" data-autoadvance-click name="PropertyType" data-name="PropertyType" value="Multi-Family Home">
+                  <div class="overlay">Multi-Family Home</div>
+                </label><!--
+                --><label class="radioImages coll one-forth">
+                  <input type="radio" data-autoadvance-click name="PropertyType" data-name="PropertyType" value="Condominium">
+                  <div class="overlay">Condominium</div>
+                </label><!--
+                --><label class="radioImages coll one-forth">
+                  <input type="radio" data-autoadvance-click name="PropertyType" data-name="PropertyType" value="Mobile Home"><div class="overlay">Mobile Home</div>
+                </label>
+              </fieldset>
+            </fieldset>
+          </fieldset>
+        </div>
+        <div class="pagenav onePageHide">
+          <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+          <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+        </div>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=2 data-page-title="/section/2">
+        <p class="fauxLander">How is your credit?</p>
+        <div class="field control-group">
+          <fieldset data-name="ApplicantInfo">
+            <fieldset data-name="Credit">
+              <label class="buttonToggle coll one-fifth">
+                <input type="radio" data-name="SelfRating" data-autoadvance-click name="cr" id="crExcellent" value="Excellent"/>
+                <span>Excellent<br class="wrapHelper"> (740+)</span>
+              </label><!--
+              --><label class="buttonToggle coll one-fifth">
+                <input type="radio" data-name="SelfRating" data-autoadvance-click name="cr" id="crGood" value="Good" checked="checked"/>
+                <span id="rating_good">Good<br class="wrapHelper"> (650-740)</span>
+              </label><!--
+              --><label class="buttonToggle coll one-fifth">
+                <input type="radio" data-name="SelfRating" data-autoadvance-click name="cr" id="crFair" value="Fair"/>
+                <span id="rating_fair">Fair<br class="wrapHelper"> (580-650)</span>
+              </label><!--
+              --><label class="buttonToggle coll one-fifth">
+                <input type="radio" data-name="SelfRating" data-autoadvance-click name="cr" id="crPoor" value="Poor"/>
+                <span id="rating_poor">Poor<br class="wrapHelper"> (Below 580)</span>
+              </label>
+            </fieldset>
+          </fieldset>
+        </div>
+        <div class="pagenav onePageHide">
+          <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+          <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+        </div>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=3 data-page-title="/section/3">
+        <p class="fauxLander">What is the property value?</p>
+        <div class="field control-group">
+          <fieldset data-name="Request">
+            <fieldset data-name="HomeRefinance">
+              <fieldset data-name="Properties" data-repeatable="1" data-index="0" >
+                <span class="rangeValueWrapper" data-prepend="$">$250,000</span>
+                <input type="range" name="PropertyValue" data-name="PropertyValue" value="250000" min="80000" max="1000000" step="5000" >
+              </fieldset>
+            </fieldset>
+          </fieldset>
+        </div>
+        <div class="pagenav onePageHide">
+          <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+          <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+        </div>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=4 data-page-title="/section/4">
+        <p class="fauxLander">What is your mortgage balance?</p>
+        <fieldset data-name="Request">
+          <fieldset data-name="HomeRefinance">
+            <fieldset data-name="ExistingMortgages" data-index="0">
+              <span class="rangeValueWrapper" data-prepend="$">$200,000</span>
+              <div class="field control-group">
+                <input type="range" min="80000" max="1000000" step="5000" name="RemainingBalance" value="200000" data-name="RemainingBalance">
+              </div>
+              <div class="pagenav onePageHide">
+                <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+                <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+              </div>
+            </fieldset>
+          </fieldset>
+        </fieldset>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=5 data-page-title="/section/5">
+        <p class="fauxLander">What is your current interest rate?</p>
+        <fieldset data-name="Request">
+          <fieldset data-name="HomeRefinance">
+            <fieldset data-name="ExistingMortgages" data-index="0">
+              <span class="rangeValueWrapper" data-append="%">4.5%</span>
+              <div class="field control-group">
+                <input type="range" min="3.00" max="10.00" step="0.125" value="4.5" name="InterestRate" data-name="InterestRate">
+              </div>
+              <div class="pagenav onePageHide">
+                <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+                <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+              </div>
+            </fieldset>
+          </fieldset>
+        </fieldset>
+      </fieldset>
+      <fieldset data-transition-type="slide" class="section active" data-page=6 data-page-title="/section/6">
+        <p class="fauxLander">Please enter the property information</p>
+        <div class="field control-group">
+          <fieldset data-name="ContactInfo">
+            <label>Street Address</label><input data-name="Address" data-validator-position="bottom" id="address" type="text" placeholder="ex: 102 South Main Street" />
+          </fieldset>
+        </div><!--
+        --><div class="field control-group">
+          <fieldset data-name="ContactInfo">
+            <label>Zip Code</label><input data-name="ZipCode" type="tel" id="zipcode" placeholder="Zip Code" />
+          </fieldset>
+        </div>
+        <div class="field control-group">
+          <fieldset data-name="ContactInfo">
+            <label>City</label><input data-name="City" data-validator-position="bottom" type="text" placeholder="City" />
+          </fieldset>
+        </div>
+        <div class="field control-group">
+          <fieldset data-name="ContactInfo">
+            <label>State</label>
+            <div class="select">
+            <select data-name="State" data-validator-position="bottom" data-label="State"></select>
+          </div>
+        </fieldset>
+      </div>
+      <div class="pagenav onePageHide">
+        <button class="btn next" data-form-action-type="next">Continue &raquo;</button>
+        <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+      </div>
+    </fieldset>
+    <fieldset data-transition-type="slide" class="section active" data-page=7 data-page-title="/section/7">
+      <p class="fauxLander">Please verify you are the homeowner</p>
+      <div class="field control-group">
+        <fieldset data-name="ContactInfo">
+          <label>First Name
+            <input data-name="FirstName" id="first-name" type="text" placeholder="First Name" />
+          </label>
+        </fieldset>
+      </div><!--
+      --><div class="field control-group">
+        <fieldset data-name="ContactInfo">
+          <label>Last Name
+            <input data-name="LastName" id="last-name" type="text" placeholder="Last Name"  />
+          </label>
+        </fieldset>
+      </div><!--
+      --><div class="field control-group">
+        <fieldset data-name="ContactInfo">
+          <label>Email</label><input data-name="Email" id="email" type="email" placeholder="YourEmail@email.com" />
+        </fieldset>
+      </div><!--
+      --><div class="field control-group">
+        <fieldset data-name="ContactInfo">
+          <label>Phone</label><input data-name="Phone" placeholder="1234567890" maxlength="10" type="tel" data-split-type="334" data-split-format="phone"  />
+        </fieldset>
+      </div>
+      <div class="cta-section">
+        <div class="pagenav onePageHide">
+          <button class="btn next" data-form-action-type="post">Submit</button>
+          <button class="btn-link back onePageHide" data-form-action-type="back">« Go Back</button>
+        </div>
+        <br>
+        <label>By submitting my information, I confirm that I understand and agree to the applicable <a href='{{ sitemap.privacy }}' target='_blank'>Privacy Policy</a> and <a href='{{ sitemap.terms }}' target='_blank'>Terms of Service</a>.</label>
+        <br>
+      </div>
+      <div class="cta-section">
+        <fieldset data-name="LeadInfo">
+          <label>
+            <input type="hidden" id="leadid_tcpa_disclosure" data-name="TCPALegal" value="By clicking “Submit”, I understand that I may be matched with one or more financial products or services companies. I agree to receive calls about financial products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='{{ sitemap.companies }}' target='_blank'>these companies</a> and their agents to the number I've provided even if my number is currently listed on any state, federal, or corporate Do Not Call list, and to allow them to access credit information about me, if needed, to provide me with the quotes or other services I request. I understand that my consent to receive calls is not required in order to purchase any property, goods or services."/>
+            By clicking “Submit”, I understand that I may be matched with one or more financial products or services companies. I agree to receive calls about financial products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='{{ sitemap.companies }}' target='_blank'>these companies</a> and their agents to the number I've provided even if my number is currently listed on any state, federal, or corporate Do Not Call list, and to allow them to access credit information about me, if needed, to provide me with the quotes or other services I request. I understand that my consent to receive calls is not required in order to purchase any property, goods or services.
+          </label>
+          <br>
+          <img src="{{ cdn }}/images/common/refi-submit-loop-color.gif" alt="" />
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+</div>
+<fieldset data-name="LeadInfo">
+  <input data-name="UniversalLeadiD" data-skip-validation="1" id="leadid_token" name="universal_leadid" type="hidden" value="">
+</fieldset>
+<fieldset data-name="ApplicantInfo">
+  <input type="hidden" data-name="VAStatus" value="false" />
+  <fieldset data-name="Residence">
+    <input data-name="OccupancyDate" id="occupancy-date" type="hidden" value="11/28/2010">
+    <input type="hidden" data-name="ResidenceStatus" value="Own" />
+  </fieldset>
+  <fieldset data-name="Credit">
+    <input data-name="Repossessions" name="Repossessions" type="hidden" value="false">
+    <input type="hidden" data-name="Bankruptcy" value="false" />
+  </fieldset>
+</fieldset>
+<fieldset data-name="Request">
+  <fieldset data-name="HomeRefinance">
+    <fieldset data-name="Properties"  data-index="0">
+      <input type="hidden" data-name="Id" value="0" />
+      <input type="hidden" data-name="Address" />
+      <input type="hidden" data-name="ZipCode" />
+      <input type="hidden" data-name="City" />
+      <input type="hidden" data-name="State" />
+      <input type="hidden" data-name="OccupancyType" value="Primary" />
+    </fieldset>
+    <fieldset data-name="ExistingMortgages" data-index="0">
+      <input data-name="Id" type="hidden" value="0"/>
+      <input data-name="PropertyId" type="hidden" value="0"/>
+      <input type="hidden" data-name="RateType" value="Fixed" />
+    </fieldset>
+    <fieldset data-name="DesiredMortgage">
+      <input type="hidden" data-name="PropertyId" value="1" />
+      <input type="hidden" data-name="RefinanceAmount" value="160000" />
+      <input type="hidden" data-name="RateType" value="Fixed" />
+      <input type="hidden" data-name="LateMortgagePayments" value="0" />
+    </fieldset>
+  </fieldset>
+</fieldset>
+</form>
