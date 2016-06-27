@@ -1,0 +1,6 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+  {% include "partials/header.nunjucks" %}
+  {% include "partials/slide1.nunjucks" %}
+  {% include "partials/footer.nunjucks" %}
+{% endblock %}

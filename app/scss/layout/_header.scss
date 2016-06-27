@@ -1,0 +1,21 @@
+.Site-header {
+  border-bottom: 1px solid #3cb2b3;
+  padding: .75rem 0 .5rem;
+  }
+.logo {
+  display: block;
+  background: url('//dn3nmb5yt1ysw.cloudfront.net/images/logos/get-my-refinance-logo-black.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .6;
+  margin: 0 auto;
+  text-indent: 999px;
+  height: 2.5rem;
+  width: 6rem;
+  border: 1px solid red;
+  @include breakpoint(780) {
+    height: 5rem;
+    width: 10rem;
+}
+  }
+
