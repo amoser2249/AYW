@@ -1,3 +1,17 @@
-<div class="Site-content">
-<h1>Terst</h1>
+<div class="site-content">
+  <p class="form-prompt">What is your loan type?</p>
+  <div class="flex double">
+    <div>
+      <label class="radioImages">
+        <input type="radio" id="Refinance" name="Value" data-name="Value" value="Refinance" data-demographics-key="LoanType" data-autoadvance-click="true" checked="checked" data-dirty="0">
+        <div class="overlay">Refinance</div>
+      </label>
+    </div>
+    <div>
+      <label class="radioImages">
+        <input type="radio" id="NewMortgage" name="Value" data-name="Value" value="NewMortgage" data-demographics-key="LoanType" data-autoadvance-click="true" data-dirty="0">
+        <div class="overlay">New Purchase</div>
+      </label>
+    </div>
+  </div>
 </div>

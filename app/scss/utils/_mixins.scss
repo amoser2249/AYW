@@ -23,3 +23,44 @@
         }
     }
 }
+
+@mixin transition($val...) {
+   -webkit-transition: $val;
+   -moz-transition: $val;
+   -o-transition: $val;
+   transition: $val;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin radioImage($name, $size:false) {
+  background: url(#{$images-path}/#{$name}.png) no-repeat center;
+  background-color: transparent;
+
+    @if($size){
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+    }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(#{$images-path}/#{$name}#{$retina-suffix}.png);
+    }
+}
+
+@mixin background-size ($size){
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}

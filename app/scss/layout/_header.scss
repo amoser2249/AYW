@@ -1,21 +1,29 @@
-.Site-header {
-  border-bottom: 1px solid #3cb2b3;
+.site-header {
+  border-bottom: 1px solid $accent;
   padding: .75rem 0 .5rem;
-  }
-.logo {
-  display: block;
-  background: url('//dn3nmb5yt1ysw.cloudfront.net/images/logos/get-my-refinance-logo-black.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: .6;
-  margin: 0 auto;
-  text-indent: 999px;
-  height: 2.5rem;
-  width: 6rem;
-  border: 1px solid red;
-  @include breakpoint(780) {
-    height: 5rem;
-    width: 10rem;
-}
-  }
 
+  h1 {
+    display: block;
+    margin: 0;
+    overflow-x: hidden;
+
+    a.logo {
+      display: block;
+      height: 3rem;
+      width: 8rem;
+      background: url('//dn3nmb5yt1ysw.cloudfront.net/images/logos/get-my-refinance-logo-black.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .6;
+      margin: 0 auto;
+      text-indent: -19999px;
+
+      @include transition(all .25s);
+
+      @include breakpoint(780) {
+        height: 4rem;
+        width: 10rem;
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@
 	<!-- endbuild -->
 	<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
 </head>
-<body class="animatedForm light shortIcon aio Site" data-page-tag="RAIOF450">
+<body class="animatedForm light shortIcon aio site" data-page-tag="RAIOF450">
 	{% block content %}
 	{% endblock %}
 	<!-- build:js js/main.min.js -->

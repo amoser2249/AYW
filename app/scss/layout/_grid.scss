@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  // max-width: 30rem;
+
+  border: 1px solid red;
+  padding: 0;
+  @include breakpoint(780) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.double > div {
+  border: 1px solid red;
+  width: 100%;
+  // max-width: 400px;
+  justify-content: center;
+  @include breakpoint(780) {
+    padding: 1rem;
+  }
+}
