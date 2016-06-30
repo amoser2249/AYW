@@ -1,0 +1,287 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"><!--<![endif]-->
+
+
+  <head>
+    <!-- Wintersmith LIVERELOAD https://github.com/jnordberg/wintersmith-livereload -->
+
+    <meta charset="utf-8">
+    <title>Free Solar Panel Cost Comparison | Cut My Electric Bill</title>
+    <!-- Google Chrome Frame for IE -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Compare the cost to get solar panels and learn more about how solar power can lower your utility bills. Find low-cost and free solar panel installation.">
+    <link rel="stylesheet" href="/css/cmeb.css" />
+
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+
+
+    <!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  </head>
+  <body class="solarForm1 legacy" data-page-tag="SAIOF11e">
+
+
+
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <a href="/" title="CutMyElectricBill.com">
+        <img src="//dn3nmb5yt1ysw.cloudfront.net/images/logos/cut-my-electric-bill-logo.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+  <div class="wrap">
+    <form id="solar-form" action="javascript:return false;" class="main-form">
+      <fieldset data-transition-type="fade" class="section active" data-page=0 data=page=title="/lander">
+        <section class="hoPanel">
+          <h1>Solar: The Smart Way to Save Thousands Off your Energy Bill</h1>
+          <div class="quotesCallout mobile-only">
+            <p>Solar rebates available!<br>Find out if you qualify.</p>
+          </div>
+          <div class="flex-wrapper">
+            <div class="solar-panels"></div>
+            <div class="ho-form main-form2">
+              <p class="desktop-only">Solar rebates available! Find out if you qualify.</p>
+              <fieldset data-name="ApplicantInfo">
+                <fieldset data-name="Residence">
+                  <div class="control-group">
+                    <div class="form__multi--row">
+                      <div class="form__multi--question">
+                        <p>Are you a home owner?</p>
+                      </div>
+                      <div class="radio-control">
+                        <div>
+                          <label for="Own">
+                            <input type="radio" id="Own" data-name="ResidenceStatus" name="RS" value="Own">
+                            <span>Yes</span>
+                          </label>
+                        </div>
+                        <div>
+                          <label for="Rent">
+                            <input type="radio" id="Rent" data-name="ResidenceStatus" name="RS" value="Rent">
+                            <span>No</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </fieldset>
+              <fieldset class="solarAddress" data-name="ContactInfo" class="control-group">
+                <div class="field first control-group">
+                  <input type="text" id="address" data-name="Address" placeholder="Enter your street address" data-validator-position="bottom"/>
+                </div>
+                <div class="field first control-group">
+                  <input type="tel" id="zip" data-name="ZipCode" placeholder="Enter your zip code" data-validator-position="bottom"/>
+                </div>
+                <div class="field first control-group">
+                  <input type="text" data-name="City" placeholder="Enter your city" data-validator-position="bottom"/>
+                </div>
+                <div class="field first control-group">
+                  <select class="form__input" data-name="State" data-label="Select Your State"></select>
+                </div>
+              <button class="greenBtn" data-form-action-type="next">Continue</button>
+              </fieldset>
+              <img class="sslSecure" src="//dn3nmb5yt1ysw.cloudfront.net/images/common/sslSecure.svg" alt="SSL Secure">
+            </div>
+          </div>
+        </section>
+        <section class="feature-list">
+          <div class="wrap">
+            <div class="feature-parent">
+              <div class="feature-block">
+                <div class="feature-image mobile-only">
+                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneypig.svg">
+                </div>
+                <div class="feature-content">
+                  <div class="feature-headline">
+                    <h2>Save Big on <br class="wrapHelp">Energy Bills</h2>
+                  </div>
+                  <div class="feature-image">
+                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneypig.svg">
+                  </div>
+                  <div class="feature-description">
+                    <p>The average solar customer saves $20,000 in energy bills over 20 years.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-block">
+                <div class="feature-image mobile-only">
+                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneyCircle.svg">
+                </div>
+                <div class="feature-content">
+                  <div class="feature-headline">
+                    <h2>Low-To-No <br class="wrapHelp">Installation Cost</h2>
+                  </div>
+                  <div class="feature-image">
+                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneyCircle.svg">
+                  </div>
+                  <div class="feature-description">
+                    <p>Customers often need $0 down to have solar panels installed in their homes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-block">
+                <div class="feature-image mobile-only">
+                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/leaf.svg">
+                </div>
+                <div class="feature-content">
+                  <div class="feature-headline">
+                    <h2>Environmentally <br class="wrapHelp">Friendly</h2>
+                  </div>
+                  <div class="feature-image">
+                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/leaf.svg">
+                  </div>
+                  <div class="feature-description">
+                    <p>Solar energy users save a collective 35 million tons of carbon dioxide annually.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="quotesCallout">
+          <p>Quotes are FREE and There's No Obligation to Buy!</p>
+        </div>
+      </fieldset>
+<!-- Begin Calculate Savings -->
+      <fieldset data-transition-type="fade" class="section ready tabletMax" data-page=1 data-page-title="/solar/info/1" >
+        <h2>Shine on! Your neighbors <span id="city-replace"></span>are already going solar.</h2>
+        <p>Now, let's see how much you stand to save.</p>
+        <p class="btn-link back onePageHide" data-form-action-type="back">« Go Back</p>
+        <fieldset data-name="Request">
+          <fieldset data-name="Solar">
+              <fieldset data-name="Properties" data-index="0" data-repeatable="1">
+                <div class="control-group first">
+                  <label class="form__label" for="MonthlyElectricBill">Average Monthly Electric Bill<i class="tooltip icon ion-help-circled" title="Please select the range that best represents how much you pay for electric each month."></i></label>
+                  <select class="form__input" id="MonthlyElectricBill" data-name="MonthlyElectricBill" data-label="Select $ Amount"></select>
+                </div>
+                <div class="control-group">
+                  <label class="form__label" for="ElectricityProvider">Electric Provider</label>
+                  <select class="form__input" id="ElectricityProvider" data-name="ElectricityProvider" data-label="Select Your Provider"></select>
+                </div>
+                <div class="control-group">
+                  <label class="form__label" for="SunExposure">Roof Sun Exposure<i class="tooltip icon ion-help-circled" title="Please indicate how much sunshine the roof of your home receives."></i></label>
+                  <select class="form__input" id="SunExposure" data-name="SunExposure" value="Full Sun"></select>
+                </div>
+                  <input type="hidden" data-name="PropertyType" value="Single Family Home" />
+                  <input type="hidden" data-name="RoofDesign" value="Gable" />
+                  <input type="hidden" data-name="RoofType" value="Asphalt Shingle" />
+                  <input type="hidden" data-name="Id" value="1" />
+                  <input type="hidden" data-name="Address" />
+                  <input type="hidden" data-name="City" />
+                  <input type="hidden" data-name="State" />
+                  <input type="hidden" data-name="ZipCode" />
+              </fieldset>
+          </fieldset>
+          <div class="pagenav onePageHide">
+            <button class="form__btn" data-form-action-type="next">Calculate Savings</button>
+          </div>
+        </fieldset>
+      </fieldset>
+<!-- End Calculate Savings -->
+<!-- Start Contact Info -->
+      <fieldset data-transition-type="fade" class="section ready tabletMax" data-page=2 data-page-title="/solar/info/2">
+        <h2>Solar can save you up to $1,500 per year.</h2>
+        <p>How can we get in touch with your savings? Your information is secure.</p>
+<!-- Start Contact Info -->
+        <p class="btn-link back onePageHide" data-form-action-type="back">« Go Back</p>
+        <fieldset data-name="ContactInfo">
+          <div class="control-group first">
+            <label class="form__label" for="first-name">First Name</label>
+            <input class="form__input" data-name="FirstName" id="first-name" type="text" placeholder="Enter First Name">
+          </div>
+        </fieldset>
+        <fieldset data-name="ContactInfo">
+          <div class="control-group">
+            <label class="form__label" for="last-name">Last Name</label>
+            <input class="form__input" data-name="LastName" id="last-name" type="text" placeholder="Enter Last Name">
+          </div>
+        </fieldset>
+        <fieldset data-name="ContactInfo">
+          <div class="control-group">
+            <label class="form__label" for="email">Email Address</label>
+            <input class="form__input" data-name="Email" id="email" type="email" placeholder="Enter Email Address">
+          </div>
+        </fieldset>
+        <fieldset data-name="ContactInfo">
+          <div class="control-group">
+            <label class="form__label" for="phone">Phone Number<i class="tooltip icon ion-help-circled" title="Please enter your phone number including area code in this format: ###-###-####"></i></label>
+            <input class="form__input" data-name="Phone" id="phone" type="tel" placeholder="Enter Phone Number">
+          </div>
+        </fieldset>
+  <!-- End Contact Info -->
+
+  <!-- Start Hidden Fields -->
+        <fieldset data-name="ApplicantInfo">
+          <fieldset data-name="Credit">
+            <input type="hidden" data-name="SelfRating" value="Average">
+            <input type="hidden" data-name="Repossessions" value="false">
+            <input type="hidden" data-name="Bankruptcy" value="false">
+          </fieldset>
+        </fieldset>
+  <!-- End Hidden Fields -->
+        <fieldset data-name="LeadInfo">
+          <label class="tcpaLabel"><input type="hidden" id="leadid_tcpa_disclosure" data-name="TCPALegal" value="By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms of Service</a>."/>By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms of Service</a>.
+          </label>
+          <button class="form__btn" data-form-action-type="post">Go Solar!</button>
+          <input data-name="UniversalLeadiD" data-skip-validation="1" id="leadid_token" name="universal_leadid" type="hidden" value="">
+          <input data-name="CEEPageId" data-skip-validation="1" name="___pageid___" type="hidden" value="">
+        </fieldset>
+      </fieldset>
+  </form>
+</div>
+
+
+  </main>
+  <footer>
+    <nav>
+      <div class="wrap">
+
+
+  <ul>
+
+      <li>
+        <a href="/" data-page-name="">Home</a>
+      </li>
+
+      <li>
+        <a href="/about-us" data-page-name="about-us">About Us</a>
+      </li>
+
+      <li>
+        <a href="/contact" data-page-name="contact">Contact Us</a>
+      </li>
+
+      <li>
+        <a href="/privacy" data-page-name="privacy">Privacy Policy</a>
+      </li>
+
+      <li>
+        <a href="/terms" data-page-name="terms">Terms and Conditions</a>
+      </li>
+
+    </ul>
+
+      </div>
+    </nav>
+    <div class="wrap">
+      <div id="copyright">
+        <p>&copy;2016 Affluent Ads, LLC d/b/a Leadnomics.  All Rights Reserved.</p>
+      </div>
+      <div id="disclosure">
+        <p>Please note that CutMyElectricBill.com&#8480; is not itself a provider of the energy industry products and services (a "Service Provider") referenced on this website, and the information you provide to CutMyElectricBill.com&#8480; is not a formal application for the products and services offered by these Service Providers. CutMyElectricBill.com&#8480; works with a network of leading energy industry Service Providers, as well as in some cases third-party finder and lead aggregator companies who will pass along your information to energy industry Service Providers, who participate in our matching engine and may have products or services available matching the criteria you submit through our forms to address your energy needs. If you are contacted by Service Providers advertising within our partner network, your quoted price for a given product or service may be higher, depending on your needs, location, and other factors. CutMyElectricBill.com&#8480; does not guarantee that the price or terms offered and made available to you by its participating Service Providers are the lowest prices available in the market or the best terms available, and not all Service Providers in our network offer all products and services that we advertise. Completing our forms does not obligate you to purchase a service or product from any Service Provider, nor does it obligate a Service Provider to agree to provide you with any particular product or service about which you may have inquired. Available prices and terms are subject to change without notice.</p>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
