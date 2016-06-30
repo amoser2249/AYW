@@ -6,13 +6,16 @@ footer {
   padding: 1rem;
   color: #ABABAB;
   font-weight: 300;
+
   @include breakpoint(780) {
     font-size: .75rem;
   }
 }
+
 .disclaimer {
   padding-top: .5rem;
 }
+
 nav, .main-nav {
   display: flex;
   align-items: center;
@@ -24,6 +27,7 @@ nav, .main-nav {
     justify-content: space-between;
   }
 }
+
 ul {
   padding: 0;
   margin: 0;

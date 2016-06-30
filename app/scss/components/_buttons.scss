@@ -1,0 +1,54 @@
+.form-nav {
+  margin: 2rem auto;
+  display: flex;
+  height: 8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 25rem;
+  align-items: center;
+}
+
+.submit.next {
+  background-color: #2366cc;
+  border: #2366cc;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1.365rem;
+  line-height: 3rem;
+
+  &:hover {
+    @include box-shadow(0, 14px, 21px, -7px, rgba(0, 0, 0, 0.3));
+  }
+}
+
+.goBack {
+  color: $faded-grey;
+  font-size: 1rem;
+  background: #fff;
+  border: 1px solid $faded-grey;
+  line-height: 2.5rem;
+  width: 50%;
+
+  @include border-radius(2px);
+
+  &:hover {
+    color: $muted-red;
+    border-color: $muted-red;
+  }
+}
+
+.btn {
+  border-radius: 2px;
+  outline: 0;
+  display: block;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+
+  @include transition(all 0.25s);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

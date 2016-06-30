@@ -5,21 +5,23 @@
   justify-content: center;
   list-style: none;
   width: 100%;
-  // max-width: 30rem;
-
-  border: 1px solid red;
   padding: 0;
   @include breakpoint(780) {
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 1rem auto;
+    max-width: 50rem;
   }
 }
+
 .double > div {
-  border: 1px solid red;
   width: 100%;
-  // max-width: 400px;
   justify-content: center;
   @include breakpoint(780) {
+    > .overlay {
+      height: 100%;
+    }
     padding: 1rem;
+    height: 15rem;
   }
 }

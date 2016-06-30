@@ -30,12 +30,12 @@ body {
 
 article,
 aside,
-details, /* 1 */
+details,
 figcaption,
 figure,
 footer,
 header,
-main, /* 2 */
+main,
 menu,
 nav,
 section,
@@ -76,7 +76,7 @@ progress {
  * 1. Add the correct display in IE.
  */
 
-template, /* 1 */
+template,
 [hidden] {
   display: none;
 }
@@ -297,7 +297,7 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
