@@ -8,10 +8,10 @@ var $ = require('gulp-load-plugins')(),
 
 // BrowserSync Server
 gulp.task('uncss', function() {
-	return gulp.src('./app/prod/gmr.css')
+	return gulp.src('./app/css/gmr.css')
 		.pipe($.uncss({
-			html: ['./app/index.html'],
+			html: ['./app/about.html', './app/aio.html', './app/contact-thanks.html', './app/contact.html', './app/exit.html', './app/financial-service-companies.html', './app/privacy.html', './app/terms.html'],
 			ignore: ['@import']
 		}))
-		.pipe(gulp.dest('./app/css/'));
+		.pipe(gulp.dest('./app/prod/'));
 });
