@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"><!--<![endif]-->
+
+
+  <head>
+    <!-- Wintersmith LIVERELOAD https://github.com/jnordberg/wintersmith-livereload -->
+
+    <meta charset="utf-8">
+    <title>Free Solar Panel Cost Comparison | Cut My Electric Bill</title>
+    <!-- Google Chrome Frame for IE -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Compare the cost to get solar panels and learn more about how solar power can lower your utility bills. Find low-cost and free solar panel installation.">
+    <link rel="stylesheet" href="/css/cmeb.css" />
+
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+
+
+    <!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+
+  </head>
+  <body class="" data-page-tag="">
+
+
+
+<div id="shell" data-type="EO" >
+    <header>
+        <div class="wrap">
+          <div class="logo">
+            <a href="/" title="CutMyElectricBill.com">
+            <img src="//dn3nmb5yt1ysw.cloudfront.net/images/logos/cut-my-electric-bill-logo.svg" alt=""></a>
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+    <main>
+    <section class="content">
+      <div class="wrap">
+        <div id="eo"></div>
+        <div id="eo-interstitial">
+  <div id="redirectContainer">
+    <div id="notifications">
+      <div id="appSubmitted">
+        <div class="sprite"></div>
+        <div>Your application has been submitted</div>
+      </div>
+      <div id="closeWarning">
+        <div class="sprite"></div>
+        <div>Do not close this window</div>
+      </div>
+    </div>
+    <div id="greeting">
+      <h2>We're processing your quotes!</h2>
+      <h4>Thank you for using CutMyElectricBill.com. Please hold while we find your matches.</h4>
+    </div>
+    <div id="appSteps">
+      <div id="stepOne">
+        <span class="sprite"></span>
+        <h3>1. Submit Application</h3>
+        <span>Complete!</span>
+      </div>
+      <div id="stepTwo">
+        <span class="sprite"></span>
+        <h3>
+          <span>2.</span> Please Wait...
+        </h3>
+        <span>This process may take up to 2 minutes</span>
+      </div>
+      <div id="stepThree">
+        <span class="sprite"></span>
+        <h3>3. Quote Match</h3>
+        <span>Pending...</span>
+      </div>
+    </div>
+    <div id="terms">
+      <div>
+        <img src="//dn3nmb5yt1ysw.cloudfront.net/files/2012/11/getseal.gif" alt="Norton Secured Icon"/>
+      </div>
+      <p>
+        <strong>
+          Do not refresh this page.
+        </strong>
+        Do not close either this page or your browser.
+        We are connecting you with an insurer. There
+        may be instances where a match cannot be made.
+        <strong>
+          By viewing this page you are not under any obligation to accept a quote.
+        </strong>
+        The insurer you are matched with will present you with the quote requested,
+        which you will have the opportunity to decline.
+      </p>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    </main>
+    <footer>
+        <nav>
+          <div class="wrap">
+
+
+  <ul>
+
+      <li>
+        <a href="/" data-page-name="">Home</a>
+      </li>
+
+      <li>
+        <a href="/about-us" data-page-name="about-us">About Us</a>
+      </li>
+
+      <li>
+        <a href="/contact" data-page-name="contact">Contact Us</a>
+      </li>
+
+      <li>
+        <a href="/privacy" data-page-name="privacy">Privacy Policy</a>
+      </li>
+
+      <li>
+        <a href="/terms" data-page-name="terms">Terms and Conditions</a>
+      </li>
+
+    </ul>
+
+          </div>
+        </nav>
+        <div class="wrap">
+          <div id="copyright">
+            <p>&copy;2016 Affluent Ads, LLC d/b/a Leadnomics.  All Rights Reserved.</p>
+          </div>
+          <div id="disclosure">
+            <p>Please note that CutMyElectricBill.com&#8480; is not itself a provider of the energy industry products and services (a "Service Provider") referenced on this website, and the information you provide to CutMyElectricBill.com&#8480; is not a formal application for the products and services offered by these Service Providers. CutMyElectricBill.com&#8480; works with a network of leading energy industry Service Providers, as well as in some cases third-party finder and lead aggregator companies who will pass along your information to energy industry Service Providers, who participate in our matching engine and may have products or services available matching the criteria you submit through our forms to address your energy needs. If you are contacted by Service Providers advertising within our partner network, your quoted price for a given product or service may be higher, depending on your needs, location, and other factors. CutMyElectricBill.com&#8480; does not guarantee that the price or terms offered and made available to you by its participating Service Providers are the lowest prices available in the market or the best terms available, and not all Service Providers in our network offer all products and services that we advertise. Completing our forms does not obligate you to purchase a service or product from any Service Provider, nor does it obligate a Service Provider to agree to provide you with any particular product or service about which you may have inquired. Available prices and terms are subject to change without notice.</p>
+          </div>
+        </div>
+      </footer>
+  </div>
+
+
+
+
+  </body>
+</html>
