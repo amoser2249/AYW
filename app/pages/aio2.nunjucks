@@ -25,7 +25,7 @@
     <!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   </head>
-  <body class="solarForm1 legacy" data-page-tag="SAIOF11e">
+  <body class="aio2 form solarForm1" data-page-tag="SFAJ134c">
 
 
 
@@ -39,206 +39,201 @@
   </header>
   <main>
 
-  <div class="wrap">
-    <form id="solar-form" action="javascript:return false;" class="main-form">
-      <fieldset data-transition-type="fade" class="section active" data-page=0 data=page=title="/lander">
-        <section class="hoPanel">
-          <h1>Solar: The Smart Way to Save Thousands Off your Energy Bill</h1>
-          <div class="quotesCallout mobile-only">
-            <p>Solar rebates available!<br>Find out if you qualify.</p>
-          </div>
+<div class="wrap">
+    <form id="solar-form" action="javascript:window.location = window.location+'&tqf=true';" class="main-form">
+        <fieldset data-transition-type="fade" class="section active" data-page=0 data-page-title="/solar/1">
           <div class="flex-wrapper">
-            <div class="solar-panels"></div>
-            <div class="ho-form main-form2">
-              <p class="desktop-only">Solar rebates available! Find out if you qualify.</p>
-              <fieldset data-name="ApplicantInfo">
-                <fieldset data-name="Residence">
-                  <div class="control-group">
-                    <div class="form__multi--row">
-                      <div class="form__multi--question">
-                        <p>Are you a home owner?</p>
-                      </div>
-                      <div class="radio-control">
-                        <div>
-                          <label for="Own">
-                            <input type="radio" id="Own" data-name="ResidenceStatus" name="RS" value="Own">
-                            <span>Yes</span>
-                          </label>
+            <div class="title">
+                <h1>Solar rebates available!</h1>
+                <h4>Find out if you qualify</h4>
+            </div>
+            <div class="questions">
+                <fieldset data-name="ApplicantInfo">
+                    <fieldset data-name="Residence">
+                        <div class="field control-group">
+                            <label class="radio-label">Do you own a home?</label>
+                            <div class="radio-control">
+                                <div>
+                                    <label for="Own">
+                                        <input type="radio" id="Own" data-name="ResidenceStatus" name="RS" value="Own" data-autoadvance-click="true" checked>
+                                        <span>Yes</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="Rent">
+                                        <input type="radio" id="Rent" data-name="ResidenceStatus" name="RS" data-autoadvance-click="true" value="Rent">
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                          <label for="Rent">
-                            <input type="radio" id="Rent" data-name="ResidenceStatus" name="RS" value="Rent">
-                            <span>No</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </fieldset>
+                    <button class="greenBtn" data-form-action-type="next">Start &raquo;</button>
                 </fieldset>
-              </fieldset>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Begin Calculate Savings -->
+        <fieldset data-transition-type="fade" class="section ready" data-page=1 data-page-title="/solar/2">
+          <div class="flex-wrapper">
+            <div class="title">
+                <h1>Please enter the property information</h1>
+            </div>
+            <div class="questions">
               <fieldset class="solarAddress" data-name="ContactInfo" class="control-group">
-                <div class="field first control-group">
-                  <input type="text" id="address" data-name="Address" placeholder="Enter your street address" data-validator-position="bottom"/>
-                </div>
-                <div class="field first control-group">
-                  <input type="tel" id="zip" data-name="ZipCode" placeholder="Enter your zip code" data-validator-position="bottom"/>
-                </div>
-                <div class="field first control-group">
-                  <input type="text" data-name="City" placeholder="Enter your city" data-validator-position="bottom"/>
-                </div>
-                <div class="field first control-group">
-                  <select class="form__input" data-name="State" data-label="Select Your State"></select>
-                </div>
-              <button class="greenBtn" data-form-action-type="next">Continue</button>
+                  <div class="field control-group">
+                      <label>Street Address</label>
+                      <input type="text" id="address" data-name="Address" placeholder="ex: 102 South Main Street" data-validator-position="bottom"/>
+                  </div>
+                  <div class="field control-group">
+                      <label>Zip Code</label>
+                      <input type="tel" id="zip" data-name="ZipCode" placeholder="Zip Code" data-validator-position="bottom"/>
+                  </div>
+                  <div class="field control-group">
+                      <label>City</label>
+                      <input type="text" data-name="City" placeholder="City" data-validator-position="bottom"/>
+                  </div>
+                  <div class="field control-group">
+                      <label>State</label>
+                      <div class="select">
+                          <select class="form__input" data-name="State" data-label="State"></select>
+                          <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                              <path d="M0-.75h24v24H0z" fill="none" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div class="pagenav onePageHide">
+                      <button class="form__btn" data-form-action-type="next">Continue &raquo;</button>
+                      <button class="btn-link back secondary" data-form-action-type="back">« Go Back</button>
+                  </div>
               </fieldset>
-              <img class="sslSecure" src="//dn3nmb5yt1ysw.cloudfront.net/images/common/sslSecure.svg" alt="SSL Secure">
             </div>
           </div>
-        </section>
-        <section class="feature-list">
-          <div class="wrap">
-            <div class="feature-parent">
-              <div class="feature-block">
-                <div class="feature-image mobile-only">
-                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneypig.svg">
-                </div>
-                <div class="feature-content">
-                  <div class="feature-headline">
-                    <h2>Save Big on <br class="wrapHelp">Energy Bills</h2>
-                  </div>
-                  <div class="feature-image">
-                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneypig.svg">
-                  </div>
-                  <div class="feature-description">
-                    <p>The average solar customer saves $20,000 in energy bills over 20 years.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-block">
-                <div class="feature-image mobile-only">
-                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneyCircle.svg">
-                </div>
-                <div class="feature-content">
-                  <div class="feature-headline">
-                    <h2>Low-To-No <br class="wrapHelp">Installation Cost</h2>
-                  </div>
-                  <div class="feature-image">
-                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/moneyCircle.svg">
-                  </div>
-                  <div class="feature-description">
-                    <p>Customers often need $0 down to have solar panels installed in their homes.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-block">
-                <div class="feature-image mobile-only">
-                  <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/leaf.svg">
-                </div>
-                <div class="feature-content">
-                  <div class="feature-headline">
-                    <h2>Environmentally <br class="wrapHelp">Friendly</h2>
-                  </div>
-                  <div class="feature-image">
-                    <img src="//dn3nmb5yt1ysw.cloudfront.net/images/common/leaf.svg">
-                  </div>
-                  <div class="feature-description">
-                    <p>Solar energy users save a collective 35 million tons of carbon dioxide annually.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="quotesCallout">
-          <p>Quotes are FREE and There's No Obligation to Buy!</p>
-        </div>
-      </fieldset>
-<!-- Begin Calculate Savings -->
-      <fieldset data-transition-type="fade" class="section ready tabletMax" data-page=1 data-page-title="/solar/info/1" >
-        <h2>Shine on! Your neighbors <span id="city-replace"></span>are already going solar.</h2>
-        <p>Now, let's see how much you stand to save.</p>
-        <p class="btn-link back onePageHide" data-form-action-type="back">« Go Back</p>
-        <fieldset data-name="Request">
-          <fieldset data-name="Solar">
-              <fieldset data-name="Properties" data-index="0" data-repeatable="1">
-                <div class="control-group first">
-                  <label class="form__label" for="MonthlyElectricBill">Average Monthly Electric Bill<i class="tooltip icon ion-help-circled" title="Please select the range that best represents how much you pay for electric each month."></i></label>
-                  <select class="form__input" id="MonthlyElectricBill" data-name="MonthlyElectricBill" data-label="Select $ Amount"></select>
-                </div>
-                <div class="control-group">
-                  <label class="form__label" for="ElectricityProvider">Electric Provider</label>
-                  <select class="form__input" id="ElectricityProvider" data-name="ElectricityProvider" data-label="Select Your Provider"></select>
-                </div>
-                <div class="control-group">
-                  <label class="form__label" for="SunExposure">Roof Sun Exposure<i class="tooltip icon ion-help-circled" title="Please indicate how much sunshine the roof of your home receives."></i></label>
-                  <select class="form__input" id="SunExposure" data-name="SunExposure" value="Full Sun"></select>
-                </div>
-                  <input type="hidden" data-name="PropertyType" value="Single Family Home" />
-                  <input type="hidden" data-name="RoofDesign" value="Gable" />
-                  <input type="hidden" data-name="RoofType" value="Asphalt Shingle" />
-                  <input type="hidden" data-name="Id" value="1" />
-                  <input type="hidden" data-name="Address" />
-                  <input type="hidden" data-name="City" />
-                  <input type="hidden" data-name="State" />
-                  <input type="hidden" data-name="ZipCode" />
-              </fieldset>
-          </fieldset>
-          <div class="pagenav onePageHide">
-            <button class="form__btn" data-form-action-type="next">Calculate Savings</button>
-          </div>
         </fieldset>
-      </fieldset>
-<!-- End Calculate Savings -->
-<!-- Start Contact Info -->
-      <fieldset data-transition-type="fade" class="section ready tabletMax" data-page=2 data-page-title="/solar/info/2">
-        <h2>Solar can save you up to $1,500 per year.</h2>
-        <p>How can we get in touch with your savings? Your information is secure.</p>
-<!-- Start Contact Info -->
-        <p class="btn-link back onePageHide" data-form-action-type="back">« Go Back</p>
-        <fieldset data-name="ContactInfo">
-          <div class="control-group first">
-            <label class="form__label" for="first-name">First Name</label>
-            <input class="form__input" data-name="FirstName" id="first-name" type="text" placeholder="Enter First Name">
-          </div>
-        </fieldset>
-        <fieldset data-name="ContactInfo">
-          <div class="control-group">
-            <label class="form__label" for="last-name">Last Name</label>
-            <input class="form__input" data-name="LastName" id="last-name" type="text" placeholder="Enter Last Name">
-          </div>
-        </fieldset>
-        <fieldset data-name="ContactInfo">
-          <div class="control-group">
-            <label class="form__label" for="email">Email Address</label>
-            <input class="form__input" data-name="Email" id="email" type="email" placeholder="Enter Email Address">
-          </div>
-        </fieldset>
-        <fieldset data-name="ContactInfo">
-          <div class="control-group">
-            <label class="form__label" for="phone">Phone Number<i class="tooltip icon ion-help-circled" title="Please enter your phone number including area code in this format: ###-###-####"></i></label>
-            <input class="form__input" data-name="Phone" id="phone" type="tel" placeholder="Enter Phone Number">
-          </div>
-        </fieldset>
-  <!-- End Contact Info -->
 
-  <!-- Start Hidden Fields -->
-        <fieldset data-name="ApplicantInfo">
-          <fieldset data-name="Credit">
-            <input type="hidden" data-name="SelfRating" value="Average">
-            <input type="hidden" data-name="Repossessions" value="false">
-            <input type="hidden" data-name="Bankruptcy" value="false">
-          </fieldset>
+        <fieldset data-transition-type="fade" class="section ready" data-page=2 data-page-title="/solar/3">
+          <div class="flex-wrapper">
+            <div class="title">
+                <h1>You qualify!</h1>
+                <h4>How much can you save?</h4>
+            </div>
+            <div class="questions">
+              <fieldset data-name="Request">
+                  <fieldset data-name="Solar">
+                      <fieldset data-name="Properties" data-index="0" data-repeatable="1">
+                          <div class="field control-group first">
+                              <label class="form__label" for="MonthlyElectricBill">Average Monthly Electric Bill</label>
+                              <div class="select">
+                                  <select class="form__input" id="MonthlyElectricBill" data-name="MonthlyElectricBill"></select>
+                                  <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                                      <path d="M0-.75h24v24H0z" fill="none" />
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="field control-group">
+                              <label class="form__label" for="ElectricityProvider">Electric Provider</label>
+                                <div class="select">
+                              <select class="form__input" id="ElectricityProvider" data-name="ElectricityProvider" data-label="Select Your Provider"></select>
+                              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                  <path d="M0-.75h24v24H0z" fill="none"/>
+                              </svg>
+                            </div>
+                             </div>
+                          <div class="field control-group">
+                              <label class="form__label" for="SunExposure">Roof Sun Exposure</label>
+                              <div class="select">
+                                  <select class="form__input" id="SunExposure" data-name="SunExposure" value="Full Sun"></select>
+                                  <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                                      <path d="M0-.75h24v24H0z" fill="none" />
+                                  </svg>
+                              </div>
+                          </div>
+                          <input type="hidden" data-name="PropertyType" value="Single Family Home" />
+                          <input type="hidden" data-name="RoofDesign" value="Gable" />
+                          <input type="hidden" data-name="RoofType" value="Asphalt Shingle" />
+                          <input type="hidden" data-name="Id" value="1" />
+                          <input type="hidden" data-name="Address" />
+                          <input type="hidden" data-name="City" />
+                          <input type="hidden" data-name="State" />
+                          <input type="hidden" data-name="ZipCode" />
+                      </fieldset>
+                  </fieldset>
+                  <div class="pagenav onePageHide">
+                      <button class="form__btn" data-form-action-type="next">Continue &raquo;</button>
+                      <button class="btn-link back secondary" data-form-action-type="back">« Go Back</button>
+                  </div>
+              </fieldset>
+            </div>
+          </div>
         </fieldset>
-  <!-- End Hidden Fields -->
-        <fieldset data-name="LeadInfo">
-          <label class="tcpaLabel"><input type="hidden" id="leadid_tcpa_disclosure" data-name="TCPALegal" value="By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms of Service</a>."/>By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms of Service</a>.
-          </label>
-          <button class="form__btn" data-form-action-type="post">Go Solar!</button>
-          <input data-name="UniversalLeadiD" data-skip-validation="1" id="leadid_token" name="universal_leadid" type="hidden" value="">
-          <input data-name="CEEPageId" data-skip-validation="1" name="___pageid___" type="hidden" value="">
+        <!-- End Calculate Savings -->
+
+        <!-- Start Contact Info -->
+        <fieldset data-transition-type="fade" class="section ready" data-page=3 data-page-title="/solar/4">
+            <div class="flex-wrapper">
+              <div class="title">
+                  <h1>Save up to $1,500 a year</h1>
+                  <h4>Please verify your information</h4>
+              </div>
+              <div class="questions">
+                <!-- Start Contact Info -->
+                <fieldset data-name="ContactInfo">
+                    <div class="field control-group first">
+                        <label class="form__label" for="first-name">First Name</label>
+                        <input class="form__input" data-name="FirstName" id="first-name" type="text" placeholder="First Name">
+                    </div>
+                </fieldset>
+                <fieldset data-name="ContactInfo">
+                    <div class="field control-group">
+                        <label class="form__label" for="last-name">Last Name</label>
+                        <input class="form__input" data-name="LastName" id="last-name" type="text" placeholder="Last Name">
+                    </div>
+                </fieldset>
+                <fieldset data-name="ContactInfo">
+                    <div class="field control-group">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" data-name="Email" id="email" type="email" placeholder="youraddress@email.com">
+                    </div>
+                </fieldset>
+                <fieldset data-name="ContactInfo">
+                    <div class="field control-group">
+                        <label class="form__label" for="phone">Phone</label>
+                        <input class="form__input" data-name="Phone" id="phone" type="tel" placeholder="123-456-7890">
+                    </div>
+                </fieldset>
+                <!-- End Contact Info -->
+
+                <!-- Start Hidden Fields -->
+                <fieldset data-name="ApplicantInfo">
+                    <fieldset data-name="Credit">
+                        <input type="hidden" data-name="SelfRating" value="Average">
+                        <input type="hidden" data-name="Repossessions" value="false">
+                        <input type="hidden" data-name="Bankruptcy" value="false">
+                    </fieldset>
+                </fieldset>
+                <!-- End Hidden Fields -->
+                <fieldset data-name="LeadInfo">
+                    <button class="form__btn" data-form-action-type="post">Submit</button>
+                    <button class="btn-link back onePageHide secondary" data-form-action-type="back">« Go Back</button>
+                    <label class="tcpaLabel">
+                        <input type="hidden" id="leadid_tcpa_disclosure" data-name="TCPALegal" value="By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms of Service</a>."
+                        />By submitting my information, I understand that I may be matched with one or more companies providing energy-related products or services, or with companies serving as their agents. I agree to receive calls about energy-related products
+                        and services (which may be auto-dialed, use artificial or pre-recorded voices, and/or be text messages) from <a href='/energy-companies/' target='_blank'>these companies</a> and their agents to the number I've provided, even if
+                        my phone number is listed on one or more national or state &quot;Do Not Call&quot; lists. I understand that my consent to receive calls is not required in order to purchase any property, goods or services. In addition, by submitting
+                        my information, I confirm that I understand and agree to CutMyElectricBill.com’s <a href='/privacy/' target='_blank'>Privacy Policy</a> and <a href='/terms/' target='_blank'>Terms &amp; Conditions</a>.
+                    </label>
+                    <input data-name="UniversalLeadiD" data-skip-validation="1" id="leadid_token" name="universal_leadid" type="hidden" value="">
+                    <input data-name="CEEPageId" data-skip-validation="1" name="___pageid___" type="hidden" value="">
+
+                </fieldset>
+              </div>
+          </div>
         </fieldset>
-      </fieldset>
-  </form>
+    </form>
 </div>
 
 
