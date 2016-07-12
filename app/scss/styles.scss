@@ -8,14 +8,17 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "layout/grid";
-@import "layout/general";
+@import "layout/structure";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/forms";
 
 @import "components/shortIcon";
+@import "components/propertyType";
 @import "components/buttons";
+@import "components/creditSlider";
+@import "components/slider";
+@import "components/input";
+@import "components/tcpa";
 
 // Import Pages Here
 

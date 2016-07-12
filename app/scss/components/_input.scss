@@ -1,0 +1,76 @@
+// name: 'input',
+// template: '<label class="{{to.labelClass}}" for="{{id}}" ng-if="to.label">{{to.label}}</label>' +
+//   '<div class="input"><input type="{{to.type || \'text\'}}" ng-model="model[options.key]" maxlength="{{to.maxlength || 64}}" ng-required="required" autocomplete="off"></div>',
+// wrapper: 'base'
+$max-width: 40rem;
+$error: rgb(214, 91, 89);
+$error-bg: rgb(255, 247, 247);
+
+@include container($street-address-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($zip-code-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($city-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($state-select, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($first-name-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($last-name-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($email-input, column, column) {
+  @extend %inputLabel;
+}
+
+@include container($phone-input, column, column) {
+  @extend %inputLabel;
+}
+
+div.input {
+  input[type=text],
+  input[type=number],
+  input[type=tel] {
+    @include convertRem(height, 36px);
+
+    line-height: 2;
+    font-size: 1.25rem;
+    &.ng-dirty {
+      border-color: $error;
+      background-color: $error-bg;
+    }
+  }
+}
+
+div.select {
+  select {
+    @include convertRem(height, 36px);
+    line-height: 5;
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+
+  &:after {
+    position: absolute;
+    content: "\f3d0";
+    font-family: ionicons;
+    color: rgba(128, 128, 128, 0.666);
+    height: 20px;
+    width: 20px;
+    top: 12px;
+    right: 25px;
+    font-size: 1.5em;
+    z-index: 0;
+  }
+}

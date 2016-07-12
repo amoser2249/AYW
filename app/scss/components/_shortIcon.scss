@@ -1,4 +1,4 @@
-label.radioImages {
+label.radio-label {
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -7,16 +7,17 @@ label.radioImages {
   color: #444;
   display: initial;
 
-  @include breakpoint(780) {
+  @include breakpoint(768) {
     font-size: 1.5rem;
   }
+
 
   input {
     display: none;
 
     &:checked + .overlay,
     + .overlay:hover {
-      box-shadow: 0 14px 21px -7px rgba(0, 0, 0, .3);
+      box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
       color: #ffffff;
     }
 
@@ -29,55 +30,133 @@ label.radioImages {
       opacity: 1;
       width: 100%;
       max-width: 40rem;
+
       @include transition(all 300ms);
+
       @include border-radius(5px);
-      @include breakpoint(780) {
+
+      @include breakpoint(768) {
         height: 13rem;
-      }
-    }
-
-    &#Refinance {
-      + .overlay {
-        @include radioImage('house-icon-refi-dark', 100px);
-        background-position: center 2.25rem;
-
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
-      }
-
-      &:checked + .overlay,
-      + .overlay:hover {
-        @include radioImage('house-icon-refi-white', 100px);
-        background-position: center 2.25em;
-        background-color: $accent;
-
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
       }
     }
 
     &#NewMortgage {
       + .overlay {
-        @include radioImage('house-icon-forsale-dark', 100px);
+        @include radioImage("house-icon-forsale-dark", 100px);
+
         background-position: center 2.25em;
 
-        @include breakpoint(780){
+        @include breakpoint(768) {
           @include background-size(82.5%);
         }
       }
 
       &:checked + .overlay,
       + .overlay:hover {
-        @include radioImage('house-icon-forsale-white', 100px);
+        @include radioImage("house-icon-forsale-white", 100px);
+
         background-position: center 2.25em;
         background-color: $accent;
 
-        @include breakpoint(780){
+        @include breakpoint(768) {
           @include background-size(82.5%);
         }
       }
+    }
+  }
+}
+
+// label#Refinance {
+//        .overlay {
+//         @include radioImage('house-icon-refi-dark', 100px);
+//         background-position: center 2.25rem;
+
+//         @include breakpoint(768){
+//           @include background-size(82.5%);
+//         }
+//       }
+
+//       input:checked + .overlay,
+//       + .overlay:hover {
+//         @include radioImage('house-icon-refi-white', 100px);
+//         background-position: center 2.25em;
+//         background-color: $accent;
+
+//         @include breakpoint(768){
+//           @include background-size(82.5%);
+//         }
+//       }
+//     }
+
+#Refinance, #NewPurchase {
+  border: 2px solid $accent;
+  background-color: $accent;
+
+  @include border-radius(5px);
+}
+
+label.radio-label {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .75rem;
+  flex: 1 1 auto;
+  @include transition(all 300ms);
+}
+
+#Refinance, #NewPurchase {
+  padding: .5rem;
+  flex: 1;
+  @include breakpoint(768) {
+    padding: 1rem;
+  }
+  .overlay {
+    order: -1;
+    font-weight: 600;
+    font-size: 1.5rem;
+    @include breakpoint(768) {
+      font-size: 1.75rem;
+    }
+  }
+  .radio-image {
+    margin-top: 1rem;
+    width: 100%;
+    flex: 1 1 75px;
+    height: auto;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include breakpoint(768) {
+      flex: 1 1 150px;
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+  }
+}
+
+#Refinance {
+  color: #fff;
+  box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
+
+  .radio-image {
+    background-image: url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-refi-white.png");
+  }
+}
+
+#NewPurchase {
+  background-color: #fff;
+  .radio-image {
+    background-image: url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-forsale-dark.png");
+  }
+
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+    box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
+    .radio-image {
+      background-image: url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-forsale-white.png");
     }
   }
 }

@@ -1,0 +1,9 @@
+    // name: 'select',
+    // template: '<label class="{{to.labelClass}}" for="{{id}}" ng-if="to.label">{{to.label}}</label>' +
+    //   '<div class="select">' +
+    //   '<select ng-model="model[options.key]" ng-required="required" >' +
+    //   '<option value disabled ng-if="to.blankOptionText || to.placeholder">{{to.blankOptionText || to.placeholder}}</option>' +
+    //   '<option ng-repeat="option in to.options" value="{{option[to.valueProp || \'value\']}}" ng-selected="{{option[to.valueProp || \'value\'] === model[options.key]}}">{{option[to.labelProp || \'name\']}}</option>' +
+    //   '</select>' +
+    //   '</div>',
+    // wrapper: 'base'

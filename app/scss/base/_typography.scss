@@ -6,6 +6,24 @@
 }
 
 .form-prompt {
-  font-size: 1.75rem;
-  margin: 0 auto;
+  font-size: 1.365rem;
+  margin: 0 auto 1.5rem;
+}
+
+.page[data-page='/lander'] {
+  .form-prompt {
+    font-size: 1.625rem;
+    margin-bottom: 0;
+    @include breakpoint(768) {
+      font-size: 2rem;
+    }
+  }
+  .btn.next {
+    font-weight: 600;
+    width: 400px;
+  }
+}
+
+.formly-field-TCPA {
+  font-size: .75rem;
 }

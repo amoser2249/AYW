@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 		.pipe($.sourcemaps.init())
 		.pipe($.sass(config.sass.options))
 		.pipe($.autoprefixer({
-			browsers: ['ie 8-9', 'last 2 versions']
+			browsers: ['ie 10-11', 'last 2 versions']
 		}))
 		.pipe(gulp.dest(config.sass.dest))
 		.pipe($.sourcemaps.write())

@@ -1,0 +1,7 @@
+    // name: 'radio',
+    // template: '<label class="{{to.labelClass}}" ng-if="to.label">{{to.label}}</label>' +
+    //   '<label class="radio-label" ng-repeat="(key, option) in options.templateOptions.options">' +
+    //   '<input type="radio" id="{{id + "_"+ $index}}" value="{{option[to.valueProp || \'value\']}}" ng-selected="{{option[to.valueProp || \'value\'] === model[options.key]}}" ng-model="model[options.key]">' +
+    //   '<span class="overlay">{{option.name}}</span>' +
+    //   '</label>',
+    // wrapper: 'base'

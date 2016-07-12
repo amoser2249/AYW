@@ -1,13 +1,14 @@
+$footer-text: #777777;
+
 footer {
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   font-size: .865rem;
   padding: 1rem;
-  color: #ABABAB;
   font-weight: 300;
-
-  @include breakpoint(780) {
+  color: $footer-text;
+  @include breakpoint(768) {
     font-size: .75rem;
   }
 }
@@ -21,12 +22,14 @@ nav, .main-nav {
   align-items: center;
   flex-direction: column;
   line-height: 2;
+  padding: 0;
 
-  @include breakpoint(780) {
+  @include breakpoint(768) {
     flex-direction: row;
     justify-content: space-between;
   }
 }
+
 
 ul {
   padding: 0;
@@ -39,12 +42,16 @@ ul {
 
     a {
       text-decoration: none;
+      font-weight: 400;
       color: inherit;
+      @include transition(all 3s);
 
       &:hover {
+        color: darken($footer-text, 25%);
         cursor: pointer;
-        color: darken(#ABABAB, 20%);
+        text-decoration: none;
       }
     }
   }
 }
+

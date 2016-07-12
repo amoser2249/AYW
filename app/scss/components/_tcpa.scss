@@ -1,0 +1,15 @@
+// template: '<label ng-bind-html="options.defaultValue | unsafe"><input type="hidden" id="leadid_tcpa_disclosure" data-name="TCPALegal" ng-model="model[options.key]"></label>'
+.formly-field-TCPA, .formly-field-Button + .formly-field-inject label {
+  color: #999;
+  font-size: .75rem;
+  margin: .75rem auto;
+  display: block;
+  @include breakpoint(768) {
+    max-width: 75%;
+  }
+}
+
+.formly-field-Button + .formly-field-inject img {
+  width: 75%;
+  max-width: 400px;
+}

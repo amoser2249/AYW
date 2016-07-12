@@ -1,0 +1,10 @@
+    // name: 'slider',
+    // template: '<div ng-if="to.displayLocation == \'top\'" class="rangeValueWrapper" ng-bind="{{\'model.\' + options.key}}|formatNumber:to.displayType:to.min:to.max"></div>' +
+    //   '<input type="range" ng-model="model[options.key]" min="{{to.min}}" max="{{to.max}}" step="{{to.step}}" />' +
+    //   '<div ng-if="to.displayLocation != \'top\'" class="rangeValueWrapper" ng-bind="{{\'model.\' + options.key}}|formatNumber:to.displayType:to.min:to.max"></div>',
+    // wrapper: 'base'
+
+div.rangeValueWrapper {
+  font-size: 1.5rem;
+  margin: 1rem;
+}

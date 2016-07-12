@@ -11,16 +11,16 @@
       display: block;
       height: 3rem;
       width: 8rem;
-      background: url('//dn3nmb5yt1ysw.cloudfront.net/images/logos/get-my-refinance-logo-black.png');
+      background: url("//dn3nmb5yt1ysw.cloudfront.net/images/logos/get-my-refinance-logo-black.png");
       background-repeat: no-repeat;
       background-size: contain;
       opacity: .6;
       margin: 0 auto;
       text-indent: -19999px;
 
-      @include transition(all .25s);
+      @include transition(all 0.25s);
 
-      @include breakpoint(780) {
+      @include breakpoint(768) {
         height: 4rem;
         width: 10rem;
       }
