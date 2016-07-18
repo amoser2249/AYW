@@ -4,7 +4,7 @@
   label.radio-label {
     flex: 1 1 150px;
     padding: 0;
-    &:hover .radio-image {
+    &:hover .radio-image, input:checked + .radio-image {
       background-size: contain;
     }
   }
@@ -28,7 +28,11 @@
 
 #SingleFamilyHome {
   .radio-image {
-    background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-color.jpg") no-repeat center;
+    background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-bw.jpg") no-repeat center;
+  }
+  
+  &:hover .radio-image, input:checked + .radio-image {
+	background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-color.jpg") no-repeat center;
   }
 }
 
@@ -37,7 +41,7 @@
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/multi-bw.jpg") no-repeat center;
   }
 
-  &:hover .radio-image {
+  &:hover .radio-image, input:checked + .radio-image {
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/multi-color.jpg") no-repeat center;
   }
 }
@@ -47,7 +51,7 @@
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/condo-bw.jpg") no-repeat center;
   }
 
-  &:hover .radio-image {
+  &:hover .radio-image, input:checked + .radio-image {
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/condo-color.jpg") no-repeat center;
   }
 }
@@ -57,7 +61,7 @@
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/mobile-bw.jpg") no-repeat center;
   }
 
-  &:hover .radio-image {
+  &:hover .radio-image, input:checked + .radio-image {
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/mobile-color.jpg") no-repeat center;
   }
 }

@@ -70,24 +70,7 @@ html {
   content: none;
 }
 
-// $loan-type-wrapper: 'LeadLeadInfoDemographics0Value';
-
-// @mixin container($id, $direction) {
-//   ##{$id} {
-//     @extend %flex;
-//     flex-direction: $direction;
-//   }
-//   }
-
-// %flex {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 3rem auto;
-//   max-width: 60rem;
-
-// }
-
-$loan-type-wrapper: "LeadLeadInfoDemographics0Value";
+$loan-type-wrapper: "LeadLeadInfoDemographics0";
 $property-type-wrapper: "LeadRequestHomeRefinanceProperties0PropertyType";
 $credit-rating-wrapper: "LeadApplicantInfoCreditSelfRating";
 $property-value-wrapper: "LeadRequestHomeRefinanceProperties0PropertyValue";
@@ -101,8 +84,6 @@ $first-name-input: "LeadContactInfoFirstName";
 $last-name-input: "LeadContactInfoLastName";
 $email-input: "LeadContactInfoEmail";
 $phone-input: "LeadContactInfoPhone";
-
-
 
 $max-width: 60rem !default;
 
@@ -136,7 +117,7 @@ $max-width: 60rem !default;
 
 @include container($loan-type-wrapper, column, row) {
   .form-prompt {
-  font-size: 20rem;
+    font-size: 20rem;
   }
 };
 

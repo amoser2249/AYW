@@ -28,6 +28,11 @@
     @include breakpoint(768) {
       width: auto;
     }
+    .page[data-page='/lander'] & {
+      width: 100%;
+      max-width: 400px;
+      font-weight: 600;
+    }
   }
   &.back {
     background: #fff;
