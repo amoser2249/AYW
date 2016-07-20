@@ -1,0 +1,1622 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [],
+    "entries": [
+      {
+        "startedDateTime": "2016-07-20T15:25:42.452Z",
+        "time": 33.37700000156474,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:25:39 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576d51fba6213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2585,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 771
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.87100000039209,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.18099999942932987,
+          "wait": 30.78500000083298,
+          "receive": 0.5400000009103394,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:25:52.453Z",
+        "time": 28.57199999925797,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:25:49 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576d9071b0213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2585,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 771
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.59800000074029,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.16799999866634008,
+          "wait": 25.85499999986497,
+          "receive": 0.9509999999863687,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:02.452Z",
+        "time": 27.726000000257045,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:25:59 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576dcef768213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2585,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 802
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.95499999972526,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.18300000010639983,
+          "wait": 25.10400000028314,
+          "receive": 0.4840000001422453,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:02.485Z",
+        "time": 10.178000000450993,
+        "request": {
+          "method": "GET",
+          "url": "https://ugc.pokevision.com/images/pokemon/16.png",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/images/pokemon/16.png"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "ugc.pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:25:59 GMT"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "HIT"
+            },
+            {
+              "name": "last-modified",
+              "value": "Wed, 20 Jul 2016 03:38:17 GMT"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-amz-request-id",
+              "value": "9D6AFF82FCD485DE"
+            },
+            {
+              "name": "etag",
+              "value": "\"de72fd7ae45eac4d50a96e99e85f4833\""
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "public, max-age=14400"
+            },
+            {
+              "name": "accept-ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576dcf276c213e-EWR"
+            },
+            {
+              "name": "content-length",
+              "value": "1624"
+            },
+            {
+              "name": "x-amz-id-2",
+              "value": "CwtmRfbuOeFiClB6ldaMBxC9rnBd1U4A8fNP7qGbRL1EySLNoDOuD4R1GT41NIP9DYfGUiO8QHU="
+            },
+            {
+              "name": "expires",
+              "value": "Wed, 20 Jul 2016 19:25:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1624,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 2008
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.71000000045751,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.13199999921199002,
+          "wait": 6.03000000046449,
+          "receive": 2.3060000003170034,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:12.452Z",
+        "time": 33.22900000057416,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:09 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576e0d7dac213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2415,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 738
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.17400000110501,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.2549999990151304,
+          "wait": 30.26099999988216,
+          "receive": 0.5390000005718605,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:22.453Z",
+        "time": 34.17000000081316,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:19 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576e4bf418213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2415,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 738
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.74300000071526,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.16200000027311012,
+          "wait": 31.566999999995428,
+          "receive": 0.6979999998293636,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:32.452Z",
+        "time": 80.42999999997846,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:29 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576e8a7a71213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2245,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 728
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.64799999947718,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.18700000146055018,
+          "wait": 78.03999999850927,
+          "receive": 0.5550000005314644,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:42.456Z",
+        "time": 31.519000000116648,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:39 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576ec8f0ad213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2245,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 713
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.03399999918474,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.19500000053086008,
+          "wait": 28.421999999409298,
+          "receive": 0.8680000009917492,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:26:52.454Z",
+        "time": 34.21100000014121,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:49 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576f077773213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2245,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 713
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.96499999947264,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.2710000007937201,
+          "wait": 31.01699999933774,
+          "receive": 0.9580000005371119,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      },
+      {
+        "startedDateTime": "2016-07-20T15:27:02.453Z",
+        "time": 29.139000000213855,
+        "request": {
+          "method": "GET",
+          "url": "https://pokevision.com/map/data/39.94935861566368/-75.18656730651855",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/map/data/39.94935861566368/-75.18656730651855"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pokevision.com"
+            },
+            {
+              "name": "cookie",
+              "value": "__cfduid=db93e42092b28e859f3849a2ff0efcf671469026522; app-session=4jvlhqr7tpvg6786u6qvvep8p7; gsScrollPos=; _ga=GA1.2.1875601574.1469026542"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "referer",
+              "value": "https://pokevision.com/"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__cfduid",
+              "value": "db93e42092b28e859f3849a2ff0efcf671469026522",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "app-session",
+              "value": "4jvlhqr7tpvg6786u6qvvep8p7",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "gsScrollPos",
+              "value": "",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1875601574.1469026542",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 20 Jul 2016 15:26:59 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare-nginx"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "PHP/5.5.9-1ubuntu4.16"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "cf-ray",
+              "value": "2c576f45fda3213e-EWR"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 883,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 488
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.97699999989709,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.23299999884330025,
+          "wait": 26.40900000005781,
+          "receive": 0.5200000014156565,
+          "ssl": -1
+        },
+        "serverIPAddress": "104.18.60.208",
+        "connection": "1935"
+      }
+    ]
+  }
+}
