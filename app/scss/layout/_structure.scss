@@ -70,7 +70,7 @@ html {
   content: none;
 }
 
-$loan-type-wrapper: "LeadLeadInfoDemographics0";
+$loan-type-wrapper: "LeadLeadInfoDemographics0Value";
 $property-type-wrapper: "LeadRequestHomeRefinanceProperties0PropertyType";
 $credit-rating-wrapper: "LeadApplicantInfoCreditSelfRating";
 $property-value-wrapper: "LeadRequestHomeRefinanceProperties0PropertyValue";
@@ -80,8 +80,8 @@ $street-address-input: "LeadContactInfoAddress";
 $zip-code-input: "LeadContactInfoZipCode";
 $city-input: "LeadContactInfoCity";
 $state-select: "LeadContactInfoState";
-$first-name-input: "LeadContactInfoFirstName";
-$last-name-input: "LeadContactInfoLastName";
+$first-name-input: "LeadPersons0FirstName";
+$last-name-input: "LeadPersons0LastName";
 $email-input: "LeadContactInfoEmail";
 $phone-input: "LeadContactInfoPhone";
 

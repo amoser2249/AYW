@@ -1,0 +1,26 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+  <div class="refi-form">
+    <div class="refi-form__slider">
+      <p class="form-prompt">What is your loan type?</p>
+      <div id="LeadLeadInfoDemographics0" class="field control-group success" >
+        <label class="radio-label ng-scope" id="Refinance" >
+          <div class="radio-image">
+          </div>
+          <span class="overlay ng-binding">Refinance</span>
+        </label>
+        <label class="radio-label ng-scope" id="NewPurchase">
+          <input type="radio" id="formly_1_radio_Lead.LeadInfo.Demographics[0]_1_1">
+          <div class="radio-image">
+          </div>
+          <span class="overlay ng-binding">New Purchase</span>
+        </label>
+      </div>
+      <div formly-field="" ng-repeat="field in fields " ng-if="!field.hide" class="formly-field ng-scope ng-isolate-scope formly-field-Button" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_2" form-state="options.formState" form-options="options" index="$index">
+        <div class="ng-scope">
+          <button type="" class="btn next" ng-click="onClick($event)">Start »</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

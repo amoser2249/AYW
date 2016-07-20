@@ -21,6 +21,10 @@ footer {
   padding-top: .5rem;
   max-width: 75rem;
   margin: 0 auto;
+  text-align: center;
+  @include breakpoint(768) {
+    text-align: left;
+  }
 }
 nav {
   margin: 0 auto;
@@ -61,5 +65,3 @@ nav, .main-nav {
     justify-content: space-between;
   }
 }
-
-

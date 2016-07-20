@@ -2,8 +2,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   label.radio-label {
-    flex: 1 1 150px;
+    flex: 1 1 100px;
     padding: 0;
+    margin: 0 .65rem .65rem;
+    @include breakpoint(768) {
+      margin: 1rem;
+    }
     &:hover .radio-image, input:checked + .radio-image {
       background-size: contain;
     }
@@ -17,7 +21,7 @@
   }
 
   div.radio-image {
-    min-height: 125px;
+    min-height: 100px;
     background-size: contain;
     @include transition(all .25s);
     @include breakpoint(768) {
@@ -30,9 +34,9 @@
   .radio-image {
     background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-bw.jpg") no-repeat center;
   }
-  
+
   &:hover .radio-image, input:checked + .radio-image {
-	background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-color.jpg") no-repeat center;
+  background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/primary-color.jpg") no-repeat center;
   }
 }
 
