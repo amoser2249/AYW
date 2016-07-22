@@ -23,5 +23,4 @@ $(document).ready(function() {
   friendsData.forEach(function(name, index) {
     console.log(friendsData[index].name);
   });
-
 });
