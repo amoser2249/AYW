@@ -18,7 +18,8 @@ label.radio-label {
 }
 
 #Refinance, #NewPurchase {
-  flex: 1 1 0%;
+  -webkit-flex: 1;
+  flex: 1 1 0px;
   border: 2px solid $accent;
   background-color: #fff;
   background-clip: border-box;

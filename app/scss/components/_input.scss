@@ -44,7 +44,7 @@ div.input {
   input[type=email],
   input[type=tel] {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    line-height: 2;
+    height: 35px;
     font-size: 1.25rem;
     @include convertRem(height, 36px);
     @include border-radius(.2px);
@@ -57,10 +57,18 @@ div.input {
 div.select {
   select {
     font-size: 1.25rem;
-    line-height: 2;
+    height: 35px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     @include border-radius(.2px);
     @include convertRem(height, 36px);
+
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus::-ms-value {
+      background-color: transparent;
+      color: rgba(0, 0, 0, .666);
+    }
 
     .control-group.error & {
       border-color: $error;
@@ -75,8 +83,8 @@ div.select {
     color: rgba(128, 128, 128, 0.666);
     height: 20px;
     width: 20px;
-    top: 12px;
-    right: 25px;
+    top: calc(100% - 25px);
+    right: 1%;
     font-size: 1.5em;
     z-index: 0;
   }
