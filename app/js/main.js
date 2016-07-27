@@ -23,6 +23,7 @@ $(document).ready(function() {
   friendsData.forEach(function(name, index) {
     console.log(friendsData[index].name);
   });
+<<<<<<< HEAD
   var pokemon = [{
   'id': '4140715',
   'data': '[]',
@@ -916,4 +917,6 @@ $(document).ready(function() {
   pokemon.forEach(function(name, index) {
     console.log(pokemon[index].name);
   });
+=======
+>>>>>>> 50bc387148e792a8f6df13638dffd9b82c388932
 });
