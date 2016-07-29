@@ -1,83 +1,100 @@
-label.radioImages {
+label.radio-label {
+  margin: 1rem;
+  display: flex;
   cursor: pointer;
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #444;
-  display: initial;
+  color: #111;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
 
-  @include breakpoint(780) {
+  @include transition(all 300ms);
+
+  @include breakpoint(768) {
     font-size: 1.5rem;
   }
-
-  input {
+  input[type=radio] {
     display: none;
+  }
+}
 
-    &:checked + .overlay,
-    + .overlay:hover {
-      box-shadow: 0 14px 21px -7px rgba(0, 0, 0, .3);
-      color: #ffffff;
+#Refinance, #NewPurchase {
+  -webkit-flex: 1;
+  flex: 1 1 0px;
+  border: 2px solid $accent;
+  background-color: #fff;
+  background-clip: border-box;
+  min-height: 10rem;
+  @include border-radius(5px);
+
+  .overlay {
+    order: -1;
+    display: block;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+    z-index: 1;
+
+    @include breakpoint(768) {
+      font-size: 1.75rem;
     }
+  }
 
-    & + .overlay {
-      border: 2px solid $accent;
-      color: #444444;
-      height: 8rem;
-      line-height: 2;
-      margin: .5em auto;
-      opacity: 1;
-      width: 100%;
-      max-width: 40rem;
-      @include transition(all 300ms);
-      @include border-radius(5px);
-      @include breakpoint(780) {
-        height: 13rem;
-      }
+  .radio-image {
+    width: 100%;
+    flex: 1 1 75px;
+    height: auto;
+    display: block;
+    border-bottom: 1rem solid transparent;
+
+    @include breakpoint(768) {
+      flex: 1 1 150px;
     }
+  }
+}
 
-    &#Refinance {
-      + .overlay {
-        @include radioImage('house-icon-refi-dark', 100px);
-        background-position: center 2.25rem;
+#Refinance {
+  .radio-image {
+    background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-refi-dark.png") no-repeat center;
+    background-size: contain;
+  }
 
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
-      }
+  &:hover .radio-image, input:checked + .radio-image {
+    background: $accent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-refi-white.png") no-repeat center;
+    background-size: contain;
+    border-color: $accent;
+    box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
 
-      &:checked + .overlay,
-      + .overlay:hover {
-        @include radioImage('house-icon-refi-white', 100px);
-        background-position: center 2.25em;
-        background-color: $accent;
+    @include transition(box-shadow 200ms);
+  }
 
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
-      }
-    }
+  &:hover .overlay, input:checked ~ .overlay {
+    color: #fff;
+    background-color: $accent;
 
-    &#NewMortgage {
-      + .overlay {
-        @include radioImage('house-icon-forsale-dark', 100px);
-        background-position: center 2.25em;
+    @include transition(color 200ms);
+  }
+}
 
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
-      }
+#NewPurchase {
+  .radio-image {
+    background: transparent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-forsale-dark.png") no-repeat center;
+    background-size: contain;
+  }
 
-      &:checked + .overlay,
-      + .overlay:hover {
-        @include radioImage('house-icon-forsale-white', 100px);
-        background-position: center 2.25em;
-        background-color: $accent;
+  &:hover .radio-image, input:checked + .radio-image {
+    background: $accent url("//dn3nmb5yt1ysw.cloudfront.net/images/common/house-icon-forsale-white.png") no-repeat center;
+    background-size: contain;
+    border-color: $accent;
+    box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
 
-        @include breakpoint(780){
-          @include background-size(82.5%);
-        }
-      }
-    }
+    @include transition(box-shadow 200ms);
+  }
+
+  &:hover .overlay, input:checked ~ .overlay {
+    color: #fff;
+    background-color: $accent;
+
+    @include transition(color 200ms);
   }
 }

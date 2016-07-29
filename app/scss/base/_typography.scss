@@ -1,11 +1,83 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400, 500, 600,700";
 
+$headline-default: rgba(0, 0, 0, 0.666);
+$headline-accent: #24b6fe;
+
 .site-content {
   color: $primary-font-color;
+}
+form, address {
   text-align: center;
 }
 
+.content-one, .content-two, .content-three, .content-four, .content-five {
+  text-align: left;
+  max-width: 50rem;
+  margin: 0px auto;
+  img {
+    margin: 2rem auto;
+  }
+}
 .form-prompt {
-  font-size: 1.75rem;
-  margin: 0 auto;
+  font-size: 1.365rem;
+  margin: 0 auto 1.5rem;
+}
+
+.page[data-page='/lander'] {
+  .form-prompt {
+    font-size: 1.625rem;
+    margin-bottom: 0;
+    @include breakpoint(768) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.formly-field-TCPA {
+  font-size: .75rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: $headline-accent;
+  font-size: 2.33rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  @include breakpoint(768) {
+    font-size: 2.8rem;
+  }
+}
+
+h1, h2, h3, h4 {
+  width: 100%;
+  font-weight: 300;
+  line-height: 1.33em;
+}
+ h2, h3, h4 {
+  color: $headline-default;
+  text-align: left;
+ }
+
+h2 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin: 3% 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+ol {
+  padding-left: 1rem;
+  ~ p {
+    padding-left: 2rem;
+  }
+   ~ ul {
+    padding-left: 5rem;
+   }
 }

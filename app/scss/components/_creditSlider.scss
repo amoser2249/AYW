@@ -1,0 +1,48 @@
+@mixin crSlider($cr, $color) {
+  ##{$cr} {
+    @include transition(background-color 0.25s, font-weight 0.1s linear);
+    span {
+      background-color: lighten($color, 10%);
+    }
+    &:hover span, input:checked + div > span {
+      background-color: $color;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+#LeadApplicantInfoCreditSelfRating {
+  @include crSlider(Excellentbr740, #69a059);
+
+  @include crSlider(Goodbr650740, #71b956);
+
+  @include crSlider(Fairbr580650, #f18136);
+
+  @include crSlider(PoorbrBelow580, #cf4539);
+
+  @include breakpoint(768) {
+    label {
+      &:first-of-type span {
+        @include border-left-radius(100px);
+      }
+      &:last-of-type span {
+        @include border-right-radius(100px);
+      }
+    }
+  }
+  .buttonToggle {
+    flex: 1;
+
+    span {
+      font-size: 1.24rem;
+      color: #666;
+      flex: 1;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+

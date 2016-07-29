@@ -1,0 +1,14 @@
+.formly-field-TCPA, .formly-field-Button + .formly-field-inject label {
+  color: #999;
+  font-size: .75rem;
+  margin: .75rem auto;
+  display: block;
+  @include breakpoint(768) {
+    max-width: 75%;
+  }
+}
+
+.formly-field-Button + .formly-field-inject img {
+  width: 75%;
+  max-width: 400px;
+}

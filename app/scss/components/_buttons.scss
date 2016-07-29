@@ -1,54 +1,48 @@
-.form-nav {
-  margin: 2rem auto;
-  display: flex;
-  height: 8rem;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 25rem;
-  align-items: center;
-}
-
-.submit.next {
-  background-color: #2366cc;
-  border: #2366cc;
-  color: #fff;
-  font-weight: 600;
-  width: 100%;
-  font-size: 1.365rem;
-  line-height: 3rem;
-
-  &:hover {
-    @include box-shadow(0, 14px, 21px, -7px, rgba(0, 0, 0, 0.3));
-  }
-}
-
-.goBack {
-  color: $faded-grey;
-  font-size: 1rem;
-  background: #fff;
-  border: 1px solid $faded-grey;
-  line-height: 2.5rem;
-  width: 50%;
-
-  @include border-radius(2px);
-
-  &:hover {
-    color: $muted-red;
-    border-color: $muted-red;
-  }
-}
-
 .btn {
-  border-radius: 2px;
+  box-sizing: border-box;
+  font-weight: 300;
   outline: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 3.3rem;
+  background: #ff8901;
+  margin: 2.75rem auto 2rem;
+  width: 100%;
+  max-width: 40rem;
   display: block;
-  -webkit-appearance: none;
-  -webkit-font-smoothing: antialiased;
-
-  @include transition(all 0.25s);
+  @include border-radius(2px);
+  @include transition(box-shadow 0.25s, background 0.25s, transform 0.25s);
 
   &:hover {
-    cursor: pointer;
+    box-shadow: 0 14px 21px -7px rgba(0, 0, 0, 0.3);
+  }
+
+  &.next {
+    overflow: hidden;
+    background: $submit;
+    border: 0;
+    padding: .145rem 3rem;
+    margin-top: 2rem;
+    @include breakpoint(768) {
+      width: auto;
+    }
+    .page[data-page='/lander'] & {
+      width: 100%;
+      max-width: 400px;
+      font-weight: 600;
+    }
+  }
+  &.back {
+    background: #fff;
+    color: rgba(102, 102, 102, 0.666);
+    font-size: 1rem;
+    border: 1px solid;
+    line-height: 1rem;
+    padding: .5rem 1.5rem;
+    width: 105px;
+    margin-top: 1rem;
+    &:hover {
+      color: #d65b59;
+    }
   }
 }
