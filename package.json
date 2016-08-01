@@ -9,7 +9,9 @@
   "license": "ISC",
   "dependencies": {
     "fsevents": "^1.0.12",
-    "node-sass": "3.2.0"
+    "gulp-sass": "^2.3.2",
+    "node-sass": "3.2.0",
+    "node-sass-middleware": "^0.9.8"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
