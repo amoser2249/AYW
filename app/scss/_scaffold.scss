@@ -1,6 +1,7 @@
 // Libraries
 // ---------
 @import 'lib/googleWebfonts';
+@import 'lib/normalize';
 
 // Helpers
 // -------
@@ -16,10 +17,9 @@
 
 // Reset and base files
 // --------------------
-// @import 'base/reset';
+@import 'base/reset';
 // @import 'base/extends';
 // @import 'base/base';
 // @import 'base/typography';
-// @import 'normalize-scss/normalize';
 
 @import 'general', 'content';

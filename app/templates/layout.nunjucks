@@ -5,18 +5,37 @@
 		<meta charset="utf-8">
 		<title>Alex's AYW Hub</title>
 		{% include 'partials/favicons.nunjucks' %}
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet">
-		<!-- build:css css/styles.min.css -->
-		<link rel="stylesheet" href="css/styles.css">
-		<!-- endbuild -->
+			<!-- build:css css/styles.min.css -->
+			<link rel="stylesheet" href="css/styles.css">
+			<!-- endbuild -->
 		</head>
 		<body>
 			{% include 'partials/header.nunjucks' %}
-			{% block content %}
-			{% endblock %}
+			<div class="flex-wrapper">
+				<div class="side-bar">
+					<div class="logo">
+						<svg viewBox="0 0 398 398" xmlns="http://www.w3.org/2000/svg">
+							<g transform="translate(10 10)" stroke="#979797" fill="none" fill-rule="evenodd">
+								<path d="M308.798 171c3-39-27.892-66-66-66-21.81 0-41.254 9.135-53.9 24.093C176.256 114.135 156.81 105 135 105c-38.108 0-69 27-66 66v102h42V163.994c0-12.7 10.304-22.994 23-22.994h10c12.703 0 23 10.3 23 22.994v69.34L168 273h42.798V163.994c0-12.695 10.298-22.994 23-22.994h10c12.697 0 23 10.295 23 22.994V273h42V171z" stroke-width="10"/>
+								<circle stroke-width="15" cx="189" cy="189" r="189"/>
+							</g>
+						</svg>
+					</div> <!-- logo -->
+					<nav>
+						<ul>
+							<li><a href="#" title="">Typography</a></li>
+						</ul>
+					</nav>
+
+				</div> <!-- side-bar -->
+				<div class="main-content">
+					{% block content %}
+					{% endblock %}
+				</div> <!-- main-content -->
+			</div> <!-- flex-wrapper  -->
 			<!-- build:js js/main.min.js -->
 			<script src="bower_components/jquery/dist/jquery.min.js"></script>
 			<script src='js/main.js'></script>

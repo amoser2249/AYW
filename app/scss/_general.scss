@@ -1,128 +1,53 @@
-
-section.hero {
-  text-align: center;
-}
-
-p.control {
-  text-align: center;
-}
-
-// Base Colors
-$shade-10: #4FA4DD !default;
-$shade-1: #d7dcdf !default;
-$shade-0: #fff !default;
-$teal: #2FD1AF !default;
-
-.hero.is-info .box .title {
-  color: #666;
-}
-h3 {
-  color: $teal;
-}
-
 * {
-  &,
-  &:before,
-  &:after {
+  -webkit-font-smoothing: antialiased;
+  &, &:before, &:after {
     box-sizing: border-box;
   }
 }
-
-.range-slider {
-  margin: 2em auto;
+div.flex-wrapper {
+  display: flex;
+  height: 100vh;
 }
-
-
-// Range Slider
-$range-width: 100% !default;
-
-$range-handle-color: $shade-10 !default;
-$range-handle-color-hover: $teal !default;
-$range-handle-size: 15px !default;
-
-$range-track-color: $shade-1 !default;
-$range-track-height: 3px !default;
-
-$range-label-color: $teal !default;
-$range-label-width: 60px !default;
-
-.range-slider {
-  width: $range-width;
-  line-height: 1.365em;
-}
-
-.range-slider__range {
-  -webkit-appearance: none;
-  width: calc(100% - (#{$range-label-width + 13px}));
-  height: $range-track-height;
-  border-radius: 5px;
-  background: $range-track-color;
-  outline: none;
-  padding: 0;
-  margin: 1em auto;
-
-  // Range Handle
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: $range-handle-size;
-    height: $range-handle-size;
-    border-radius: 50%;
-    background: $range-handle-color;
-    cursor: pointer;
-    transition: background .15s ease-in-out;
-
-    &:hover {
-      background: $range-handle-color-hover;
+.side-bar {
+  padding: 50px 0px;
+  width: 30%;
+  background: rgba(0, 83, 119, 1);
+  background: -moz-linear-gradient(top, rgba(0, 83, 119, 1) 0%, rgba(27, 59, 76, 1) 66%, rgba(41, 47, 54, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 83, 119, 1)), color-stop(66%, rgba(27, 59, 76, 1)), color-stop(100%, rgba(41, 47, 54, 1)));
+  background: -webkit-linear-gradient(top, rgba(0, 83, 119, 1) 0%, rgba(27, 59, 76, 1) 66%, rgba(41, 47, 54, 1) 100%);
+  background: -o-linear-gradient(top, rgba(0, 83, 119, 1) 0%, rgba(27, 59, 76, 1) 66%, rgba(41, 47, 54, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 83, 119, 1) 0%, rgba(27, 59, 76, 1) 66%, rgba(41, 47, 54, 1) 100%);
+  background: linear-gradient(to bottom, rgba(0, 83, 119, 1) 0%, rgba(27, 59, 76, 1) 66%, rgba(41, 47, 54, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005377', endColorstr='#292f36', GradientType=0);
+  .logo {
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    g {
+      stroke: #FFFFFF;
     }
   }
-
-  &:active::-webkit-slider-thumb {
-    background: $range-handle-color-hover;
-  }
-
-  &::-moz-range-thumb {
-    width: $range-handle-size;
-    height: $range-handle-size;
-    border: 0;
-    border-radius: 50%;
-    background: $range-handle-color;
-    cursor: pointer;
-    transition: background .15s ease-in-out;
-
-    &:hover {
-      background: $range-handle-color-hover;
+  nav {
+    margin: 50px auto;
+    li {
+      width: 100%;
+      display: block;
+      a {
+        text-decoration: none;
+        color: #FFF;
+        font-family: 'Roboto';
+        font-size: 18px;
+        padding-left: 16px;
+        background-color: rgba(255,255,255, .12);
+        display: block;
+        line-height: 2.5;
+        font-weight: 500;
+        border-left: 5px solid #FFF;
+        letter-spacing: 1px;
+      }
     }
   }
-
-  &:active::-moz-range-thumb {
-    background: $range-handle-color-hover;
-  }
 }
-
-
-// Range Label
-.range-slider__value {
-  display: inline-block;
-  position: relative;
-  // width: $range-label-width;
-  color: $range-label-color;;
-  line-height: 20px;
-  font-size: 1.25em;
-  text-align: center;
-  border-radius: 3px;
-  // background: $range-label-color;
-  padding: 5px;
-  // margin-left: 8px;
-}
-
-
-// Firefox Overrides
-::-moz-range-track {
-    background: $range-track-color;
-    border: 0;
-}
-
-input::-moz-focus-inner,
-input::-moz-focus-outer {
-  border: 0;
+.main-content {
+  flex: 1 1 100%;
 }
