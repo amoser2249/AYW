@@ -1,0 +1,12 @@
+
+{% for item in testimonials %}
+  <div class="testimonial__item">
+  <p>from <span>{{item.location}}</span></p>
+  <h4>{{item.name}} writes</h4>
+  <div class="testimonial__content">
+  <p>{{item.testimonial | truncate(160)}}</p>
+
+  </div>
+
+  </div>
+{% endfor %}

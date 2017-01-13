@@ -4,7 +4,7 @@ var $ = require('gulp-load-plugins')(),
 	gulp = require('gulp'),
 	browserSync = require('browser-sync');
 
-gulp.task('watch-js', ['lint:js'], browserSync.reload);
+gulp.task('watch-js', ['lint:js', 'babel'], browserSync.reload);
 
 // Watches files for changes
 gulp.task('watch', function() {

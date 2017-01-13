@@ -1,12 +1,49 @@
 {
     "images": [
         {
-            "src": "image-one.png",
+            "src": "images/healthHazard.svg",
             "alt": "image one alt text"
         },
         {
             "src": "image-two.png",
             "alt": "image two alt text"
+        }
+    ],
+    "iconCopy": [
+        {
+            "visual": "images/jesse.png",
+            "headline": "I Didn't Say I Killed Him",
+            "body": "At first I thought to myself 'Hell yeah, bitch. Now give me a D and shut up so I can go blaze one with my boys.' Maybe it was the way he said it, but... it was like he wasn't exactly saying it sucked. He was just asking me honestly, 'Is that all you got?' And for some reason, I thought to myself: 'Yeah, man, I can do better.' ",
+            "headline-color": "shit"
+        },
+        {
+            "visual": "images/walt.png",
+            "headline": "No Speeches..",
+            "body": "You lost your partner today. What's his name - Emilio? Emilio is going to prison. The DEA took all your money, your lab. You got nothing. Square one. But you know the business and I know the chemistry. I'm thinking... maybe you and I could partner up. ",
+            "headline-color": "shit"
+        },
+        {
+            "visual": "images/mike.png",
+            "headline": "You Are Trouble",
+            "body": "You... are trouble. I'm sorry the kid here doesn't see it, but I sure as hell do. You are a time bomb. Tick, tick, ticking. And I have no intention of being around for the boom. Well... you know how they say, it's been a pleasure? It hasn't.",
+            "headline-color": "shit"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Marie Schrader",
+            "location": "Albuquerque, NM",
+            "testimonial": "Maybe Walt's addicted to the pot and he owes his drug dealer a lot of money. These shoes make me look like I should be changing bedpans, like I should be squeaking around bringing soup to some disgusting old person — then take the bus home to my 16 cats. Let me get this straight. You call in sick the day after receiving a long awaited, career boosting promotion so you can play Oktoberfest in your man cave? Please don't tell me to relax. You know I hate that. Dave said I should express that."
+        },
+    {
+            "name": "Hector Salamanca",
+            "location": "Casa Tranquila, NM",
+            "testimonial": "Ding ding ding ding. Ding. Ding, ding ding ding ding. DING DING DING! Ding, ding ding, ding ding DING DING. DING. Ding, ding ding. Ding, ding ding ding. Ding. Ding ding ding ding. Ding, ding - ding ding. DING?! DING DING DING? Ding, ding ding... ding. Ding. DING. DING! "
+        },
+    {
+            "name": "Gene [LAST NAME WITHHELD]",
+            "location": "Omaha, NE",
+            "testimonial": "Look, let's crunch some numbers. How much money are we laundering? Yeah, apparently. All right, $16,000 laundered at 75 cents on the dollar, minus my fee, which is 17%, comes out to $9,960. Congratulations, you've just left your family a second hand Subaru."
         }
     ]
 }

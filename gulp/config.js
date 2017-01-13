@@ -14,7 +14,8 @@ var config = {
   },
 
   js: {
-    src: 'app/js/**/*.js'
+    src: 'app/js/**/*.js',
+    dest: 'dist/js'
   },
 
   jshint: {
