@@ -13,8 +13,8 @@
 		<!-- endbuild -->
 		</head>
 		<body>
-			{% include 'partials/header.nunjucks' %}
-			{% include 'partials/navigation.nunjucks' %}
+{# 			{% include 'partials/header.nunjucks' %}
+			{% include 'partials/navigation.nunjucks' %} #}
 			{% block content %}
 			{% endblock %}
 			<!-- build:js js/main.min.js -->

@@ -1,0 +1,33 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+<div class="container">
+
+    <header>
+        <nav>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+        <button></button>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <h3></h3>
+        </aside>
+        <section class="main">
+            <h2></h2>
+            <p></p>
+        </section>
+    </div><!-- /wrapper -->
+
+    <footer>
+        <h3></h3>
+        <p></p>
+    </footer>
+</div><! -- /container -->
+
+{% endblock %}
