@@ -1,13 +1,13 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<div class="site-wrap">
-  <section class="iconCopy">
-    {% include "partials/iconCopy.nunjucks" %}
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
   </section>
-  <h1>Testimonial Section</h1>
-  <section class="testimonials">
-    {% include "partials/testimonial.nunjucks" %}
-  </section>
-</div>
-
 {% endblock %}

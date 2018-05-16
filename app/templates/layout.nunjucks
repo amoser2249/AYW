@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
-		<meta charset="utf-8">
-		<title>Alex's AYW Hub</title>
-		{% include 'partials/favicons.nunjucks' %}
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet">
-		<!-- build:css css/styles.min.css -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    		<!-- build:css css/styles.min.css -->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- endbuild -->
-		</head>
-		<body>
-{# 			{% include 'partials/header.nunjucks' %}
-			{% include 'partials/navigation.nunjucks' %} #}
+  </head>
+  <body>
 			{% block content %}
 			{% endblock %}
 			<!-- build:js js/main.min.js -->
 			<!-- <script src="bower_components/jquery/dist/jquery.min.js"></script> -->
 			<script src='js/main.js'></script>
 			<!-- endbuild -->
-		</body>
-	</html>
+  </body>
+</html>
